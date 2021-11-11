@@ -4,10 +4,10 @@
         <script>
             onmousedown = function(e){
                 console.log("mouse location:", e.clientX, e.clientY)
-                x = window.innerWidth-e.clientX 
-                y = window.innerHeight-e.clientY
+                x = e.clientX - 50
+                y = e.clientY - 38
                 //console.log("image location:", x, y)
-                document.getElementById("body").innerHTML += "<img src='img/4.png' alt='Break' width='100' height='auto' style='position: absolute;top: "+e.clientY+"px;left: "+e.clientX+"px;'/>"
+                document.getElementById("body").innerHTML += "<img src='img/4.png' alt='Break' width='100' height='auto' style='position: absolute;top: "+y+"px;left: "+x+"px;'/>"
             }
         </script>
     </head>

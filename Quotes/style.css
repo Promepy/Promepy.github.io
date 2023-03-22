@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    margin: auto;
+    width: 640px;
+    padding: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    background-color: black;
+}

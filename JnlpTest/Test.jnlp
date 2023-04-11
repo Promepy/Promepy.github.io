@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?> 
-<jnlp spec="1.0+" codebase="http://localhost:5500/" href="Test.jnlp">
+<jnlp spec="1.0+" codebase="https://promepy.github.io/JnlpTest/" href="Test.jnlp">
  <information>
   <title>Jnlp Testing</title>
   <vendor>Promepy</vendor>
-  <homepage href="http://localhost:5500/" />
+  <homepage href="https://promepy.github.io/GlassBreak" />
   <description>Testing Testing ME ME Testing</description>
  </information>
  <security>

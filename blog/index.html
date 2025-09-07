@@ -1,56 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promepy Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 5vw auto;
-            max-width: 90vw;
-            line-height: 1.6;
-            padding: 0 5vw;
-        }
-        h1 {
-            text-align: center;
-        }
-        .blog-preview {
-            border-bottom: 1px solid #ccc;
-            padding: 15px 0;
-        }
-        .blog-preview a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 1.2em;
-        }
-        .blog-preview a:hover {
-            text-decoration: underline;
-        }
-        @media (min-width: 768px) {
-            body {
-                max-width: 800px;
-                padding: 0;
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blog | Promepy</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
-    <header>
-        <h1>Promepy Blog</h1>
+    <header class="site-header"> 
+        <nav class="nav">
+            <a class="logo" href="../index.html">Promepy</a>
+            <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section>
-        <div class="blog-preview">
-            <a href="MeAndBeach/index.html">Me and the Beach</a>
-            <h2>Did you ever have a conversation with any element of nature? I did!</h2>
-            <p><strong>Author:</strong> Gowtham Muraharirao | <strong>Date:</strong> 10 Mar 2025</p>
-        </div>
-        
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Promepy Blog. All rights reserved.</p>
+
+    <main class="wrap narrow">
+        <h1>Blog</h1>
+        <p class="tagline">Tutorials & practical guidance on Maestro test automation. Early phase: laying foundations.</p>
+
+        <ol class="post-roadmap">
+            <li><a href="post-1/index.html">Getting Started with Maestro: 5 Fast Wins</a> <span class="status">(Draft)</span></li>
+            <li>Structuring Maintainable Maestro Flows <span class="status">(Planned)</span></li>
+            <li>Wiring Maestro into GitHub Actions (Step-by-Step) <span class="status">(Planned)</span></li>
+            <li>Preventing Flaky Mobile UI Tests (Stability Checklist) <span class="status">(Backlog)</span></li>
+            <li>Using Maestro Across iOS + Android + Web <span class="status">(Backlog)</span></li>
+            <li>When to Add Visual Assertions (and When Not To) <span class="status">(Backlog)</span></li>
+        </ol>
+
+        <p class="note">Articles will roll out incrementally. Follow along as public examples expand.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Promepy. <a href="../terms.html">Terms</a> • <a href="../privacy.html">Privacy</a></p>
     </footer>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

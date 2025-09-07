@@ -1,0 +1,9 @@
+<!-- Plausible Analytics Snippet Reference -->
+<!-- Replace example.com with your actual GitHub Pages domain or future custom domain -->
+<script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
+
+Implementation Steps:
+1. Confirm domain (currently promepy.github.io).
+2. Add the above <script> tag inside <head> on every page (or inject via a build step later).
+3. Verify events appear in Plausible dashboard after deployment.
+4. (Optional) Add custom events later (e.g., book_call_click).

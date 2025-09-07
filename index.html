@@ -1,26 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ProRecruit</title>
-    <style>
-        body {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-            font-size: xxx-large;
-            font-family: ui-monospace;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Promepy | Maestro-Powered Test Automation</title>
+    <meta name="description" content="Free early-phase Maestro test automation setup for mobile & web apps. Ship faster with reliable end-to-end flows." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Plausible (add once account ready) -->
+    <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-    <a href="https://www.linkedin.com/in/gowthammuraharirao/">ProRecruits</a>
+    <header class="site-header"> 
+        <nav class="nav">
+            <a class="logo" href="index.html">Promepy</a>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <h1>Ship faster with confidence.</h1>
+                <p class="sub">I set up Maestro-powered end-to-end UI test suites for your mobile & web app — free for early partners while building public case studies.</p>
+                <div class="actions">
+                    <a class="btn primary" href="contact.html" data-analytics="book_call_click">Book a Free Setup Call</a>
+                    <a class="btn outline" href="services.html">See How It Works</a>
+                </div>
+                <p class="note" style="margin-top:1rem;">Early phase: Limited spots. Lock in discounted future maintenance.</p>
+            </div>
+            <div class="hero-visual placeholder" style="min-height:260px;border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:.85rem;background:var(--surface);">Visual Placeholder (Future: diagram / flow run)</div>
+        </div>
+    </section>
+
+    <main class="wrap">
+        <section>
+            <h2 style="margin-top:0;">Why Maestro + Promepy?</h2>
+            <ul class="bullets" style="list-style:disc;padding-left:1.25rem;line-height:1.55;">
+                <li>Multi-platform coverage (iOS, Android, Web) from one approach</li>
+                <li>Automated on every build via CI (GitHub Actions baseline)</li>
+                <li>Fast onboarding & knowledge transfer sessions</li>
+                <li>Free initial setup for early credibility partners</li>
+            </ul>
+        </section>
+
+        <section class="cta-block">
+            <h2>Be an Early Partner</h2>
+            <p>Get your foundational automation suite wired into CI. Provide feedback. Become a future case study.</p>
+            <a class="btn" href="contact.html">Book a Call</a>
+        </section>
+
+        <section>
+            <h2>Testimonials (Coming Soon)</h2>
+            <div class="testimonials-grid">
+                <article class="testimonial placeholder">
+                    <blockquote>“Your success story will appear here soon. Want to be first?”</blockquote>
+                    <p class="attribution">— Future Client</p>
+                </article>
+                <article class="testimonial placeholder">
+                    <blockquote>“Placeholder for improved release speed quote.”</blockquote>
+                    <p class="attribution">— Future Client</p>
+                </article>
+                <article class="testimonial placeholder">
+                    <blockquote>“Placeholder for flake reduction results.”</blockquote>
+                    <p class="attribution">— Future Client</p>
+                </article>
+            </div>
+            <p style="margin-top:1rem;" class="note"><a href="testimonials.html">See all placeholders</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Promepy. <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

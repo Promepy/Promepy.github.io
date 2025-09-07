@@ -1,1 +1,0 @@
-document.write('<a href="https://www.websiteout.net/counter.php"><img src="https://counter.websiteout.com/compte.php?S='+encodeURIComponent(window.location.href)+'&C=2&D=0&N=1025&M=0&clt=1733769087&ca=" alt="web hit counter" border="0" /></a>');

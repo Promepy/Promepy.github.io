@@ -4,52 +4,223 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | Promepy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <header class="site-header"> 
-    <nav class="nav">
-      <a class="logo" href="index.html">Promepy</a>
-      <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="new-header" role="banner">
+    <div class="new-header-inner">
+      <a href="index.html" class="site-brand" aria-label="Promepy Home">Promepy</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="icon-sun" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="icon-moon" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="contact.html" class="nav-cta" data-analytics="book_call_click">Book a Call
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
+          <svg id="icon-menu" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Book a Free Setup Call</a>
+    </div>
   </header>
 
-  <main class="wrap narrow">
-    <h1>Book a Free Setup Call</h1>
-    <p class="tagline">Early partner? Get full Maestro test suite setup at no cost (limited time).</p>
-
-    <section>
-      <h2>Submit Your App Details</h2>
-      <p>Provide your app URL, tech stack and any context via the embedded form below. I'll respond with proposed next steps.</p>
-      <div class="form-embed placeholder">
-        <!-- Replace the below iframe src with real Google Form link once created -->
-        <p class="note">Google Form embed placeholder. Create form & replace this block with iframe:</p>
-        <code>&lt;iframe src="FORM_EMBED_URL" width="100%" height="800" frameborder="0"&gt;&lt;/iframe&gt;</code>
+  <main>
+    <!-- Intro -->
+    <section class="hero-new" style="padding:4.2rem 1.25rem 3rem;">
+      <div class="max" style="text-align:center;">
+        <div style="display:inline-block;margin-bottom:1rem;" class="badge alt">Free Consultation • No Commitment</div>
+        <h1 style="margin:0 0 1rem;font-size:clamp(2.2rem,5vw,3.1rem);">Let's Discuss Your Testing Needs</h1>
+        <p class="lead" style="margin-top:.4rem;max-width:860px;">Ready to eliminate UI regressions and ship with confidence? Book a free consultation to see how Maestro automation can transform your development workflow.</p>
       </div>
-      <p class="alt-contact">Prefer email? <a href="mailto:placeholder@promepy.dev">placeholder@promepy.dev</a></p>
     </section>
 
-    <section class="cta-block">
-      <h2>What You Get</h2>
-      <ul class="bullets">
-        <li>Initial automation audit (high-level)</li>
-        <li>Flow coverage proposal</li>
-        <li>CI wiring plan</li>
-        <li>Stability strategy outline</li>
-      </ul>
+    <!-- Contact Methods -->
+    <section class="section" style="padding-top:3.5rem;">
+      <div class="max">
+        <div class="contact-methods">
+          <div class="method-card recommended" style="position:relative;">
+            <span class="badge" style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#2563eb;color:#fff;">Recommended</span>
+            <div class="icon-circle" style="background:#dbeafe;color:#1d4ed8;">📅</div>
+            <h3>Book a Call</h3>
+            <p>Schedule a free 30-minute consultation to discuss your testing needs.</p>
+            <a href="#form" class="btn new" data-analytics="book_call_click">Schedule Now
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="method-card">
+            <div class="icon-circle" style="background:#dcfce7;color:#15803d;">💬</div>
+            <h3>Quick Form</h3>
+            <p>Send details about your app and we'll get back within 24 hours.</p>
+            <a href="#form" class="btn" style="background:var(--primary);color:#fff;" data-analytics="contact_form_cta">Send Message
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="method-card">
+            <div class="icon-circle" style="background:#ede9fe;color:#6d28d9;">✉️</div>
+            <h3>Direct Email</h3>
+            <p>Prefer email? Reach out directly for any questions or inquiries.</p>
+            <a href="mailto:placeholder@promepy.dev" class="btn" style="background:var(--primary);color:#fff;">Email Us
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call Benefits -->
+    <section class="section alt" style="padding-top:3.5rem;" id="benefits">
+      <div class="max">
+        <div class="card" style="background:linear-gradient(90deg,#eff6ff,#eef2ff);border:1px solid #bfdbfe;">
+          <div style="text-align:center;margin-bottom:2rem;">
+            <h2 style="margin:0 0 .75rem;font-size:1.9rem;">What to Expect from Our Call</h2>
+            <p style="margin:0;font-size:1rem;color:var(--muted);">This isn't a sales pitch—it's a genuine technical consultation to help you succeed.</p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-item">Free technical assessment of your current testing setup</div>
+            <div class="benefit-item">Custom recommendations for your specific platform & stack</div>
+            <div class="benefit-item">Clear timeline and next steps if we're a good fit</div>
+            <div class="benefit-item">No pressure—focused on helping you decide confidently</div>
+          </div>
+          <div style="margin-top:2rem;padding:1rem 1.25rem;background:#fff;border-radius:.75rem;border:1px solid var(--border);display:flex;flex-direction:column;gap:.5rem;">
+            <div style="display:flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;color:#1d4ed8;">⏱ <span>Typical Call Duration: 30 minutes</span></div>
+            <p style="margin:0;font-size:.75rem;color:var(--muted);">We respect your time. Calls are focused, technical, and give you clear next steps whether we work together or not.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form + FAQ -->
+    <section class="section" style="padding-top:3.5rem;" id="form">
+      <div class="max" style="display:grid;gap:3rem;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:start;">
+        <!-- Form -->
+        <div>
+          <h2 style="margin:0 0 1rem;font-size:1.8rem;">Quick Contact Form</h2>
+            <p style="margin:0 0 1.75rem;font-size:.95rem;color:var(--muted);">Can't schedule a call now? Send your details and we'll reach out within 24 hours.</p>
+          <div class="card" style="padding:1.5rem;">
+            <form id="contactForm" class="vertical-form" onsubmit="event.preventDefault(); if(window.plausible) plausible('ContactFormSubmit'); alert('Thanks! Form submission placeholder – wire to backend or service later.');">
+              <div class="two-col">
+                <label>First Name<input required name="firstName" placeholder="John" /></label>
+                <label>Last Name<input required name="lastName" placeholder="Doe" /></label>
+              </div>
+              <label>Email Address<input required type="email" name="email" placeholder="john@company.com" /></label>
+              <label>Company<input name="company" placeholder="Your Company Name" /></label>
+              <label>App URL (if available)<input name="appUrl" placeholder="https://yourapp.com or store link" /></label>
+              <label>Tech Stack<select name="techStack" required><option value="" disabled selected>Select platform</option><option>iOS Native</option><option>Android Native</option><option>React Native</option><option>Flutter</option><option>Web Application</option><option>Multiple Platforms</option><option>Other</option></select></label>
+              <label>Project Stage<select name="stage" required><option value="" disabled selected>Where are you in development?</option><option>Pre-launch / In Development</option><option>Beta Testing</option><option>Live in Production</option><option>Scaling / Growing User Base</option></select></label>
+              <label>Message<textarea name="message" rows="4" placeholder="Tell us about current testing challenges, timeline, or questions..."></textarea></label>
+              <button type="submit" class="btn new" style="width:100%;background:#2563eb;color:#fff;">Send Message
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- FAQ -->
+        <div>
+          <h2 style="margin:0 0 1rem;font-size:1.8rem;">Frequently Asked Questions</h2>
+          <div class="faq-list" style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="faq-item card"><h3>What information should I prepare for our call?</h3><p>Have your app URL, your tech stack (iOS/Android/Web/Framework), and your current testing challenges in mind. We'll handle the rest.</p></div>
+            <div class="faq-item card"><h3>How long does setup usually take?</h3><p>Most Bronze tier setups complete within 1-2 weeks. Silver/Gold typically 2-4 weeks depending on complexity & training.</p></div>
+            <div class="faq-item card"><h3>Do you work with pre-launch apps?</h3><p>Absolutely. Setting up testing early is often easier than retrofitting later.</p></div>
+            <div class="faq-item card"><h3>What if our app uses a unique tech stack?</h3><p>Maestro supports most modern platforms. If anything is unusual we'll assess compatibility during the consultation.</p></div>
+          </div>
+          <div class="card" style="margin-top:2rem;">
+            <h3 style="margin:0 0 .5rem;font-size:1rem;">Still have questions?</h3>
+            <p style="margin:0 0 1rem;font-size:.75rem;color:var(--muted);">Don't see your question answered? We'll cover it on the call or via email.</p>
+            <a href="#form" class="btn" style="width:100%;background:var(--primary);color:#fff;">Book a Call to Ask Directly</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section" style="padding-top:0;">
+      <div class="max">
+        <div class="card" style="background:var(--primary);color:#fff;">
+          <div style="text-align:center;display:flex;flex-direction:column;gap:1rem;">
+            <h2 style="margin:0;font-size:2rem;">Ready to Eliminate UI Regressions?</h2>
+            <p style="margin:0;font-size:1rem;max-width:720px;margin-inline:auto;color:rgba(255,255,255,.85);">Join our early client program and get professional Maestro test automation setup completely free. Limited spots available while building our case study portfolio.</p>
+            <a href="#form" class="btn" style="background:#fff;color:#111827;display:inline-flex;align-items:center;gap:.5rem;font-weight:600;" data-analytics="book_call_click">Book Your Free Setup Call Now
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <p style="margin:0;font-size:.7rem;color:rgba(255,255,255,.8);">30-minute technical consultation • No commitment • Completely free</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Promepy. <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Promepy</h3>
+          <p style="font-size:.85rem;line-height:1.4;max-width:260px;">Maestro-powered UI test automation for mobile & web apps. Free setup for early clients while building case studies.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="services.html">Bronze Tier</a>
+          <a href="services.html">Silver Tier</a>
+          <a href="services.html">Gold Tier</a>
+          <a href="services.html">Training</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="blog/index.html">Blog</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="projects.html">Demos</a>
+          <a href="contact.html" class="active">Newsletter</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <div class="social-row">
+            <a class="social-icon" aria-label="LinkedIn" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a class="social-icon" aria-label="GitHub" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg></a>
+            <a class="social-icon" aria-label="Email" href="mailto:placeholder@promepy.dev"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.75rem;align-items:center;justify-content:center;border-top:1px solid var(--border);padding-top:1.25rem;">
+        <p style="margin:0;font-size:.75rem;color:var(--muted);">&copy; <span id="year"></span> Promepy. All rights reserved.</p>
+        <p style="margin:0;font-size:.7rem;color:var(--muted);"><a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+      </div>
+    </div>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function(){
+      const toggle=document.getElementById('mobileNavToggle');
+      const menu=document.getElementById('mobileMenu');
+      const iconMenu=document.getElementById('icon-menu');
+      const iconClose=document.getElementById('icon-close');
+      if(toggle){toggle.addEventListener('click',()=>{const open=menu.style.display==='block';menu.style.display=open?'none':'block';toggle.setAttribute('aria-expanded',String(!open));iconMenu.style.display=open?'block':'none';iconClose.style.display=open?'none':'block';});}
+      const root=document.documentElement;const sun=document.getElementById('icon-sun');const moon=document.getElementById('icon-moon');const stored=localStorage.getItem('theme');if(stored==='dark'){root.classList.add('dark');sun.style.display='none';moon.style.display='block';}
+      document.getElementById('themeToggle')?.addEventListener('click',()=>{const isDark=root.classList.toggle('dark');localStorage.setItem('theme',isDark?'dark':'light');sun.style.display=isDark?'none':'block';moon.style.display=isDark?'block':'none';});
+    })();
+  </script>
 </body>
 </html>

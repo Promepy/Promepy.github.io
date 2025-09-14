@@ -4,54 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Terms of Use | Promepy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <header class="site-header"> 
-    <nav class="nav">
-      <a class="logo" href="index.html">Promepy</a>
-      <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="new-header" role="banner">
+    <div class="new-header-inner">
+      <a href="index.html" class="site-brand" aria-label="Promepy Home">Promepy</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="terms.html" class="active">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="icon-sun" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="icon-moon" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="contact.html" class="nav-cta" data-analytics="book_call_click">Book a Call
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
+          <svg id="icon-menu" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="terms.html" class="active">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Book a Free Setup Call</a>
+    </div>
   </header>
 
-  <main class="wrap legal narrow">
-    <h1>Terms of Use (Early Phase)</h1>
-    <p><strong>Last Updated:</strong> 07 Sep 2025</p>
-
-    <h2>1. Beta / Early Engagement Disclaimer</h2>
-    <p>All services rendered during the early credibility-building phase are provided on a goodwill, no-fee basis (excluding any third-party platform costs). They are offered “as-is” without warranties of any kind.</p>
-
-    <h2>2. Scope</h2>
-    <p>Scope is limited to automation test suite setup, basic CI wiring, and optional training as mutually agreed in writing (email or message).</p>
-
-    <h2>3. Ownership</h2>
-    <p>All test assets created for a client belong to the client once delivered. I may retain anonymized structural learnings for future improvement.</p>
-
-    <h2>4. No Liability</h2>
-    <p>Client is responsible for validating all automation changes and approving any integration to production workflows.</p>
-
-    <h2>5. Confidentiality</h2>
-    <p>Reasonable care will be taken to avoid disclosure of confidential application details. Formal NDA can be added later upon request.</p>
-
-    <h2>6. Transition to Paid Model</h2>
-    <p>Future paid structure (target early 2026) will be communicated in advance. Existing early partners may receive ongoing discounts.</p>
-
-    <h2>7. Modification</h2>
-    <p>These terms may evolve. Continued use of the site after updates implies acceptance.</p>
-
-    <p class="small">Questions? <a href="contact.html">Contact me</a>.</p>
+  <main>
+    <section class="hero-new" style="padding:4.2rem 1.25rem 2.5rem;">
+      <div class="max" style="text-align:center;">
+        <h1 style="margin:0 0 1rem;font-size:clamp(2.1rem,5vw,3rem);">Terms of Use</h1>
+        <p style="margin:0;font-size:.9rem;color:var(--muted);">Early engagement / beta phase. Please read before participating.</p>
+        <p style="margin:.75rem 0 0;font-size:.7rem;color:var(--muted);">Last Updated: 07 Sep 2025</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:2rem;">
+      <div class="max legal-wrap">
+        <div class="legal-card">
+          <h2>1. Beta / Early Engagement Disclaimer</h2>
+          <p>All services rendered during the early credibility-building phase are provided on a goodwill, no-fee basis (excluding any third-party platform costs). They are offered “as-is” without warranties of any kind.</p>
+        </div>
+        <div class="legal-card">
+          <h2>2. Scope</h2>
+          <p>Scope is limited to automation test suite setup, basic CI wiring, and optional training as mutually agreed in writing (email or message).</p>
+        </div>
+        <div class="legal-card">
+          <h2>3. Ownership</h2>
+          <p>All test assets created for a client belong to the client once delivered. I may retain anonymized structural learnings for future improvement.</p>
+        </div>
+        <div class="legal-card">
+          <h2>4. No Liability</h2>
+          <p>Client is responsible for validating all automation changes and approving any integration to production workflows.</p>
+        </div>
+        <div class="legal-card">
+          <h2>5. Confidentiality</h2>
+          <p>Reasonable care will be taken to avoid disclosure of confidential application details. Formal NDA can be added later upon request.</p>
+        </div>
+        <div class="legal-card">
+          <h2>6. Transition to Paid Model</h2>
+          <p>Future paid structure (target early 2026) will be communicated in advance. Existing early partners may receive ongoing discounts.</p>
+        </div>
+        <div class="legal-card">
+          <h2>7. Modification</h2>
+          <p>These terms may evolve. Continued use of the site after updates implies acceptance.</p>
+        </div>
+        <div class="legal-card">
+          <h2>Questions?</h2>
+          <p>Have questions or need clarification? <a href="contact.html">Contact us</a>.</p>
+        </div>
+      </div>
+    </section>
+    <section class="cta-band" style="margin-top:0;">
+      <div class="inner">
+        <h2>Need Clarification?</h2>
+        <p>We're transparent about this early phase. Reach out if anything here needs more detail.</p>
+        <a href="contact.html" class="btn new" style="background:#fff;color:#111827;" data-analytics="book_call_click">Contact Us
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Promepy. <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Promepy</h3>
+          <p style="font-size:.85rem;line-height:1.4;max-width:260px;">Maestro-powered UI test automation for mobile & web apps. Free setup for early clients while building case studies.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="services.html">Bronze Tier</a>
+          <a href="services.html">Silver Tier</a>
+          <a href="services.html">Gold Tier</a>
+          <a href="services.html">Training</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="blog/index.html">Blog</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="projects.html">Demos</a>
+          <a href="contact.html">Newsletter</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <div class="social-row">
+            <a class="social-icon" aria-label="LinkedIn" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a class="social-icon" aria-label="GitHub" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg></a>
+            <a class="social-icon" aria-label="Email" href="mailto:placeholder@promepy.dev"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.75rem;align-items:center;justify-content:center;border-top:1px solid var(--border);padding-top:1.25rem;">
+        <p style="margin:0;font-size:.75rem;color:var(--muted);">&copy; <span id="year"></span> Promepy. All rights reserved.</p>
+        <p style="margin:0;font-size:.7rem;color:var(--muted);"><a href="terms.html" class="active">Terms</a> • <a href="privacy.html">Privacy</a></p>
+      </div>
+    </div>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function(){
+      const toggle=document.getElementById('mobileNavToggle');
+      const menu=document.getElementById('mobileMenu');
+      const iconMenu=document.getElementById('icon-menu');
+      const iconClose=document.getElementById('icon-close');
+      if(toggle){toggle.addEventListener('click',()=>{const open=menu.style.display==='block';menu.style.display=open?'none':'block';toggle.setAttribute('aria-expanded',String(!open));iconMenu.style.display=open?'block':'none';iconClose.style.display=open?'none':'block';});}
+      const root=document.documentElement;const sun=document.getElementById('icon-sun');const moon=document.getElementById('icon-moon');const stored=localStorage.getItem('theme');if(stored==='dark'){root.classList.add('dark');sun.style.display='none';moon.style.display='block';}
+      document.getElementById('themeToggle')?.addEventListener('click',()=>{const isDark=root.classList.toggle('dark');localStorage.setItem('theme',isDark?'dark':'light');sun.style.display=isDark?'none':'block';moon.style.display=isDark?'block':'none';});
+    })();
+  </script>
 </body>
 </html>

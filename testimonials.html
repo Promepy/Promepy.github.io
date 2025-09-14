@@ -4,52 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Testimonials | Promepy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <header class="site-header"> 
-    <nav class="nav">
-      <a class="logo" href="index.html">Promepy</a>
-      <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="testimonials.html" class="active">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="new-header" role="banner">
+    <div class="new-header-inner">
+      <a href="index.html" class="site-brand" aria-label="Promepy Home">Promepy</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimonials.html" class="active">Testimonials</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="icon-sun" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="icon-moon" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="contact.html" class="nav-cta" data-analytics="book_call_click">Book a Call
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
+          <svg id="icon-menu" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="testimonials.html" class="active">Testimonials</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Book a Free Setup Call</a>
+    </div>
   </header>
-  <main class="wrap narrow">
-    <h1>Testimonials</h1>
-    <p class="tagline">Early partner feedback will appear here. Want to be first? <a href="contact.html">Book a call</a>.</p>
 
-    <section class="testimonials-grid placeholders">
-      <article class="testimonial placeholder">
-        <blockquote>“Your success story will appear here soon. Ship faster with confidence.”</blockquote>
-        <p class="attribution">— Future Client #1</p>
-      </article>
-      <article class="testimonial placeholder">
-        <blockquote>“Placeholder for improved release cadence quote.”</blockquote>
-        <p class="attribution">— Future Client #2</p>
-      </article>
-      <article class="testimonial placeholder">
-        <blockquote>“Placeholder for stability / flake reduction results.”</blockquote>
-        <p class="attribution">— Future Client #3</p>
-      </article>
-      <article class="testimonial placeholder">
-        <blockquote>“Placeholder for training & handover feedback.”</blockquote>
-        <p class="attribution">— Future Client #4</p>
-      </article>
-      <article class="testimonial placeholder">
-        <blockquote>“Placeholder for ROI / confidence metric.”</blockquote>
-        <p class="attribution">— Future Client #5</p>
-      </article>
+  <main>
+    <section class="hero-new" style="padding:4.2rem 1.25rem 3rem;">
+      <div class="max" style="text-align:center;">
+        <h1 style="margin:0 0 1rem;font-size:clamp(2.2rem,5vw,3.1rem);">Testimonials</h1>
+        <p class="lead" style="margin-top:.4rem;">Early partner feedback will appear here. Want to be first? <a href="contact.html">Book a call</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:3.5rem;">
+      <div class="max">
+        <div class="quote-cards" style="margin-top:1rem;">
+          <div class="quote-card placeholder"><p class="quote">“Your success story will appear here soon. Ship faster with confidence.”</p><p class="who">— Future Client #1</p></div>
+          <div class="quote-card placeholder"><p class="quote">“Placeholder for improved release cadence quote.”</p><p class="who">— Future Client #2</p></div>
+          <div class="quote-card placeholder"><p class="quote">“Placeholder for stability / flake reduction results.”</p><p class="who">— Future Client #3</p></div>
+          <div class="quote-card placeholder"><p class="quote">“Placeholder for training & handover feedback.”</p><p class="who">— Future Client #4</p></div>
+          <div class="quote-card placeholder"><p class="quote">“Placeholder for ROI / confidence metric.”</p><p class="who">— Future Client #5</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" style="margin-top:0;">
+      <div class="inner">
+        <h2>Want Your Quote Featured?</h2>
+        <p>Join as an early partner and help shape how teams adopt Maestro. Your success metrics become a featured testimonial.</p>
+        <a href="contact.html" class="btn new" style="background:#fff;color:#111827;" data-analytics="book_call_click">Book a Free Setup Call
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Promepy. <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Promepy</h3>
+          <p style="font-size:.85rem;line-height:1.4;max-width:260px;">Maestro-powered UI test automation for mobile & web apps. Free setup for early clients while building case studies.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="services.html">Bronze Tier</a>
+          <a href="services.html">Silver Tier</a>
+          <a href="services.html">Gold Tier</a>
+          <a href="services.html">Training</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="blog/index.html">Blog</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="projects.html">Demos</a>
+          <a href="contact.html">Newsletter</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <div class="social-row">
+            <a class="social-icon" aria-label="LinkedIn" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a class="social-icon" aria-label="GitHub" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg></a>
+            <a class="social-icon" aria-label="Email" href="mailto:placeholder@promepy.dev"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.75rem;align-items:center;justify-content:center;border-top:1px solid var(--border);padding-top:1.25rem;">
+        <p style="margin:0;font-size:.75rem;color:var(--muted);">&copy; <span id="year"></span> Promepy. All rights reserved.</p>
+        <p style="margin:0;font-size:.7rem;color:var(--muted);"><a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+      </div>
+    </div>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function(){
+      const toggle=document.getElementById('mobileNavToggle');
+      const menu=document.getElementById('mobileMenu');
+      const iconMenu=document.getElementById('icon-menu');
+      const iconClose=document.getElementById('icon-close');
+      if(toggle){toggle.addEventListener('click',()=>{const open=menu.style.display==='block';menu.style.display=open?'none':'block';toggle.setAttribute('aria-expanded',String(!open));iconMenu.style.display=open?'block':'none';iconClose.style.display=open?'none':'block';});}
+      const root=document.documentElement;const sun=document.getElementById('icon-sun');const moon=document.getElementById('icon-moon');const stored=localStorage.getItem('theme');if(stored==='dark'){root.classList.add('dark');sun.style.display='none';moon.style.display='block';}
+      document.getElementById('themeToggle')?.addEventListener('click',()=>{const isDark=root.classList.toggle('dark');localStorage.setItem('theme',isDark?'dark':'light');sun.style.display=isDark?'none':'block';moon.style.display=isDark?'block':'none';});
+    })();
+  </script>
 </body>
 </html>

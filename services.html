@@ -4,77 +4,232 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services | Promepy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="site-header"> 
-    <nav class="nav">
-      <a class="logo" href="index.html">Promepy</a>
-      <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="new-header" role="banner">
+    <div class="new-header-inner">
+      <a href="index.html" class="site-brand" aria-label="Promepy Home">Promepy</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="icon-sun" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="icon-moon" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="contact.html" class="nav-cta" data-analytics="book_call_click">Book a Call
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
+          <svg id="icon-menu" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Book a Free Setup Call</a>
+    </div>
   </header>
 
-  <main class="wrap narrow">
-    <h1>Service Offering</h1>
-    <p class="tagline">Free end-to-end Maestro test suite setup for early clients. Build credibility together.</p>
-
-    <section class="tiers-grid">
-      <article class="tier">
-        <h2>Bronze (FREE - Early Phase)</h2>
-        <ul>
-          <li>Core critical user journeys (Smoke Flows)</li>
-          <li>Basic CI Integration (GitHub Actions)</li>
-          <li>Run on each build</li>
-          <li>Simple report / pass-fail visibility</li>
-        </ul>
-      </article>
-      <article class="tier">
-        <h2>Silver (FREE - Early Phase)</h2>
-        <ul>
-          <li>Expanded flows & edge cases</li>
-          <li>Parallel jobs optimization (if feasible)</li>
-          <li>Email / pipeline notifications</li>
-          <li>Stability & flake triage guidance</li>
-        </ul>
-      </article>
-      <article class="tier">
-        <h2>Gold (Discounted / Minimal Flat)</h2>
-        <ul>
-          <li>Team training workshop(s)</li>
-          <li>Handover + internal champion onboarding</li>
-          <li>Knowledge transfer docs</li>
-          <li>Ongoing mentoring (optional recurring)</li>
-        </ul>
-      </article>
+  <main>
+    <section class="hero-new" style="padding:4.5rem 1.25rem 3.5rem;">
+      <div class="max" style="text-align:center;">
+        <span class="badge">Early Client Special • Limited Time</span>
+        <h1 style="margin:1rem 0 1rem;font-size:clamp(2.2rem,5.5vw,3.2rem);">Choose Your Automation Package</h1>
+        <p class="lead" style="margin-top:.5rem;">All tiers are currently <strong style="color:#16a34a;">FREE</strong> for early clients while we build case studies. Get professional UI test automation setup at no cost.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Optional Add-ons</h2>
-      <ul class="bullets">
-        <li>Monthly maintenance & expansion (discounted now)</li>
-        <li>Recorded training sessions (flat fee)</li>
-        <li>Multi-platform matrix scaling</li>
-      </ul>
+    <!-- Service Tiers -->
+    <section class="section" id="tiers">
+      <div class="max">
+        <div class="grid-3" style="margin-top:0;">
+          <!-- Bronze -->
+          <div class="card gradient-card" style="position:relative;">
+            <h2 style="margin:0 0 .75rem;">Bronze</h2>
+            <p style="font-size:.85rem;color:var(--muted);margin:.25rem 0 1rem;">Core critical user journeys with CI integration</p>
+            <div style="font-size:2rem;font-weight:700;color:#16a34a;">FREE</div>
+            <div style="font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.35rem 0 1rem;">Future: Paid Baseline</div>
+            <ul style="margin:0 0 1.25rem;padding-left:1.1rem;font-size:.8rem;line-height:1.5;">
+              <li>Smoke test coverage for critical flows</li>
+              <li>Basic CI/CD integration</li>
+              <li>Essential test infrastructure setup</li>
+              <li>Basic reporting & notifications</li>
+              <li>Email support during setup</li>
+            </ul>
+            <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Get Started Free</a>
+          </div>
+          <!-- Silver -->
+          <div class="card gradient-card" style="position:relative;box-shadow:0 0 0 2px var(--primary);">
+            <span class="badge" style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--primary);color:#fff;">Most Popular</span>
+            <h2 style="margin:0 0 .75rem;">Silver</h2>
+            <p style="font-size:.85rem;color:var(--muted);margin:.25rem 0 1rem;">Expanded flows with parallel builds & advanced notifications</p>
+            <div style="font-size:2rem;font-weight:700;color:#16a34a;">FREE</div>
+            <div style="font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.35rem 0 1rem;">Future: Mid-tier</div>
+            <ul style="margin:0 0 1.25rem;padding-left:1.1rem;font-size:.8rem;line-height:1.5;">
+              <li>Everything in Bronze</li>
+              <li>Comprehensive coverage (10+ flows)</li>
+              <li>Parallel test execution</li>
+              <li>Advanced reporting dashboard</li>
+              <li>Slack/Teams notifications</li>
+              <li>Performance monitoring</li>
+              <li>Priority email support</li>
+            </ul>
+            <a href="contact.html" class="btn new w-full" data-analytics="book_call_click" style="background:var(--primary);">Get Started Free</a>
+          </div>
+          <!-- Gold -->
+            <div class="card gradient-card" style="position:relative;">
+              <h2 style="margin:0 0 .75rem;">Gold</h2>
+              <p style="font-size:.85rem;color:var(--muted);margin:.25rem 0 1rem;">Full training, handover, and team enablement</p>
+              <div style="font-size:1.3rem;font-weight:700;color:#fbbf24;">Minimal Fee</div>
+              <div style="font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.35rem 0 1rem;">Future: Premium</div>
+              <ul style="margin:0 0 1.25rem;padding-left:1.1rem;font-size:.8rem;line-height:1.5;">
+                <li>Everything in Silver</li>
+                <li>Interactive training workshop (2–4h)</li>
+                <li>Complete knowledge handover</li>
+                <li>Internal champion enablement</li>
+                <li>Custom documentation</li>
+                <li>Recorded training sessions</li>
+                <li>30-day post-setup support</li>
+                <li>Priority phone/video support</li>
+              </ul>
+              <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Book Consultation</a>
+            </div>
+        </div>
+      </div>
     </section>
 
-    <section class="cta-block">
-      <h2>Want the free setup?</h2>
-      <p>Be an early partner. Help generate real case studies. Get long-term value.</p>
-      <a class="btn primary" href="contact.html">Book a Free Setup Call</a>
+    <!-- Add-ons -->
+    <section class="section alt" id="addons" style="padding-top:3.5rem;">
+      <div class="max">
+        <h2 class="center" style="font-size:2rem;margin:0 0 2rem;">Additional Services</h2>
+        <div class="grid-3" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+          <div class="card">
+            <h3 style="margin:.35rem 0 .75rem;">Team Training</h3>
+            <p style="font-size:.85rem;color:var(--muted);">Optional workshops to enable your team on Maestro best practices.</p>
+            <ul style="margin:1rem 0 1.25rem;padding-left:1.1rem;font-size:.8rem;line-height:1.5;">
+              <li>Interactive 2–4 hour session</li>
+              <li>Hands-on Maestro practice</li>
+              <li>Recorded session access</li>
+            </ul>
+            <span class="badge">Flat fee per participant</span>
+          </div>
+          <div class="card">
+            <h3 style="margin:.35rem 0 .75rem;">Ongoing Maintenance</h3>
+            <p style="font-size:.85rem;color:var(--muted);">Monthly support to keep your tests stable and growing.</p>
+            <ul style="margin:1rem 0 1.25rem;padding-left:1.1rem;font-size:.8rem;line-height:1.5;">
+              <li>Flake triage & fixes</li>
+              <li>New test flow additions</li>
+              <li>CI pipeline stability</li>
+            </ul>
+            <span class="badge">Discounted early</span>
+          </div>
+          <div class="card">
+            <h3 style="margin:.35rem 0 .75rem;">Documentation</h3>
+            <p style="font-size:.85rem;color:var(--muted);">Custom framework docs & internal playbooks for long-term scaling.</p>
+            <ul style="margin:1rem 0 1.25rem;padding-left:1.1rem;font-size:.8rem;line-height:1.5;">
+              <li>Architecture overview</li>
+              <li>Flow authoring guidelines</li>
+              <li>Maintenance runbook</li>
+            </ul>
+            <span class="badge">Optional add-on</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platforms & CI -->
+    <section class="section" id="platforms-ci">
+      <div class="max">
+        <h2 class="center" style="font-size:2rem;margin:0 0 2rem;">Supported Platforms</h2>
+        <div class="grid-plat" style="margin-bottom:2rem;">
+          <span class="pill">iOS</span><span class="pill">Android</span><span class="pill">React Native</span><span class="pill">Flutter</span><span class="pill">Web Apps</span><span class="pill">Mobile Browser</span><span class="pill">WebViews</span><span class="pill">Flutter Web</span><span class="pill">Jetpack Compose</span><span class="pill">SwiftUI</span><span class="pill">NativeScript</span><span class="pill">.NET MAUI</span><span class="pill">Capacitor</span><span class="pill">Cordova</span><span class="pill">Ionic</span>
+        </div>
+        <div class="card" style="margin-bottom:2.5rem;">
+          <h3 style="margin:.25rem 0 .85rem;">CI/CD Integration</h3>
+          <p style="font-size:.85rem;color:var(--muted);margin:0 0 1rem;">We integrate with all major CI/CD platforms for seamless automation.</p>
+          <div class="grid-plat">
+            <span class="pill">GitHub Actions</span><span class="pill">Bitrise</span><span class="pill">Bitbucket Pipelines</span><span class="pill">CircleCI</span><span class="pill">GitLab CI/CD</span><span class="pill">TravisCI</span><span class="pill">Jenkins</span><span class="pill">Custom Solutions</span>
+          </div>
+        </div>
+        <div class="cta-block" style="margin-top:0;">
+          <h2 style="margin-top:0;">Ready to Get Started?</h2>
+            <p>Book a free consultation to discuss your testing needs and get a custom recommendation.</p>
+            <a href="contact.html" class="btn new" data-analytics="book_call_click" style="background:#fff;color:#111827;">Book Your Free Consultation
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <p class="note" style="margin-top:1rem;">30-minute call • No commitment • Free while building case studies</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Promepy. <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Promepy</h3>
+          <p style="font-size:.85rem;line-height:1.4;max-width:260px;">Maestro-powered UI test automation for mobile & web apps. Free setup for early clients while building case studies.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="services.html">Bronze Tier</a>
+          <a href="services.html">Silver Tier</a>
+          <a href="services.html">Gold Tier</a>
+          <a href="services.html">Training</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="blog/index.html">Blog</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="projects.html">Demos</a>
+          <a href="contact.html">Newsletter</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <div class="social-row">
+            <a class="social-icon" aria-label="LinkedIn" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a class="social-icon" aria-label="GitHub" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg></a>
+            <a class="social-icon" aria-label="Email" href="mailto:placeholder@promepy.dev"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.75rem;align-items:center;justify-content:center;border-top:1px solid var(--border);padding-top:1.25rem;">
+        <p style="margin:0;font-size:.75rem;color:var(--muted);">&copy; <span id="year"></span> Promepy. All rights reserved.</p>
+        <p style="margin:0;font-size:.7rem;color:var(--muted);"><a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+      </div>
+    </div>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script>
+    // Page-specific inline: unify theme toggle icons (re-uses index logic pattern)
+    (function(){
+      const toggle = document.getElementById('mobileNavToggle');
+      const menu = document.getElementById('mobileMenu');
+      const iconMenu = document.getElementById('icon-menu');
+      const iconClose = document.getElementById('icon-close');
+      if(toggle){toggle.addEventListener('click',()=>{const open=menu.style.display==='block';menu.style.display=open?'none':'block';toggle.setAttribute('aria-expanded',String(!open));iconMenu.style.display=open?'block':'none';iconClose.style.display=open?'none':'block';});}
+      const root=document.documentElement;const sun=document.getElementById('icon-sun');const moon=document.getElementById('icon-moon');const stored=localStorage.getItem('theme');if(stored==='dark'){root.classList.add('dark');sun.style.display='none';moon.style.display='block';}
+      document.getElementById('themeToggle')?.addEventListener('click',()=>{const isDark=root.classList.toggle('dark');localStorage.setItem('theme',isDark?'dark':'light');sun.style.display=isDark?'none':'block';moon.style.display=isDark?'block':'none';});
+    })();
+  </script>
 </body>
 </html>

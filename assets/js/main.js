@@ -1,32 +1,58 @@
-// Core site enhancements (navigation, theme, analytics events)
-(function(){
-  const doc = document.documentElement;
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+// ============================================
+// Main JS — Scroll animations, smooth scroll, analytics
+// ============================================
+(function () {
+  'use strict';
 
-  // Active link highlighting for new header (fallback if class not already set)
-  const current = window.location.pathname.replace(/\/$/,'').split('/').pop() || 'index.html';
-  document.querySelectorAll('.primary-nav a, #mobileMenu a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (!href) return;
-    if ((current === '' || current === 'index.html') && href === 'index.html') link.classList.add('active');
-    else if (href.endsWith(current)) link.classList.add('active');
-  });
+  // ---- Scroll-triggered reveal animations ----
+  function initRevealAnimations() {
+    const reveals = document.querySelectorAll('.reveal, .stagger');
+    if (!reveals.length) return;
 
-  // Theme initialization (if not already inlined)
-  const stored = localStorage.getItem('theme');
-  if (stored && !doc.classList.contains('dark') && stored === 'dark') doc.classList.add('dark');
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  // Analytics CTA binding (idempotent)
-  const bindCTAs = () => {
-    document.querySelectorAll('[data-analytics="book_call_click"]').forEach(el => {
-      if(el.dataset._bound === '1') return;
-      el.addEventListener('click', () => { if(window.plausible) window.plausible('BookCallClick'); });
+    reveals.forEach(function (el) { observer.observe(el); });
+  }
+
+  // ---- Smooth scroll for anchor links ----
+  function initSmoothScroll() {
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest('a[href^="#"]');
+      if (!link) return;
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+
+  // ---- Analytics CTA binding (Plausible) ----
+  function initAnalytics() {
+    document.querySelectorAll('[data-analytics]').forEach(function (el) {
+      if (el.dataset._bound === '1') return;
+      el.addEventListener('click', function () {
+        if (window.plausible) window.plausible(el.dataset.analytics);
+      });
       el.dataset._bound = '1';
     });
-  };
-  bindCTAs();
+  }
 
-  // Observing dynamically added nodes (future expansions)
-  const mo = new MutationObserver(bindCTAs); mo.observe(document.body,{childList:true,subtree:true});
+  // ---- Init ----
+  document.addEventListener('DOMContentLoaded', function () {
+    initRevealAnimations();
+    initSmoothScroll();
+    initAnalytics();
+
+    // Re-bind analytics on dynamic content
+    const mo = new MutationObserver(initAnalytics);
+    mo.observe(document.body, { childList: true, subtree: true });
+  });
 })();

@@ -3,89 +3,204 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Promepy | Maestro-Powered Test Automation</title>
-    <meta name="description" content="Free early-phase Maestro test automation setup for mobile & web apps. Ship faster with reliable end-to-end flows." />
+    <title>Gowtham M. | Python AI & Automation Specialist</title>
+    <meta name="description" content="I help businesses automate workflows and integrate AI to save 10+ hours a week. Python AI & Automation Specialist — Data Pipelines, LLMs, & API Integrations." />
+    <meta name="keywords" content="Python, AI, Automation, LLM, Data Pipelines, API Integration, Freelance Developer" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gowtham M. | Python AI & Automation Specialist" />
+    <meta property="og:description" content="I help businesses automate workflows and integrate AI to save 10+ hours a week." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://promepy.github.io/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gowtham M. | Python AI & Automation Specialist" />
+    <meta name="twitter:description" content="I help businesses automate workflows and integrate AI to save 10+ hours a week." />
+
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Plausible (add once account ready) -->
     <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gowtham M.",
+      "jobTitle": "Python AI & Automation Specialist",
+      "url": "https://promepy.github.io/",
+      "sameAs": [
+        "https://github.com/Promepy",
+        "https://www.youtube.com/@gowthammuraharirao"
+      ],
+      "knowsAbout": ["Python", "Artificial Intelligence", "Machine Learning", "Data Pipelines", "LLMs", "Automation"]
+    }
+    </script>
 </head>
 <body>
-    <!-- UNDER CONSTRUCTION OVERLAY - comment this div to reveal site content -->
-    <div id="under-construction" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;background:#111;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-family:sans-serif;text-align:center;">
-        <h1 style="font-size:2rem;margin-bottom:1.5rem;">The website is under construction</h1>
-        <p style="font-size:1.15rem;margin-bottom:2rem;">You can still book a call for Maestro-powered test automation setup:</p>
-        <a href="https://forms.gle/rZLCVutKX3EN7QEy6" target="_blank" style="background:#fff;color:#111;padding:.75rem 1.5rem;border-radius:6px;font-weight:600;text-decoration:none;font-size:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,.08);">Book a Call Here</a>
-    </div>
-    <!-- ...existing code... -->
-    <header class="site-header"> 
-        <nav class="nav">
-            <a class="logo" href="index.html">Promepy</a>
-            <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Nav & Footer injected by JS -->
 
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-copy">
-                <h1>Ship faster with confidence.</h1>
-                <p class="sub">I set up Maestro-powered end-to-end UI test suites for your mobile & web app — free for early partners while building public case studies.</p>
-                <div class="actions">
-                    <a class="btn primary" href="contact.html" data-analytics="book_call_click">Book a Free Setup Call</a>
-                    <a class="btn outline" href="services.html">See How It Works</a>
-                </div>
-                <p class="note" style="margin-top:1rem;">Early phase: Limited spots. Lock in discounted future maintenance.</p>
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="hero">
+        <div class="container hero-content reveal">
+            <span class="section-label">Python AI & Automation</span>
+            <h1>I help businesses <span class="highlight">automate workflows</span> and integrate AI to save 10+ hours a week.</h1>
+            <p class="lead">Python AI & Automation Specialist — Building secure data pipelines, intelligent LLM systems, and custom automation that scales your operations.</p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn btn-primary btn-lg" data-analytics="hero_book_call">
+                    Book a Free Discovery Call
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary btn-lg">
+                    View Case Studies
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                </a>
             </div>
-            <div class="hero-visual placeholder" style="min-height:260px;border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:.85rem;background:var(--surface);">Visual Placeholder (Future: diagram / flow run)</div>
         </div>
     </section>
 
-    <main class="wrap">
-        <section>
-            <h2 style="margin-top:0;">Why Maestro + Promepy?</h2>
-            <ul class="bullets" style="list-style:disc;padding-left:1.25rem;line-height:1.55;">
-                <li>Multi-platform coverage (iOS, Android, Web) from one approach</li>
-                <li>Automated on every build via CI (GitHub Actions baseline)</li>
-                <li>Fast onboarding & knowledge transfer sessions</li>
-                <li>Free initial setup for early credibility partners</li>
-            </ul>
-        </section>
-
-        <section class="cta-block">
-            <h2>Be an Early Partner</h2>
-            <p>Get your foundational automation suite wired into CI. Provide feedback. Become a future case study.</p>
-            <a class="btn" href="contact.html">Book a Call</a>
-        </section>
-
-        <section>
-            <h2>Testimonials (Coming Soon)</h2>
-            <div class="testimonials-grid">
-                <article class="testimonial placeholder">
-                    <blockquote>“Your success story will appear here soon. Want to be first?”</blockquote>
-                    <p class="attribution">— Future Client</p>
-                </article>
-                <article class="testimonial placeholder">
-                    <blockquote>“Placeholder for improved release speed quote.”</blockquote>
-                    <p class="attribution">— Future Client</p>
-                </article>
-                <article class="testimonial placeholder">
-                    <blockquote>“Placeholder for flake reduction results.”</blockquote>
-                    <p class="attribution">— Future Client</p>
-                </article>
+    <!-- ======== SERVICES ======== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">What I Do</span>
+                <h2>Technical Expertise,<br>Business Impact</h2>
+                <p class="lead mx-auto" style="margin-top:.75rem;">I translate complex technical capabilities into real business outcomes — saving you time, money, and headaches.</p>
             </div>
-            <p style="margin-top:1rem;" class="note"><a href="testimonials.html">See all placeholders</a></p>
-        </section>
-    </main>
+            <div class="grid-3 stagger" style="margin-top:3rem;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Data Extraction & ETL</h3>
+                    <p>Turning messy local & API data into clean, automated CSV/Database pipelines. Web scraping, data transformation, and scheduled workflows.</p>
+                    <a href="#projects" class="project-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" style="background:rgba(139,92,246,.15);color:#8B5CF6;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Custom AI & LLM Solutions</h3>
+                    <p>Building secure, offline RAG systems, intelligent chatbots, and AI-powered tools. Privacy-first approach — your data never leaves your servers.</p>
+                    <a href="#projects" class="project-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" style="background:var(--green-glow);color:var(--green);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Business Automation</h3>
+                    <p>Scripting away manual data entry, Excel manipulation, and reporting. If you do it manually more than twice, I can automate it.</p>
+                    <a href="#projects" class="project-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="site-footer">
-        <p>&copy; <span id="year"></span> Promepy. <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
-    </footer>
+    <!-- ======== FEATURED PROJECTS ======== -->
+    <section class="section" id="projects" style="background:var(--bg-elevated);">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Featured Work</span>
+                <h2>Projects & Case Studies</h2>
+                <p class="lead mx-auto" style="margin-top:.75rem;">Real problems solved with real impact. Every project follows the Problem → Solution → Impact framework.</p>
+            </div>
+            <div class="grid-3 stagger" style="margin-top:3rem;" id="featuredProjectsGrid">
+                <!-- Rendered by JS from data/projects.json -->
+            </div>
+            <div class="text-center" style="margin-top:2.5rem;">
+                <a href="projects.html" class="btn btn-secondary">
+                    View All Projects
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== TESTIMONIALS ======== -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Social Proof</span>
+                <h2>What Clients Say</h2>
+                <p class="lead mx-auto" style="margin-top:.75rem;">Testimonials from clients and collaborators — coming soon.</p>
+            </div>
+            <div class="grid-3 stagger" style="margin-top:3rem;">
+                <div class="testimonial-card placeholder">
+                    <blockquote>"Your success story will appear here soon. Ready to be the first featured client?"</blockquote>
+                    <div>
+                        <div class="testimonial-author">Future Client #1</div>
+                        <div class="testimonial-role">Company Name</div>
+                    </div>
+                </div>
+                <div class="testimonial-card placeholder">
+                    <blockquote>"Placeholder for automation ROI results — time saved, processes streamlined, growth achieved."</blockquote>
+                    <div>
+                        <div class="testimonial-author">Future Client #2</div>
+                        <div class="testimonial-role">Company Name</div>
+                    </div>
+                </div>
+                <div class="testimonial-card placeholder">
+                    <blockquote>"Placeholder for AI implementation feedback — accuracy, speed, reliability, and security."</blockquote>
+                    <div>
+                        <div class="testimonial-author">Future Client #3</div>
+                        <div class="testimonial-role">Company Name</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-muted text-sm" style="margin-top:1.5rem;">Hire me on <a href="#">Upwork</a> or <a href="#">Fiverr</a> • Reviews coming soon</p>
+        </div>
+    </section>
+
+    <!-- ======== CTA ======== -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="cta-block reveal">
+                <h2>Ready to Automate & Scale?</h2>
+                <p>Let's discuss how Python AI & Automation can transform your workflows. Book a free 30-minute discovery call — no commitment, just a genuine technical consultation.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg" data-analytics="cta_book_call">
+                    Book Your Free Call
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/templates.js"></script>
+    <script src="assets/js/font-loader.js"></script>
+    <script src="assets/js/theme-engine.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/footer.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Load featured projects
+      (async function() {
+        try {
+          const resp = await fetch('data/projects.json');
+          const projects = await resp.json();
+          const featured = projects.filter(p => p.featured).slice(0, 3);
+          const grid = document.getElementById('featuredProjectsGrid');
+          if (!grid || !featured.length) return;
+
+          grid.innerHTML = featured.map(p => `
+            <div class="project-card" onclick="window.location='${p.link}'">
+              <div class="project-meta">
+                <span class="badge">${p.category}</span>
+                <span class="text-xs text-muted">${new Date(p.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
+              </div>
+              <h3>${p.title}</h3>
+              <p>${p.excerpt}</p>
+              <div class="project-tags">
+                ${p.tags.map(t => `<span class="pill">${t}</span>`).join('')}
+              </div>
+              <a href="${p.link}" class="project-link">
+                Explore Case Study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          `).join('');
+        } catch(e) { console.warn('Could not load projects:', e); }
+      })();
+    </script>
 </body>
 </html>

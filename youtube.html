@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YouTube | Gowtham M.</title>
+    <meta name="description"
+        content="Python AI & Automation tutorials, deep dives, and project walkthroughs on YouTube." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
+</head>
+
+<body>
+    <section class="page-hero">
+        <div class="container reveal">
+            <span class="section-label">YouTube Corner</span>
+            <h1>Videos & Tutorials</h1>
+            <p class="lead">Deep dives, project walkthroughs, and Python automation tutorials. Subscribe to stay
+                updated.</p>
+            <div style="margin-top:1.5rem;">
+                <a href="https://www.youtube.com/@gowthammuraharirao" target="_blank" rel="noopener"
+                    class="btn btn-primary" data-analytics="yt_subscribe">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                        <path d="m10 15 5-3-5-3z" />
+                    </svg>
+                    Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div id="ytFilterTabs" class="filter-tabs reveal">
+                <button class="filter-tab active" data-type="all">All</button>
+                <button class="filter-tab" data-type="video">Videos</button>
+                <button class="filter-tab" data-type="playlist">Playlists</button>
+            </div>
+            <div class="grid-3 stagger" id="ytGrid">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm">
+        <div class="container">
+            <div class="cta-block reveal">
+                <h2>Want to Learn More?</h2>
+                <p>Subscribe to my YouTube channel for weekly Python AI & Automation content. Practical guides you can
+                    follow along.</p>
+                <a href="https://www.youtube.com/@gowthammuraharirao" target="_blank" rel="noopener"
+                    class="btn btn-primary btn-lg" data-analytics="yt_cta_subscribe">
+                    Subscribe Now
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/templates.js"></script>
+    <script src="assets/js/font-loader.js"></script>
+    <script src="assets/js/theme-engine.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        (async function () {
+            let allItems = [];
+            let activeType = 'all';
+
+            try {
+                const resp = await fetch('data/youtube.json');
+                allItems = await resp.json();
+            } catch (e) { console.warn('Could not load YouTube data:', e); }
+
+            function getYTThumb(url) {
+                const match = url.match(/(?:v=|\/)([\w-]{11})/);
+                return match ? 'https://img.youtube.com/vi/' + match[1] + '/hqdefault.jpg' : '';
+            }
+
+            function render(items) {
+                const grid = document.getElementById('ytGrid');
+                if (!items.length) {
+                    grid.innerHTML = '<p class="text-muted text-center" style="grid-column:1/-1;">No content yet — subscribe to be first to know!</p>';
+                    return;
+                }
+                grid.innerHTML = items.map(item => {
+                    const thumb = item.thumbnail || getYTThumb(item.url);
+                    const isPlaylist = item.type === 'playlist';
+                    return `
+            <a href="${item.url}" target="_blank" rel="noopener" class="yt-card ${isPlaylist ? 'playlist' : ''}" style="text-decoration:none;color:inherit;">
+              <div class="yt-thumb">
+                ${thumb ? `<img src="${thumb}" alt="${item.title}" loading="lazy" />` : ''}
+                <div class="yt-play">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                </div>
+              </div>
+              <div class="yt-info">
+                <span class="yt-badge">${isPlaylist ? '📚 Playlist' : '🎬 Video'} · ${new Date(item.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+              </div>
+            </a>
+          `;
+                }).join('');
+            }
+
+            render(allItems);
+
+            document.getElementById('ytFilterTabs').addEventListener('click', function (e) {
+                const tab = e.target.closest('.filter-tab');
+                if (!tab) return;
+                activeType = tab.dataset.type;
+                this.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const filtered = activeType === 'all' ? allItems : allItems.filter(i => i.type === activeType);
+                render(filtered);
+            });
+        })();
+    </script>
+</body>
+
+</html>

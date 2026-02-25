@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rag-system",
+    "title": "Secure Offline RAG System",
+    "category": "AI/ML",
+    "excerpt": "Privacy-first document chat using fully local LLMs — no data leaves the machine.",
+    "description": "Built a production-grade, fully offline Retrieval-Augmented Generation system that enables secure document querying without exposing sensitive data to public APIs.",
+    "problem": "Client needed to query sensitive internal documents without exposing data to third-party cloud APIs.",
+    "solution": "Built a privacy-first, locally-hosted LLM solution using Python, Ollama, and ChromaDB for vector search, with a clean CLI and web interface.",
+    "impact": "Enabled instant, secure document retrieval with zero data leakage and sub-second query response times.",
+    "tags": ["Python", "LLM", "RAG", "ChromaDB", "Ollama"],
+    "thumbnail": "",
+    "link": "projects/rag-system.html",
+    "github": "https://github.com/Promepy",
+    "date": "2026-01-15",
+    "featured": true
+  },
+  {
+    "id": "cold-email-engine",
+    "title": "AI-Powered B2B Cold Email Outreach Engine",
+    "category": "Automation",
+    "excerpt": "Automated lead generation and personalized email drafting at scale using AI.",
+    "description": "Developed a Python automation pipeline integrating AI to scrape leads, enrich contact data, and generate hyper-personalized cold outreach emails at scale.",
+    "problem": "Manual lead generation and email drafting was taking hours per day, limiting outreach volume.",
+    "solution": "Developed a Python automation script integrating AI to scrape leads from multiple sources and generate personalized outreach emails with dynamic templates.",
+    "impact": "Scaled outreach volume by 10x while maintaining personalization quality, reducing time spent from 4 hours to 20 minutes daily.",
+    "tags": ["Python", "AI", "Automation", "Email", "Web Scraping"],
+    "thumbnail": "",
+    "link": "projects/cold-email-engine.html",
+    "github": "https://github.com/Promepy",
+    "date": "2026-02-01",
+    "featured": true
+  },
+  {
+    "id": "server-alert-dashboard",
+    "title": "Enterprise Server Alert Dashboard",
+    "category": "Data Engineering",
+    "excerpt": "Real-time monitoring dashboards and automated alert pipelines for enterprise servers.",
+    "description": "Developed real-time Python-based dashboards and automated email alert pipelines for enterprise server monitoring at Harman International.",
+    "problem": "Slow incident response times due to manual server monitoring and delayed alert notifications.",
+    "solution": "Developed real-time Python-based monitoring dashboards with automated email alert pipelines, integrating with existing infrastructure.",
+    "impact": "Cut incident response times by over 90%, from hours to minutes, across a fleet of 200+ servers.",
+    "tags": ["Python", "Dashboard", "Monitoring", "Email Automation", "ETL"],
+    "thumbnail": "",
+    "link": "projects/server-alert-dashboard.html",
+    "github": "https://github.com/Promepy",
+    "date": "2025-08-10",
+    "featured": true
+  }
+]

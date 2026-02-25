@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://promepy.github.io/sitemap.xml
+
+# Block crawling of standalone sub-apps (they have their own structure)
+User-agent: *
+Disallow: /GlassBreak/
+Disallow: /Quotes/
+Disallow: /Resume/

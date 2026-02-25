@@ -1,233 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Projects | Promepy</title>
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <title>Projects & Case Studies | Gowtham M.</title>
+  <meta name="description"
+    content="Real-world Python AI & Automation projects. Secure RAG systems, AI-powered outreach engines, and enterprise monitoring dashboards." />
+  <meta property="og:title" content="Projects & Case Studies | Gowtham M." />
+  <meta property="og:description" content="Real-world Python AI & Automation projects with measurable impact." />
+  <meta property="og:url" content="https://promepy.github.io/projects.html" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Projects & Case Studies",
+      "description": "Portfolio of Python AI & Automation projects by Gowtham M.",
+      "url": "https://promepy.github.io/projects.html"
+    }
+    </script>
 </head>
+
 <body>
-  <header class="new-header" role="banner">
-    <div class="new-header-inner">
-      <a href="index.html" class="site-brand" aria-label="Promepy Home">Promepy</a>
-      <nav class="primary-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="blog/index.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-      <div class="flex items-center gap-2">
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <svg id="icon-sun" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg id="icon-moon" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-        </button>
-        <a href="contact.html" class="nav-cta" data-analytics="book_call_click">Book a Call
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+  <!-- ======== PAGE HERO ======== -->
+  <section class="page-hero">
+    <div class="container reveal">
+      <span class="section-label">Portfolio</span>
+      <h1>Projects & Case Studies</h1>
+      <p class="lead">Real problems solved with measurable impact. Every project follows the Problem → Solution → Impact
+        framework.</p>
+    </div>
+  </section>
+
+  <!-- ======== FILTER + GRID ======== -->
+  <section class="section">
+    <div class="container">
+      <div id="filterTabs" class="filter-tabs reveal">
+        <!-- Rendered by projects.js -->
+      </div>
+      <div class="grid-3 stagger" id="projectsGrid">
+        <!-- Rendered by projects.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA ======== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-block reveal">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's discuss how I can help automate your workflows or build custom AI solutions. Book a free discovery
+          call.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-analytics="projects_cta">
+          Book a Free Call
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
         </a>
-        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
-          <svg id="icon-menu" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          <svg id="icon-close" class="icon" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
       </div>
     </div>
-    <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile Navigation">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="blog/index.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="terms.html">Terms</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="contact.html" class="btn new w-full" data-analytics="book_call_click">Book a Free Setup Call</a>
-    </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- Header Section -->
-    <section class="hero-new" style="padding:4.2rem 1.25rem 3.2rem;">
-      <div class="max" style="text-align:center;">
-        <h1 style="margin:0 0 1rem;font-size:clamp(2.2rem,5vw,3.1rem);">Projects & Case Studies</h1>
-        <p class="lead" style="margin-top:.5rem;">Real-world implementations of Maestro test automation. See how we help teams ship with confidence and build the case studies that establish our expertise.</p>
-      </div>
-    </section>
-
-    <!-- Featured Project -->
-    <section class="section" id="featured-project" style="padding-top:3.5rem;">
-      <div class="max">
-        <h2 style="font-size:2rem;margin:0 0 1.5rem;">Featured Project</h2>
-        <div class="card gradient-card" style="border:2px solid var(--border);">
-          <div style="display:flex;flex-direction:column;gap:1.25rem;">
-            <div style="display:flex;flex-direction:column;gap:.6rem;">
-              <span class="badge" style="background:#16a34a;color:#fff;">Completed</span>
-              <h3 style="margin:0;font-size:1.5rem;">E-commerce App UI Test Suite</h3>
-              <p style="font-size:.9rem;line-height:1.55;color:var(--muted);max-width:820px;">Comprehensive Maestro test automation covering critical user journeys including login, product search, cart management, and checkout flow.</p>
-            </div>
-            <div class="projects-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:.25rem;">
-              <div class="project-card" style="gap:.35rem;">
-                <h4 style="margin:0;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);">Platforms</h4>
-                <div class="grid-plat" style="gap:.4rem;">
-                  <span class="pill">iOS</span><span class="pill">Android</span><span class="pill">Web</span>
-                </div>
-              </div>
-              <div class="project-card" style="gap:.35rem;">
-                <h4 style="margin:0;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);">Coverage</h4>
-                <p style="margin:0;font-size:.75rem;color:var(--muted);">15 critical flows<br/>GitHub Actions CI</p>
-              </div>
-              <div class="project-card" style="gap:.5rem;">
-                <h4 style="margin:0;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);">Results</h4>
-                <ul style="margin:0;padding-left:1.1rem;font-size:.75rem;line-height:1.4;color:var(--muted);">
-                  <li>80% time reduction</li>
-                  <li>12 bugs caught pre-release</li>
-                  <li>85% target coverage</li>
-                </ul>
-              </div>
-            </div>
-            <div style="display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:.5rem;">
-              <div class="project-card" style="gap:.65rem;">
-                <h4 style="margin:0;font-size:.85rem;">Test Coverage</h4>
-                <ul style="margin:0;padding-left:1.1rem;font-size:.75rem;line-height:1.5;color:var(--muted);">
-                  <li>User authentication flows</li>
-                  <li>Product browsing & search</li>
-                  <li>Shopping cart operations</li>
-                  <li>Checkout & payment flow</li>
-                  <li>User profile management</li>
-                  <li>Order history & tracking</li>
-                </ul>
-              </div>
-              <div class="project-card" style="gap:.65rem;">
-                <h4 style="margin:0;font-size:.85rem;">Technologies Used</h4>
-                <div class="grid-plat" style="gap:.4rem;">
-                  <span class="pill">Maestro</span><span class="pill">GitHub Actions</span><span class="pill">Docker</span><span class="pill">Slack Integration</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pipeline Projects -->
-    <section class="section alt" id="pipeline" style="padding-top:3.5rem;">
-      <div class="max">
-        <h2 style="font-size:2rem;margin:0 0 1.5rem;">Pipeline Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div style="display:flex;align-items:center;justify-content:space-between;">
-              <span class="badge" style="background:var(--primary);color:#fff;">In Progress</span>
-              <span style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">Q4 2024</span>
-            </div>
-            <h3 style="margin:.5rem 0 .4rem;font-size:1rem;">FinTech Mobile App Testing</h3>
-            <p style="font-size:.8rem;color:var(--muted);line-height:1.5;">Multi-platform test suite for a financial services app with complex security flows.</p>
-            <div class="grid-plat" style="gap:.35rem;margin-top:.5rem;">
-              <span class="pill">iOS</span><span class="pill">Android</span><span class="pill">React Native</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div style="display:flex;align-items:center;justify-content:space-between;">
-              <span class="badge" style="background:var(--secondary);color:var(--text);">Planning</span>
-              <span style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">Q1 2025</span>
-            </div>
-            <h3 style="margin:.5rem 0 .4rem;font-size:1rem;">Healthcare Portal Automation</h3>
-            <p style="font-size:.8rem;color:var(--muted);line-height:1.5;">Web-based patient portal with compliance-focused testing requirements.</p>
-            <div class="grid-plat" style="gap:.35rem;margin-top:.5rem;">
-              <span class="pill">Web</span><span class="pill">Mobile Web</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div style="display:flex;align-items:center;justify-content:space-between;">
-              <span class="badge" style="background:var(--secondary);color:var(--text);">Proposal</span>
-              <span style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">Q1 2025</span>
-            </div>
-            <h3 style="margin:.5rem 0 .4rem;font-size:1rem;">Gaming App UI Validation</h3>
-            <p style="font-size:.8rem;color:var(--muted);line-height:1.5;">Flutter-based mobile game with complex UI interactions and real-time flows.</p>
-            <div class="grid-plat" style="gap:.35rem;margin-top:.5rem;">
-              <span class="pill">Flutter</span><span class="pill">iOS</span><span class="pill">Android</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Case Study Placeholders -->
-    <section class="section" id="case-studies" style="padding-top:3.5rem;">
-      <div class="max">
-        <h2 style="font-size:2rem;margin:0 0 1.25rem;">Future Case Studies</h2>
-        <p class="lead" style="margin-top:0;">These slots are reserved for early clients' success stories. Join the program and get featured prominently.</p>
-        <div class="projects-grid" style="margin-top:2rem;">
-          <div class="project-card" style="border:1px dashed var(--border);background:linear-gradient(135deg,#f1f5f9,#eef2ff);"><h3 style="margin:.25rem 0 .5rem;">SaaS Platform Success</h3><p style="font-size:.75rem;color:var(--muted);">Reduced manual testing by 90%</p><p style="font-size:.8rem;color:var(--muted);">Your case study will appear here once we complete your project.</p><span class="badge small">Coming Soon</span></div>
-          <div class="project-card" style="border:1px dashed var(--border);background:linear-gradient(135deg,#f1f5f9,#eef2ff);"><h3 style="margin:.25rem 0 .5rem;">Startup MVP Launch</h3><p style="font-size:.75rem;color:var(--muted);">Zero critical bugs in production</p><p style="font-size:.8rem;color:var(--muted);">Early clients get featured prominently as case studies.</p><span class="badge small">Your Results Here</span></div>
-          <div class="project-card" style="border:1px dashed var(--border);background:linear-gradient(135deg,#f1f5f9,#eef2ff);"><h3 style="margin:.25rem 0 .5rem;">Enterprise Integration</h3><p style="font-size:.75rem;color:var(--muted);">Seamless CI/CD pipeline</p><p style="font-size:.8rem;color:var(--muted);">Join and your success becomes a featured story.</p><span class="badge small">Future Success</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-band" style="margin-top:0;">
-      <div class="inner">
-        <h2>Want Your Project Featured Here?</h2>
-        <p>Join the early client program and get professional UI test automation setup for free. Your success becomes our case study.</p>
-        <a href="contact.html" class="btn new" style="background:#fff;color:#111827;" data-analytics="book_call_click">Book Your Free Project Setup
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-        <p class="note" style="margin-top:1rem;color:rgba(255,255,255,.85);">Limited spots available • Free setup while building portfolio</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>Promepy</h3>
-          <p style="font-size:.85rem;line-height:1.4;max-width:260px;">Maestro-powered UI test automation for mobile & web apps. Free setup for early clients while building case studies.</p>
-        </div>
-        <div class="footer-col">
-          <h3>Services</h3>
-          <a href="services.html">Bronze Tier</a>
-          <a href="services.html">Silver Tier</a>
-          <a href="services.html">Gold Tier</a>
-          <a href="services.html">Training</a>
-        </div>
-        <div class="footer-col">
-          <h3>Resources</h3>
-          <a href="blog/index.html">Blog</a>
-          <a href="projects.html" class="active">Case Studies</a>
-          <a href="projects.html">Demos</a>
-          <a href="contact.html">Newsletter</a>
-        </div>
-        <div class="footer-col">
-          <h3>Connect</h3>
-          <div class="social-row">
-            <a class="social-icon" aria-label="LinkedIn" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a class="social-icon" aria-label="GitHub" href="#"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg></a>
-            <a class="social-icon" aria-label="Email" href="mailto:placeholder@promepy.dev"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
-          </div>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:.75rem;align-items:center;justify-content:center;border-top:1px solid var(--border);padding-top:1.25rem;">
-        <p style="margin:0;font-size:.75rem;color:var(--muted);">&copy; <span id="year"></span> Promepy. All rights reserved.</p>
-        <p style="margin:0;font-size:.7rem;color:var(--muted);"><a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
-      </div>
-    </div>
-  </footer>
+  <script src="assets/js/templates.js"></script>
+    <script src="assets/js/font-loader.js"></script>
+    <script src="assets/js/theme-engine.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/footer.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    (function(){
-      const toggle = document.getElementById('mobileNavToggle');
-      const menu = document.getElementById('mobileMenu');
-      const iconMenu = document.getElementById('icon-menu');
-      const iconClose = document.getElementById('icon-close');
-      if(toggle){toggle.addEventListener('click',()=>{const open=menu.style.display==='block';menu.style.display=open?'none':'block';toggle.setAttribute('aria-expanded',String(!open));iconMenu.style.display=open?'block':'none';iconClose.style.display=open?'none':'block';});}
-      const root=document.documentElement;const sun=document.getElementById('icon-sun');const moon=document.getElementById('icon-moon');const stored=localStorage.getItem('theme');if(stored==='dark'){root.classList.add('dark');sun.style.display='none';moon.style.display='block';}
-      document.getElementById('themeToggle')?.addEventListener('click',()=>{const isDark=root.classList.toggle('dark');localStorage.setItem('theme',isDark?'dark':'light');sun.style.display=isDark?'none':'block';moon.style.display=isDark?'block':'none';});
-    })();
-  </script>
+  <script src="assets/js/projects.js"></script>
 </body>
+
 </html>

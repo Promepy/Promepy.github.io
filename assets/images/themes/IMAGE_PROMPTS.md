@@ -6,7 +6,7 @@ Use these prompts with an image generation AI (Midjourney, DALL·E, Stable Diffu
 
 ---
 
-## Cyberpunk — `cyberpunk-bg.webp`
+## Cyberpunk - `cyberpunk-bg.webp`
 
 **Hero background:**
 > Dark futuristic cityscape at night with neon cyan and magenta reflections, rain-soaked streets, holographic signs in the far distance, extremely dark and moody with most details in shadow. Subtle grid lines overlaid. Aspect ratio 16:9, ultra-dark.
@@ -16,17 +16,17 @@ Use these prompts with an image generation AI (Midjourney, DALL·E, Stable Diffu
 
 ---
 
-## Vintage — `vintage-bg.webp`
+## Vintage - `vintage-bg.webp`
 
 **Hero background:**
-> Aged leather desk surface with warm amber lighting, very dark, subtle paper grain texture, antique book spines barely visible in corners. Rich warm tones — deep browns, burnt sienna, aged gold. Ultra-dark, atmospheric.
+> Aged leather desk surface with warm amber lighting, very dark, subtle paper grain texture, antique book spines barely visible in corners. Rich warm tones - deep browns, burnt sienna, aged gold. Ultra-dark, atmospheric.
 
 **Texture overlay:**
 > Subtle paper grain noise texture on dark warm brown background, seamless tileable, very low contrast. Old parchment feel but extremely dark.
 
 ---
 
-## Ocean — `ocean-bg.webp`
+## Ocean - `ocean-bg.webp`
 
 **Hero background:**
 > Deep underwater scene looking up toward faint surface light, dark teal and midnight blue tones, subtle light rays filtering through water, abstract and ethereal. Very dark, almost black with hints of deep blue-green.
@@ -36,7 +36,7 @@ Use these prompts with an image generation AI (Midjourney, DALL·E, Stable Diffu
 
 ---
 
-## Forest — `forest-bg.webp`
+## Forest - `forest-bg.webp`
 
 **Hero background:**
 > Dark dense forest canopy at night, moonlight barely filtering through leaves, deep emerald and black tones, mysterious and grounded feel. Fog between trees. Extremely dark with subtle green atmospheric glow.
@@ -46,7 +46,7 @@ Use these prompts with an image generation AI (Midjourney, DALL·E, Stable Diffu
 
 ---
 
-## Midnight — `midnight-bg.webp`
+## Midnight - `midnight-bg.webp`
 
 **Hero background:**
 > Abstract dark space nebula with deep purple and indigo tones, scattered subtle star points, very dark and moody cosmic atmosphere. Rich purple-black gradient with barely visible gas clouds.

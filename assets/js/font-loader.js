@@ -1,5 +1,5 @@
 // ============================================
-// Font Loader — Dynamic Google Fonts injection
+// Font Loader - Dynamic Google Fonts injection
 // ============================================
 (function () {
     'use strict';

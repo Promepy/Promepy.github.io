@@ -1,10 +1,10 @@
-# Gowtham M. — Portfolio
+# Gowtham M. - Portfolio
 
 Python AI & Automation Specialist. Live at [promepy.github.io](https://promepy.github.io).
 
 ## Stack
 
-- **HTML / CSS / JS** — No frameworks, no build step
+- **HTML / CSS / JS** - No frameworks, no build step
 - **Dark-mode-first** design with light toggle
 - **JSON-driven** projects, blog, and YouTube data (`data/`)
 - **Plausible** analytics (privacy-friendly)

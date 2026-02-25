@@ -1,12 +1,12 @@
 /* ============================================
-   Gowtham M. — Portfolio Design System
+   Gowtham M. - Portfolio Design System
    Dark-mode-first, CSS variable driven
    ============================================ */
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* ---- Design Tokens (Dark — Default) ---- */
+/* ---- Design Tokens (Dark - Default) ---- */
 :root {
   --bg: #0a0f1a;
   --bg-elevated: #111827;

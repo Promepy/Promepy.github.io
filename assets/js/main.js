@@ -1,5 +1,5 @@
 // ============================================
-// Main JS — Scroll animations, smooth scroll, analytics
+// Main JS - Scroll animations, smooth scroll, analytics
 // ============================================
 (function () {
   'use strict';

@@ -1,5 +1,5 @@
 // ============================================
-// Template Registry — Visual Theme Definitions
+// Template Registry - Visual Theme Definitions
 // Each template defines ~25 CSS tokens that control
 // the entire visual feel of the site.
 // ============================================
@@ -7,7 +7,7 @@
     'use strict';
 
     window.TEMPLATES = [
-        // ---- 1. Default Dark — Clean Professional ----
+        // ---- 1. Default Dark - Clean Professional ----
         {
             id: 'default-dark',
             name: 'Default Dark',
@@ -57,7 +57,7 @@
             accentGlow: '0 0 20px rgba(59,130,246,.15)',
         },
 
-        // ---- 2. Midnight — Elegant Purple ----
+        // ---- 2. Midnight - Elegant Purple ----
         {
             id: 'midnight',
             name: 'Midnight',
@@ -101,7 +101,7 @@
             accentGlow: '0 0 24px rgba(139,92,246,.2)',
         },
 
-        // ---- 3. Cyberpunk — Neon Future ----
+        // ---- 3. Cyberpunk - Neon Future ----
         {
             id: 'cyberpunk',
             name: 'Cyberpunk',
@@ -145,7 +145,7 @@
             accentGlow: '0 0 20px rgba(0,255,204,.3), 0 0 40px rgba(0,255,204,.1)',
         },
 
-        // ---- 4. Vintage — Warm Retro ----
+        // ---- 4. Vintage - Warm Retro ----
         {
             id: 'vintage',
             name: 'Vintage',
@@ -189,7 +189,7 @@
             accentGlow: '0 0 20px rgba(217,119,6,.15)',
         },
 
-        // ---- 5. Ocean — Cool Aquatic ----
+        // ---- 5. Ocean - Cool Aquatic ----
         {
             id: 'ocean',
             name: 'Ocean',
@@ -233,7 +233,7 @@
             accentGlow: '0 0 24px rgba(14,165,233,.2)',
         },
 
-        // ---- 6. Forest — Natural & Grounded ----
+        // ---- 6. Forest - Natural & Grounded ----
         {
             id: 'forest',
             name: 'Forest',
@@ -277,7 +277,7 @@
             accentGlow: '0 0 20px rgba(34,197,94,.15)',
         },
 
-        // ---- 7. Default Light — Clean Light ----
+        // ---- 7. Default Light - Clean Light ----
         {
             id: 'default-light',
             name: 'Light',

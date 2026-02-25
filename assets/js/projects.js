@@ -1,5 +1,5 @@
 // ============================================
-// Projects Listing — Render from JSON + filter
+// Projects Listing - Render from JSON + filter
 // ============================================
 (function () {
     'use strict';

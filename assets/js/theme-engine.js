@@ -1,5 +1,5 @@
 // ============================================
-// Theme Engine — Full Template-Driven Styling
+// Theme Engine - Full Template-Driven Styling
 // State management, computed styles, appearance modal
 // ============================================
 (function () {

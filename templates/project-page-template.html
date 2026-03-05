@@ -1,157 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <!--  EDIT: Update title  -->
-    <title>PROJECT_TITLE | Gowtham M.</title>
-    <meta name="description" content="PROJECT_DESCRIPTION" />
-    <meta property="og:title" content="PROJECT_TITLE | Gowtham M." />
-    <meta property="og:description" content="PROJECT_DESCRIPTION" />
-    <meta property="og:url" content="https://promepy.github.io/projects/PROJECT_ID.html" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
-
-    <!--  EDIT: Update JSON-LD  -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "PROJECT_TITLE",
-      "author": { "@type": "Person", "name": "Gowtham M." },
-      "description": "PROJECT_DESCRIPTION",
-      "url": "https://promepy.github.io/projects/PROJECT_ID.html"
-    }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{PROJECT_TITLE}} | Gowtham M.</title>
+  <meta name="description" content="{{PROJECT_DESCRIPTION}}" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
-
 <body>
-    <!--  EDIT: Update hero content  -->
+  <main class="site-main">
     <section class="page-hero">
-        <div class="container reveal">
-            <a href="../projects.html" class="btn btn-ghost" style="margin-bottom:1rem;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m15 18-6-6 6-6" />
-                </svg>
-                Back to Projects
-            </a>
-            <span class="badge">CATEGORY</span>
-            <h1 style="margin-top:.75rem;">PROJECT_TITLE</h1>
-            <p class="lead">PROJECT_EXCERPT</p>
-            <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem;">
-                <!-- EDIT: Add tech tags -->
-                <span class="pill">Python</span>
-                <span class="pill">Tag2</span>
-                <span class="pill">Tag3</span>
-            </div>
-        </div>
+      <div class="container reveal">
+        <a href="../projects.html" class="btn btn-ghost" style="margin-bottom:14px;">Back to Projects</a>
+        <span class="badge">{{CATEGORY}}</span>
+        <h1 style="margin-top:10px;">{{PROJECT_TITLE}}</h1>
+        <p class="lead">{{PROJECT_EXCERPT}}</p>
+      </div>
     </section>
 
-    <!-- ======== PROBLEM / SOLUTION / IMPACT ======== -->
     <section class="section">
-        <div class="container" style="max-width:860px;">
-            <!--  Problem  -->
-            <div class="reveal" style="margin-bottom:3rem;">
-                <span class="section-label">The Problem</span>
-                <h2>Problem Headline</h2>
-                <p style="color:var(--text-secondary);line-height:1.8;margin-top:1rem;">
-                    Describe the business pain point or technical challenge that existed before this project.
-                </p>
-            </div>
+      <div class="container" style="max-width:900px;">
+        <figure class="project-media reveal">
+          <img src="../assets/images/projects/placeholders/{{PROJECT_SLUG}}-placeholder.svg" alt="Placeholder visual for {{PROJECT_TITLE}}" loading="lazy" />
+          <figcaption>Replace this placeholder with the final project visual.</figcaption>
+        </figure>
 
-            <!--  Solution  -->
-            <div class="reveal" style="margin-bottom:3rem;">
-                <span class="section-label">The Solution</span>
-                <h2>Solution Headline</h2>
-                <p style="color:var(--text-secondary);line-height:1.8;margin-top:1rem;">
-                    Describe what was built, the architecture, and the technical approach used to solve the problem.
-                </p>
-                <!-- EDIT: Optional architecture diagram placeholder -->
-                <div class="card" style="margin-top:2rem;padding:3rem;text-align:center;border-style:dashed;">
-                    <p class="text-muted">Architecture diagram or screenshot placeholder</p>
-                </div>
-            </div>
+        <article class="reveal" style="margin-bottom:40px;">
+          <span class="section-label">Problem</span>
+          <h2>{{PROBLEM_HEADLINE}}</h2>
+          <p class="text-muted" style="margin-top:12px;">{{PROBLEM_DETAILS}}</p>
+        </article>
 
-            <!--  Impact  -->
-            <div class="reveal" style="margin-bottom:3rem;">
-                <span class="section-label">The Impact</span>
-                <h2>Results & Outcomes</h2>
-                <!--  EDIT: Update impact metrics  -->
-                <div class="impact-grid" style="margin-top:1.5rem;">
-                    <div class="impact-item">
-                        <div class="impact-value">XX%</div>
-                        <div class="impact-label">Metric Description</div>
-                    </div>
-                    <div class="impact-item">
-                        <div class="impact-value">XX+</div>
-                        <div class="impact-label">Metric Description</div>
-                    </div>
-                    <div class="impact-item">
-                        <div class="impact-value">XX×</div>
-                        <div class="impact-label">Metric Description</div>
-                    </div>
-                </div>
-            </div>
+        <article class="reveal" style="margin-bottom:40px;">
+          <span class="section-label">Solution</span>
+          <h2>{{SOLUTION_HEADLINE}}</h2>
+          <p class="text-muted" style="margin-top:12px;">{{SOLUTION_DETAILS}}</p>
+        </article>
 
-            <!--  Links  -->
-            <div class="reveal" style="display:flex;gap:1rem;flex-wrap:wrap;">
-                <!--  EDIT: Update links  -->
-                <a href="#" target="_blank" rel="noopener" class="btn btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                    </svg>
-                    View on GitHub
-                </a>
-                <a href="../projects.html" class="btn btn-secondary">View All Projects</a>
-            </div>
-        </div>
+        <article class="reveal">
+          <span class="section-label">Impact</span>
+          <h2>{{IMPACT_HEADLINE}}</h2>
+          <p class="text-muted" style="margin-top:12px;">{{IMPACT_DETAILS}}</p>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <!--  Related Projects  -->
-    <section class="section" style="background:var(--bg-elevated);">
-        <div class="container">
-            <div class="text-center reveal">
-                <h2>Other Projects</h2>
-            </div>
-            <div class="grid-3 stagger" style="margin-top:2rem;" id="relatedProjects">
-                <!-- Populated by JS -->
-            </div>
-        </div>
-    </section>
-
-    <script src="../assets/js/templates.js"></script>
-    <script src="../assets/js/font-loader.js"></script>
-    <script src="../assets/js/theme-engine.js"></script>
-    <script src="../assets/js/nav.js"></script>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script>
-        // Load related projects (exclude current)
-        (async function () {
-            try {
-                const currentId = window.location.pathname.split('/').pop().replace('.html', '');
-                const resp = await fetch('../data/projects.json');
-                const projects = await resp.json();
-                const related = projects.filter(p => p.id !== currentId).slice(0, 3);
-                const grid = document.getElementById('relatedProjects');
-                if (!grid || !related.length) return;
-                grid.innerHTML = related.map(p => `
-          <a href="${p.id}.html" class="project-card" style="text-decoration:none;color:inherit;">
-            <div class="project-meta">
-              <span class="badge">${p.category}</span>
-            </div>
-            <h3>${p.title}</h3>
-            <p>${p.excerpt}</p>
-            <span class="project-link">Explore → </span>
-          </a>
-        `).join('');
-            } catch (e) { }
-        })();
-    </script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Cold Email Engine Placeholder</title>
+  <desc id="desc">Placeholder visual for AI-powered B2B cold email engine.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="120" y="110" width="960" height="455" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#0f172a" font-weight="700">AI-Powered B2B Cold Email Engine</text>
+  <rect x="170" y="220" width="240" height="180" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="480" y="220" width="240" height="180" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="790" y="220" width="240" height="180" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="290" y="305" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">Lead Intake</text>
+  <text x="600" y="305" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">AI Drafting</text>
+  <text x="910" y="305" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">Delivery</text>
+  <rect x="330" y="450" width="540" height="90" rx="10" fill="#0f172a"/>
+  <text x="600" y="506" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" fill="#ffffff" font-weight="600">Replace with final project visual</text>
+  <path d="M410 310h65" stroke="#2563eb" stroke-width="4"/>
+  <path d="M720 310h65" stroke="#2563eb" stroke-width="4"/>
+</svg>

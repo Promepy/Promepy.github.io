@@ -1,126 +1,134 @@
-// ============================================
-// Shared Navigation Component
-// ============================================
 (function () {
-    'use strict';
+  'use strict';
 
-    const NAV_LINKS = [
-        { label: 'Home', href: 'index.html' },
-        { label: 'Projects', href: 'projects.html' },
-        { label: 'Blog', href: 'blog/index.html' },
-        { label: 'YouTube', href: 'youtube.html' },
-        { label: 'Community', href: 'community.html' },
-        { label: 'About', href: 'about.html' },
-    ];
+  var NAV_LINKS = [
+    { label: 'Home', href: 'index.html' },
+    { label: 'Services', href: 'services.html' },
+    { label: 'Projects', href: 'projects.html' },
+    { label: 'Blog', href: 'blog/index.html' },
+    { label: 'YouTube', href: 'youtube.html' },
+    { label: 'About', href: 'about.html' },
+    { label: 'Contact', href: 'contact.html' }
+  ];
 
-    function getBasePath() {
-        const path = window.location.pathname;
-        // If we're in a subdirectory like /blog/ or /projects/
-        if (path.includes('/blog/') || path.includes('/projects/')) {
-            return '../';
-        }
-        return '';
+  function getSiteRoot(scriptFile) {
+    var scripts = document.querySelectorAll('script[src]');
+    for (var i = scripts.length - 1; i >= 0; i -= 1) {
+      var rawSrc = scripts[i].getAttribute('src') || '';
+      if (rawSrc.indexOf('assets/js/' + scriptFile) === -1) continue;
+
+      try {
+        var absolute = new URL(rawSrc, window.location.href).href;
+        var marker = 'assets/js/' + scriptFile;
+        var index = absolute.indexOf(marker);
+        if (index !== -1) return absolute.slice(0, index);
+      } catch (error) {
+        console.warn('Failed to resolve site root from script src.', error);
+      }
     }
 
-    function isActive(href) {
-        const path = window.location.pathname;
-        const page = path.split('/').pop() || 'index.html';
-
-        if (href === 'index.html' && (page === '' || page === 'index.html' || page === '')) return true;
-        if (href === 'blog/index.html' && (path.includes('/blog/') || page === 'blog')) return true;
-        if (href === 'projects.html' && (path.includes('/projects/') || page === 'projects.html')) return true;
-        if (page === href) return true;
-        return false;
+    try {
+      return new URL('./', window.location.href).href;
+    } catch (fallbackError) {
+      return '/';
     }
+  }
 
-    function createNav() {
-        const base = getBasePath();
-        const header = document.createElement('header');
-        header.className = 'site-header';
-        header.id = 'siteHeader';
-        header.setAttribute('role', 'banner');
+  function toHref(root, relPath) {
+    try {
+      return new URL(relPath, root).href;
+    } catch (error) {
+      return relPath;
+    }
+  }
 
-        const desktopLinks = NAV_LINKS.map(link =>
-            `<a href="${base}${link.href}" ${isActive(link.href) ? 'class="active"' : ''}>${link.label}</a>`
-        ).join('');
+  function getCurrentPage() {
+    var path = window.location.pathname;
+    var page = path.split('/').pop();
+    return page || 'index.html';
+  }
 
-        const mobileLinks = NAV_LINKS.map(link =>
-            `<a href="${base}${link.href}" ${isActive(link.href) ? 'class="active"' : ''}>${link.label}</a>`
-        ).join('');
+  function isActive(linkHref) {
+    var path = window.location.pathname;
+    var page = getCurrentPage();
 
-        header.innerHTML = `
-      <div class="header-inner">
-        <a href="${base}index.html" class="site-brand">Gowtham <span>M.</span></a>
-        <nav class="desktop-nav" aria-label="Primary">
-          ${desktopLinks}
-        </nav>
-        <div class="header-actions">
-          <button class="icon-btn" id="settingsBtn" aria-label="Settings">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-            </svg>
-          </button>
-          <a href="${base}contact.html" class="btn btn-primary btn-nav-cta">
-            Book a Call
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <button class="icon-btn mobile-toggle" id="mobileNavToggle" aria-label="Menu" aria-expanded="false">
-            <svg id="navIconMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-            </svg>
-            <svg id="navIconClose" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
-        ${mobileLinks}
-        <a href="${base}contact.html" class="mobile-cta">Book a Free Discovery Call</a>
-      </nav>
-    `;
+    if (linkHref === 'index.html') {
+      return (
+        (page === 'index.html' || page === '') &&
+        !path.includes('/blog/') &&
+        !path.includes('/projects/')
+      );
+    }
+    if (linkHref === 'blog/index.html' && path.includes('/blog/')) return true;
+    if (linkHref === 'projects.html' && path.includes('/projects/')) return true;
+    return page === linkHref;
+  }
 
-        // Insert at top of body
-        document.body.insertBefore(header, document.body.firstChild);
+  function renderLinks(root) {
+    return NAV_LINKS.map(function (link) {
+      var cls = isActive(link.href) ? ' class="active"' : '';
+      return '<a href="' + toHref(root, link.href) + '"' + cls + '>' + link.label + '</a>';
+    }).join('');
+  }
 
-        // Mobile toggle
-        const toggle = document.getElementById('mobileNavToggle');
-        const mobileNav = document.getElementById('mobileNav');
-        const iconMenu = document.getElementById('navIconMenu');
-        const iconClose = document.getElementById('navIconClose');
+  function createNav() {
+    var root = getSiteRoot('nav.js');
+    var header = document.createElement('header');
+    header.className = 'site-header';
+    header.id = 'siteHeader';
+    var mobileNav = document.createElement('nav');
+    mobileNav.className = 'mobile-nav';
+    mobileNav.id = 'mobileNav';
+    mobileNav.setAttribute('aria-label', 'Mobile Navigation');
+    mobileNav.innerHTML =
+      renderLinks(root) +
+      '<a href="' + toHref(root, 'contact.html') + '" class="mobile-cta">Book a Free Discovery Call</a>';
 
-        toggle.addEventListener('click', function () {
-            const isOpen = mobileNav.classList.toggle('open');
-            toggle.setAttribute('aria-expanded', String(isOpen));
-            iconMenu.style.display = isOpen ? 'none' : 'block';
-            iconClose.style.display = isOpen ? 'block' : 'none';
-            document.body.style.overflow = isOpen ? 'hidden' : '';
+    header.innerHTML =
+      '<div class="header-inner">' +
+        '<a href="' + toHref(root, 'index.html') + '" class="site-brand">Gowtham <span>M.</span></a>' +
+        '<nav class="desktop-nav" aria-label="Primary">' + renderLinks(root) + '</nav>' +
+        '<div class="header-actions">' +
+          '<a href="' + toHref(root, 'contact.html') + '" class="btn btn-primary btn-nav-cta">Book a Free Call</a>' +
+          '<button class="mobile-toggle" id="mobileNavToggle" aria-label="Menu" aria-expanded="false">' +
+            '<svg id="navIconMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
+            '<svg id="navIconClose" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>' +
+          '</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.insertBefore(header, document.body.firstChild);
+    document.body.insertBefore(mobileNav, header.nextSibling);
+
+    var toggle = document.getElementById('mobileNavToggle');
+    var mobileNavEl = document.getElementById('mobileNav');
+    var iconMenu = document.getElementById('navIconMenu');
+    var iconClose = document.getElementById('navIconClose');
+
+    if (toggle && mobileNavEl) {
+      toggle.addEventListener('click', function () {
+        var isOpen = mobileNavEl.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        iconMenu.style.display = isOpen ? 'none' : 'block';
+        iconClose.style.display = isOpen ? 'block' : 'none';
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      mobileNavEl.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileNavEl.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          iconMenu.style.display = 'block';
+          iconClose.style.display = 'none';
+          document.body.style.overflow = '';
         });
-
-        // Close mobile nav when clicking a link
-        mobileNav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function () {
-                mobileNav.classList.remove('open');
-                toggle.setAttribute('aria-expanded', 'false');
-                iconMenu.style.display = 'block';
-                iconClose.style.display = 'none';
-                document.body.style.overflow = '';
-            });
-        });
-
-        // Scroll shadow
-        window.addEventListener('scroll', function () {
-            header.classList.toggle('scrolled', window.scrollY > 10);
-        }, { passive: true });
+      });
     }
 
-    // Small CTA button style
-    const style = document.createElement('style');
-    style.textContent = `
-    .btn-nav-cta { padding: .5rem 1rem; font-size: .8rem; border-radius: 8px; }
-    @media (max-width: 860px) { .btn-nav-cta { display: none; } }
-  `;
-    document.head.appendChild(style);
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    }, { passive: true });
+  }
 
-    document.addEventListener('DOMContentLoaded', createNav);
+  document.addEventListener('DOMContentLoaded', createNav);
 })();

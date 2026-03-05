@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Server Alert Dashboard Placeholder</title>
+  <desc id="desc">Placeholder visual for enterprise server alert dashboard.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="120" y="110" width="960" height="455" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#0f172a" font-weight="700">Enterprise Server Alert Dashboard</text>
+  <rect x="180" y="220" width="320" height="250" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="540" y="220" width="320" height="110" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="540" y="360" width="320" height="110" rx="10" fill="#fee2e2" stroke="#fecaca"/>
+  <text x="340" y="350" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">Live Metrics</text>
+  <text x="700" y="285" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="20" fill="#1d4ed8">Health Status</text>
+  <text x="700" y="425" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="20" fill="#b91c1c">Alert Queue</text>
+  <rect x="330" y="500" width="540" height="70" rx="10" fill="#0f172a"/>
+  <text x="600" y="544" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="600">Replace with final project visual</text>
+</svg>

@@ -1,182 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Secure Offline RAG System | Gowtham M.</title>
-    <meta name="description"
-        content="Privacy-first document chat using fully local LLMs. Built with Python, Ollama, and ChromaDB - no data leaves the machine." />
-    <meta property="og:title" content="Secure Offline RAG System | Gowtham M." />
-    <meta property="og:description"
-        content="Privacy-first document chat using fully local LLMs - no data leaves the machine." />
-    <meta property="og:url" content="https://promepy.github.io/projects/rag-system.html" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "Secure Offline RAG System",
-      "author": { "@type": "Person", "name": "Gowtham M." },
-      "description": "Privacy-first document chat system using fully local LLMs, ChromaDB for vector storage, and Ollama for inference. Zero cloud dependency.",
-      "url": "https://promepy.github.io/projects/rag-system.html"
-    }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Secure Offline RAG System | Gowtham M.</title>
+  <meta name="description" content="Case study: Privacy-first document chat using fully local LLMs with zero cloud data exposure." />
+  <meta property="og:title" content="Secure Offline RAG System | Gowtham M." />
+  <meta property="og:description" content="Local-first AI document retrieval with strong privacy constraints." />
+  <meta property="og:url" content="https://promepy.github.io/projects/rag-system.html" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
-
 <body>
+  <main class="site-main">
     <section class="page-hero">
-        <div class="container reveal">
-            <a href="../projects.html" class="btn btn-ghost" style="margin-bottom:1rem;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m15 18-6-6 6-6" />
-                </svg>
-                Back to Projects
-            </a>
-            <span class="badge">AI/ML</span>
-            <h1 style="margin-top:.75rem;">Secure Offline RAG System</h1>
-            <p class="lead">Privacy-first document chat using fully local LLMs - no data leaves the machine. Built for
-                enterprises that can't compromise on data security.</p>
-            <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem;">
-                <span class="pill">Python</span>
-                <span class="pill">LLM</span>
-                <span class="pill">RAG</span>
-                <span class="pill">ChromaDB</span>
-                <span class="pill">Ollama</span>
-            </div>
+      <div class="container reveal">
+        <a href="../projects.html" class="btn btn-ghost" style="margin-bottom:14px;">Back to Projects</a>
+        <span class="badge">AI/ML</span>
+        <h1 style="margin-top:10px;">Secure Offline RAG System</h1>
+        <p class="lead">Privacy-first document chat using fully local LLMs. Keeps sensitive business data secure while leveraging AI.</p>
+        <div class="project-tags" style="margin-top:14px;">
+          <span class="pill">Python</span>
+          <span class="pill">LLM</span>
+          <span class="pill">RAG</span>
+          <span class="pill">ChromaDB</span>
+          <span class="pill">SQLite</span>
         </div>
+      </div>
     </section>
 
     <section class="section">
-        <div class="container" style="max-width:860px;">
-            <!-- Problem -->
-            <div class="reveal" style="margin-bottom:3rem;">
-                <span class="section-label">The Problem</span>
-                <h2>Sensitive Documents, Public APIs - A Security Risk</h2>
-                <p style="color:var(--text-secondary);line-height:1.8;margin-top:1rem;">
-                    The client needed to query internal documents - contracts, technical specs, compliance records -
-                    using natural language. But sending this data to cloud-based AI APIs like OpenAI or Google was a
-                    non-starter due to strict data privacy requirements.
-                </p>
-                <p style="color:var(--text-secondary);line-height:1.8;margin-top:1rem;">
-                    Existing solutions either required cloud connectivity, lacked the accuracy needed for technical
-                    documents, or were too complex for non-technical staff to use. They needed a system that was as easy
-                    as chatting but kept everything local.
-                </p>
-            </div>
+      <div class="container" style="max-width:900px;">
+        <figure class="project-media reveal">
+          <img src="../assets/images/projects/placeholders/rag-system-placeholder.svg" alt="Placeholder visual for Secure Offline RAG System architecture" loading="lazy" />
+          <figcaption>Placeholder image - replace with architecture diagram or product screenshot.</figcaption>
+        </figure>
 
-            <!-- Solution -->
-            <div class="reveal" style="margin-bottom:3rem;">
-                <span class="section-label">The Solution</span>
-                <h2>Fully Offline AI-Powered Document Chat</h2>
-                <p style="color:var(--text-secondary);line-height:1.8;margin-top:1rem;">
-                    I built a complete Retrieval-Augmented Generation (RAG) system that runs entirely on-premise. The
-                    architecture uses three core components:
-                </p>
-                <div class="grid-3" style="margin-top:1.5rem;">
-                    <div class="card" style="padding:1.25rem;">
-                        <h4 style="color:var(--accent);">Ollama</h4>
-                        <p class="text-sm" style="color:var(--text-secondary);margin-top:.5rem;">Local LLM inference
-                            engine. No API calls, no cloud. Supports multiple models for different accuracy/speed
-                            tradeoffs.</p>
-                    </div>
-                    <div class="card" style="padding:1.25rem;">
-                        <h4 style="color:var(--accent);">ChromaDB</h4>
-                        <p class="text-sm" style="color:var(--text-secondary);margin-top:.5rem;">Vector database for
-                            semantic document search. Documents are chunked, embedded, and indexed locally for instant
-                            retrieval.</p>
-                    </div>
-                    <div class="card" style="padding:1.25rem;">
-                        <h4 style="color:var(--accent);">Python Pipeline</h4>
-                        <p class="text-sm" style="color:var(--text-secondary);margin-top:.5rem;">Custom ingestion,
-                            retrieval, and response generation pipeline. Handles PDF, DOCX, TXT, and Markdown formats.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="margin-top:2rem;padding:3rem;text-align:center;border-style:dashed;">
-                    <p class="text-muted">Architecture diagram: Document → Chunking → Embedding → ChromaDB → Query →
-                        Ollama → Response</p>
-                </div>
-            </div>
+        <article class="reveal" style="margin-bottom:40px;">
+          <span class="section-label">Problem</span>
+          <h2>Sensitive documents were blocked from cloud AI tools.</h2>
+          <p class="text-muted" style="margin-top:12px;">The client needed natural language search across internal files, but privacy and compliance constraints made public APIs non-viable.</p>
+        </article>
 
-            <!-- Impact -->
-            <div class="reveal" style="margin-bottom:3rem;">
-                <span class="section-label">The Impact</span>
-                <h2>Instant, Secure Document Retrieval</h2>
-                <div class="impact-grid" style="margin-top:1.5rem;">
-                    <div class="impact-item">
-                        <div class="impact-value">0</div>
-                        <div class="impact-label">Data leaked to cloud</div>
-                    </div>
-                    <div class="impact-item">
-                        <div class="impact-value">&lt;2s</div>
-                        <div class="impact-label">Query response time</div>
-                    </div>
-                    <div class="impact-item">
-                        <div class="impact-value">100%</div>
-                        <div class="impact-label">Offline capability</div>
-                    </div>
-                </div>
-                <p style="color:var(--text-secondary);line-height:1.8;margin-top:1.5rem;">
-                    The system enabled non-technical staff to query complex documents in natural language, getting
-                    accurate answers in seconds - all without any data leaving the building. Cross-platform support
-                    (macOS and Windows) ensured the entire team could use it.
-                </p>
-            </div>
+        <article class="reveal" style="margin-bottom:40px;">
+          <span class="section-label">Solution</span>
+          <h2>Fully local retrieval and response pipeline.</h2>
+          <div class="grid-3" style="margin-top:16px;">
+            <div class="card"><h4>Ollama</h4><p class="text-muted" style="margin-top:8px;">Local model inference with no outbound API dependency.</p></div>
+            <div class="card"><h4>ChromaDB</h4><p class="text-muted" style="margin-top:8px;">Local vector storage for semantic retrieval.</p></div>
+            <div class="card"><h4>Python Orchestration</h4><p class="text-muted" style="margin-top:8px;">Ingestion, chunking, indexing, and answer pipeline automation.</p></div>
+          </div>
+        </article>
 
-            <!-- Links -->
-            <div class="reveal" style="display:flex;gap:1rem;flex-wrap:wrap;">
-                <a href="https://github.com/Promepy" target="_blank" rel="noopener" class="btn btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                    </svg>
-                    View on GitHub
-                </a>
-                <a href="../projects.html" class="btn btn-secondary">View All Projects</a>
-            </div>
-        </div>
+        <article class="reveal">
+          <span class="section-label">Impact</span>
+          <h2>Secure answers, fast retrieval, zero cloud leakage.</h2>
+          <div class="impact-grid" style="margin-top:16px;">
+            <div class="impact-item"><div class="impact-value">0</div><div class="impact-label">Cloud data exposure</div></div>
+            <div class="impact-item"><div class="impact-value">&lt;2s</div><div class="impact-label">Response latency</div></div>
+            <div class="impact-item"><div class="impact-value">100%</div><div class="impact-label">Offline capable</div></div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Related Projects -->
-    <section class="section" style="background:var(--bg-elevated);">
-        <div class="container">
-            <div class="text-center reveal">
-                <h2>Other Projects</h2>
-            </div>
-            <div class="grid-3 stagger" style="margin-top:2rem;" id="relatedProjects"></div>
+    <section class="section-sm">
+      <div class="container" style="max-width:900px;">
+        <div class="cta-block reveal">
+          <h2>Want this level of secure AI integration in your business?</h2>
+          <p>Let's build a private, production-ready implementation around your data and workflow requirements.</p>
+          <a href="../contact.html" class="btn btn-primary">Book a Free Discovery Call</a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <script src="../assets/js/templates.js"></script>
-    <script src="../assets/js/font-loader.js"></script>
-    <script src="../assets/js/theme-engine.js"></script>
-    <script src="../assets/js/nav.js"></script>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script>
-        (async function () {
-            try {
-                const resp = await fetch('../data/projects.json');
-                const projects = await resp.json();
-                const related = projects.filter(p => p.id !== 'rag-system').slice(0, 3);
-                const grid = document.getElementById('relatedProjects');
-                if (!grid || !related.length) return;
-                grid.innerHTML = related.map(p => `
-          <a href="${p.id}.html" class="project-card" style="text-decoration:none;color:inherit;">
-            <div class="project-meta"><span class="badge">${p.category}</span></div>
-            <h3>${p.title}</h3>
-            <p>${p.excerpt}</p>
-            <span class="project-link">Explore →</span>
-          </a>
-        `).join('');
-            } catch (e) { }
-        })();
-    </script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
-
 </html>

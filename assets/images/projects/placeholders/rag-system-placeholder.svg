@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">RAG System Placeholder</title>
+  <desc id="desc">Placeholder visual for secure offline RAG architecture.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="120" y="110" width="960" height="455" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <rect x="180" y="190" width="250" height="90" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="475" y="190" width="250" height="90" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="770" y="190" width="250" height="90" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="330" y="360" width="540" height="110" rx="10" fill="#0f172a"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#0f172a" font-weight="700">Secure Offline RAG System</text>
+  <text x="305" y="245" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">Documents</text>
+  <text x="600" y="245" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">Vector DB</text>
+  <text x="895" y="245" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="22" fill="#1d4ed8">Local LLM</text>
+  <text x="600" y="425" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" fill="#ffffff" font-weight="600">Replace with final project visual</text>
+  <path d="M430 245h45" stroke="#2563eb" stroke-width="4"/>
+  <path d="M725 245h45" stroke="#2563eb" stroke-width="4"/>
+</svg>

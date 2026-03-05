@@ -1,108 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Blog | Gowtham M.</title>
-    <meta name="description"
-        content="Technical articles on Python AI, automation, data engineering, and building intelligent systems. By Gowtham M." />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog | Gowtham M.</title>
+  <meta name="description" content="Practical writing on websites, automation, AI workflows, and engineering decisions that improve business outcomes." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
-
 <body>
+  <main class="site-main">
     <section class="page-hero">
-        <div class="container reveal">
-            <span class="section-label">Blog</span>
-            <h1>Thoughts & Tutorials</h1>
-            <p class="lead">Deep dives into Python AI, automation patterns, data engineering, and building intelligent
-                systems. Practical guides you can follow.</p>
-        </div>
+      <div class="container reveal">
+        <span class="section-label">Blog</span>
+        <h1>Technical notes with business intent.</h1>
+        <p class="lead">Clear breakdowns of website architecture, automation design, and practical AI implementation for real-world teams.</p>
+      </div>
     </section>
 
     <section class="section">
-        <div class="container">
-            <div class="grid-3 stagger" id="blogGrid">
-                <!-- Rendered from data/blogs.json -->
-            </div>
-            <div id="blogEmpty" class="text-center reveal" style="display:none;">
-                <div class="card" style="padding:4rem 2rem;max-width:600px;margin:0 auto;">
-                    <div style="font-size:3rem;margin-bottom:1rem;">📝</div>
-                    <h3>Blog Posts Coming Soon</h3>
-                    <p class="text-sm" style="color:var(--text-secondary);margin:.75rem 0 1.5rem;">I'm working on
-                        in-depth technical articles about Python AI, RAG systems, automation patterns, and more. Check
-                        back soon!</p>
-                    <a href="../index.html" class="btn btn-secondary">
-                        Back to Home
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14" />
-                            <path d="m12 5 7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="grid-3 stagger" id="blogGrid"></div>
+        <div id="blogEmpty" class="text-center" style="display:none;">
+          <div class="card" style="max-width:680px; margin:0 auto;">
+            <h3>Articles coming soon.</h3>
+            <p class="text-muted" style="margin-top:10px;">Long-form guides on high-converting web structure, backend automation workflows, and AI-backed delivery systems are in progress.</p>
+            <a href="../contact.html" class="btn btn-primary" style="margin-top:16px;">Book a Free Discovery Call</a>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <section class="section-sm">
-        <div class="container">
-            <div class="cta-block reveal">
-                <h2>Want Implementation Help?</h2>
-                <p>I don't just write about it - I build production-grade automation and AI systems for businesses.
-                    Let's discuss your project.</p>
-                <a href="../contact.html" class="btn btn-primary btn-lg" data-analytics="blog_cta">
-                    Book a Free Call
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    (async function () {
+      try {
+        var response = await fetch('../data/blogs.json');
+        var posts = await response.json();
+        var grid = document.getElementById('blogGrid');
+        var empty = document.getElementById('blogEmpty');
 
-    <script src="../assets/js/templates.js"></script>
-    <script src="../assets/js/font-loader.js"></script>
-    <script src="../assets/js/theme-engine.js"></script>
-    <script src="../assets/js/nav.js"></script>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script>
-        (async function () {
-            try {
-                const resp = await fetch('../data/blogs.json');
-                const posts = await resp.json();
-                const grid = document.getElementById('blogGrid');
-                const empty = document.getElementById('blogEmpty');
+        if (!grid || !empty) return;
 
-                if (!posts.length) {
-                    grid.style.display = 'none';
-                    empty.style.display = 'block';
-                    return;
-                }
+        if (!posts.length) {
+          grid.style.display = 'none';
+          empty.style.display = 'block';
+          return;
+        }
 
-                grid.innerHTML = posts.map(post => `
-          <a href="${post.link}" class="project-card" style="text-decoration:none;color:inherit;">
-            <div class="project-meta">
-              <span class="text-xs text-muted">${new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
-              <span class="text-xs text-muted">${post.readTime || '5 min read'}</span>
-            </div>
-            <h3>${post.title}</h3>
-            <p>${post.excerpt}</p>
-            <div class="project-tags">
-              ${(post.tags || []).map(t => `<span class="pill">${t}</span>`).join('')}
-            </div>
-          </a>
-        `).join('');
-            } catch (e) {
-                document.getElementById('blogGrid').style.display = 'none';
-                document.getElementById('blogEmpty').style.display = 'block';
-            }
-        })();
-    </script>
+        grid.innerHTML = posts.map(function (post) {
+          var date = new Date(post.date).toLocaleDateString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+          });
+          var tags = (post.tags || []).map(function (tag) { return '<span class="pill">' + tag + '</span>'; }).join('');
+
+          return '<a href="' + post.link + '" class="project-card" style="color:inherit;">' +
+            '<div class="project-meta"><span class="text-xs text-soft">' + date + '</span><span class="text-xs text-soft">' + (post.readTime || '5 min read') + '</span></div>' +
+            '<h3>' + post.title + '</h3>' +
+            '<p class="text-muted">' + post.excerpt + '</p>' +
+            '<div class="project-tags">' + tags + '</div>' +
+          '</a>';
+        }).join('');
+      } catch (error) {
+        document.getElementById('blogGrid').style.display = 'none';
+        document.getElementById('blogEmpty').style.display = 'block';
+      }
+    })();
+  </script>
 </body>
-
 </html>

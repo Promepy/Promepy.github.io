@@ -9,20 +9,24 @@
 </head>
 <body>
   <main class="site-main">
-    <section class="page-hero">
-      <div class="container reveal">
-        <a href="../blog/index.html" class="btn btn-ghost" style="margin-bottom:14px;">Back to Blog</a>
-        <span class="section-label">{{POST_CATEGORY}}</span>
-        <h1>{{POST_TITLE}}</h1>
-        <p class="lead">{{POST_SUBTITLE}}</p>
-        <p class="text-sm text-soft" style="margin-top:10px;">{{POST_DATE}} - {{READ_TIME}}</p>
+    <section class="page-hero page-hero-dark">
+      <div class="container container-narrow">
+        <div class="copy-block reveal">
+          <a href="../blog/index.html" class="btn btn-ghost">Back to Blog</a>
+          <span class="section-label">{{POST_CATEGORY}}</span>
+          <h1>{{POST_TITLE}}</h1>
+          <p class="lead">{{POST_SUBTITLE}}</p>
+          <p class="text-sm text-soft">{{POST_DATE}} · {{READ_TIME}}</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container" style="max-width:860px;">
-        <article class="card reveal" style="line-height:1.8;">
-          {{POST_CONTENT_HTML}}
+    <section class="section section-light">
+      <div class="container container-narrow">
+        <article class="article-card reveal">
+          <div class="article-body">
+            {{POST_CONTENT_HTML}}
+          </div>
         </article>
       </div>
     </section>

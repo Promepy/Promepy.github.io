@@ -1,58 +1,75 @@
-// ============================================
-// Main JS - Scroll animations, smooth scroll, analytics
-// ============================================
+// Shared behaviors: subtle reveal animation, anchor smoothing, analytics binding.
 (function () {
-  'use strict';
+  "use strict";
 
-  // ---- Scroll-triggered reveal animations ----
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
   function initRevealAnimations() {
-    const reveals = document.querySelectorAll('.reveal, .stagger');
+    var reveals = document.querySelectorAll(".reveal, .stagger");
     if (!reveals.length) return;
 
-    const observer = new IntersectionObserver(function (entries) {
+    if (reduceMotion.matches || !("IntersectionObserver" in window)) {
+      reveals.forEach(function (element) {
+        element.classList.add("visible");
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    }, {
+      threshold: 0.12,
+      rootMargin: "0px 0px -60px 0px"
+    });
 
-    reveals.forEach(function (el) { observer.observe(el); });
+    reveals.forEach(function (element) {
+      observer.observe(element);
+    });
   }
 
-  // ---- Smooth scroll for anchor links ----
   function initSmoothScroll() {
-    document.addEventListener('click', function (e) {
-      const link = e.target.closest('a[href^="#"]');
+    if (reduceMotion.matches) return;
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest('a[href^="#"]');
       if (!link) return;
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+
+      var href = link.getAttribute("href");
+      if (!href || href === "#") return;
+
+      var target = document.querySelector(href);
+      if (!target) return;
+
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 
-  // ---- Analytics CTA binding (Plausible) ----
   function initAnalytics() {
-    document.querySelectorAll('[data-analytics]').forEach(function (el) {
-      if (el.dataset._bound === '1') return;
-      el.addEventListener('click', function () {
-        if (window.plausible) window.plausible(el.dataset.analytics);
+    document.querySelectorAll("[data-analytics]").forEach(function (element) {
+      if (element.dataset.analyticsBound === "1") return;
+
+      element.addEventListener("click", function () {
+        if (window.plausible) window.plausible(element.dataset.analytics);
       });
-      el.dataset._bound = '1';
+
+      element.dataset.analyticsBound = "1";
     });
   }
 
-  // ---- Init ----
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener("DOMContentLoaded", function () {
     initRevealAnimations();
     initSmoothScroll();
     initAnalytics();
 
-    // Re-bind analytics on dynamic content
-    const mo = new MutationObserver(initAnalytics);
-    mo.observe(document.body, { childList: true, subtree: true });
+    var observer = new MutationObserver(function () {
+      initAnalytics();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
   });
 })();

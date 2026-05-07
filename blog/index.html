@@ -4,28 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blog | Gowtham M.</title>
-  <meta name="description" content="Practical writing on websites, automation, AI workflows, and engineering decisions that improve business outcomes." />
+  <meta name="description" content="Notes on web architecture, automation systems, and private AI implementation." />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
   <main class="site-main">
     <section class="page-hero">
-      <div class="container reveal">
-        <span class="section-label">Blog</span>
-        <h1>Technical notes with business intent.</h1>
-        <p class="lead">Clear breakdowns of website architecture, automation design, and practical AI implementation for real-world teams.</p>
+      <div class="container">
+        <div class="page-hero-shell split">
+          <div class="copy-block reveal">
+            <span class="section-label">Blog</span>
+            <h1>Technical notes with operating intent.</h1>
+            <p class="lead">Writing here focuses on implementation quality: the design choices, automation patterns, and system decisions that make a digital product feel more dependable in practice.</p>
+          </div>
+          <div class="media-frame reveal">
+            <div class="stage-panel">
+              <span class="stage-kicker">Current focus</span>
+              <h3>Web structure, automation logic, and AI systems that stay useful after the demo.</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-light">
       <div class="container">
         <div class="grid-3 stagger" id="blogGrid"></div>
         <div id="blogEmpty" class="text-center" style="display:none;">
-          <div class="card" style="max-width:680px; margin:0 auto;">
-            <h3>Articles coming soon.</h3>
-            <p class="text-muted" style="margin-top:10px;">Long-form guides on high-converting web structure, backend automation workflows, and AI-backed delivery systems are in progress.</p>
-            <a href="../contact.html" class="btn btn-primary" style="margin-top:16px;">Book a Free Discovery Call</a>
+          <div class="article-card mx-auto reveal" style="max-width: 720px;">
+            <span class="section-label">Writing Queue</span>
+            <h3>Long-form notes are being expanded.</h3>
+            <p class="text-muted">More articles on systems thinking, automation design, and product-quality technical delivery are in progress. For now, the best overview still lives in the case studies and the services pages.</p>
+            <div class="hero-actions" style="justify-content:center; margin-top: 8px;">
+              <a href="../projects.html" class="btn btn-primary">Review Projects</a>
+              <a href="../contact.html" class="btn btn-secondary">Start a Conversation</a>
+            </div>
           </div>
         </div>
       </div>
@@ -38,37 +52,44 @@
   <script>
     (async function () {
       try {
-        var response = await fetch('../data/blogs.json');
+        var response = await fetch("../data/blogs.json");
         var posts = await response.json();
-        var grid = document.getElementById('blogGrid');
-        var empty = document.getElementById('blogEmpty');
+        var grid = document.getElementById("blogGrid");
+        var empty = document.getElementById("blogEmpty");
 
         if (!grid || !empty) return;
 
         if (!posts.length) {
-          grid.style.display = 'none';
-          empty.style.display = 'block';
+          grid.style.display = "none";
+          empty.style.display = "block";
+          var emptyCard = empty.querySelector(".reveal");
+          if (emptyCard) emptyCard.classList.add("visible");
           return;
         }
 
         grid.innerHTML = posts.map(function (post) {
-          var date = new Date(post.date).toLocaleDateString('en-US', {
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric'
+          var date = new Date(post.date).toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric"
           });
-          var tags = (post.tags || []).map(function (tag) { return '<span class="pill">' + tag + '</span>'; }).join('');
+          var tags = (post.tags || []).map(function (tag) {
+            return '<span class="pill">' + tag + "</span>";
+          }).join("");
 
-          return '<a href="' + post.link + '" class="project-card" style="color:inherit;">' +
-            '<div class="project-meta"><span class="text-xs text-soft">' + date + '</span><span class="text-xs text-soft">' + (post.readTime || '5 min read') + '</span></div>' +
-            '<h3>' + post.title + '</h3>' +
-            '<p class="text-muted">' + post.excerpt + '</p>' +
-            '<div class="project-tags">' + tags + '</div>' +
-          '</a>';
-        }).join('');
+          return '<a href="' + post.link + '" class="project-card">' +
+            '<div class="project-meta"><span class="text-xs text-soft">' + date + '</span><span class="text-xs text-soft">' + (post.readTime || "5 min read") + "</span></div>" +
+            "<h3>" + post.title + "</h3>" +
+            '<p class="text-muted">' + post.excerpt + "</p>" +
+            '<div class="project-tags">' + tags + "</div>" +
+            '<span class="project-link">Read Article</span>' +
+          "</a>";
+        }).join("");
       } catch (error) {
-        document.getElementById('blogGrid').style.display = 'none';
-        document.getElementById('blogEmpty').style.display = 'block';
+        document.getElementById("blogGrid").style.display = "none";
+        document.getElementById("blogEmpty").style.display = "block";
+        var emptyCard = document.querySelector("#blogEmpty .reveal");
+        if (emptyCard) emptyCard.classList.add("visible");
       }
     })();
   </script>

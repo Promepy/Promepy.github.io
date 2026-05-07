@@ -1,9 +1,23 @@
-body {
-    text-align: center;
-    margin: auto;
-    width: 640px;
-    padding: 50px;
-    font-family: 'Lexend Deca', sans-serif;
-    color: white;
-    background-color: black;
+.quote-card {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+  padding: 28px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.quote-card p {
+  margin: 0;
+}
+
+#quoteText {
+  color: #ffffff;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+#quoteAuthor {
+  font-size: 0.94rem;
 }

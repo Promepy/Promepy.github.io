@@ -9,39 +9,89 @@
 </head>
 <body>
   <main class="site-main">
-    <section class="page-hero">
-      <div class="container reveal">
-        <a href="../projects.html" class="btn btn-ghost" style="margin-bottom:14px;">Back to Projects</a>
-        <span class="badge">{{CATEGORY}}</span>
-        <h1 style="margin-top:10px;">{{PROJECT_TITLE}}</h1>
-        <p class="lead">{{PROJECT_EXCERPT}}</p>
+    <section class="page-hero page-hero-dark">
+      <div class="container">
+        <div class="page-hero-shell split">
+          <div class="copy-block reveal">
+            <a href="../projects.html" class="btn btn-ghost">Back to Projects</a>
+            <span class="badge">{{CATEGORY}}</span>
+            <h1>{{PROJECT_TITLE}}</h1>
+            <p class="lead">{{PROJECT_EXCERPT}}</p>
+            <div class="project-tags">
+              <span class="pill">{{TAG_ONE}}</span>
+              <span class="pill">{{TAG_TWO}}</span>
+              <span class="pill">{{TAG_THREE}}</span>
+            </div>
+          </div>
+          <div class="media-frame reveal">
+            <figure class="project-media">
+              <img src="../assets/images/projects/placeholders/{{PROJECT_SLUG}}-placeholder.svg" alt="Placeholder visual for {{PROJECT_TITLE}}" loading="lazy" />
+              <figcaption>Replace this placeholder with the final project visual when available.</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container" style="max-width:900px;">
-        <figure class="project-media reveal">
-          <img src="../assets/images/projects/placeholders/{{PROJECT_SLUG}}-placeholder.svg" alt="Placeholder visual for {{PROJECT_TITLE}}" loading="lazy" />
-          <figcaption>Replace this placeholder with the final project visual.</figcaption>
-        </figure>
+    <section class="section section-light">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="copy-block reveal">
+            <span class="section-label">Problem</span>
+            <h2>{{PROBLEM_HEADLINE}}</h2>
+            <p>{{PROBLEM_DETAILS}}</p>
+          </div>
+          <div class="service-panel reveal">
+            <span class="section-label">Design target</span>
+            <p>{{PROBLEM_SUPPORTING_CONTEXT}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <article class="reveal" style="margin-bottom:40px;">
-          <span class="section-label">Problem</span>
-          <h2>{{PROBLEM_HEADLINE}}</h2>
-          <p class="text-muted" style="margin-top:12px;">{{PROBLEM_DETAILS}}</p>
-        </article>
-
-        <article class="reveal" style="margin-bottom:40px;">
+    <section class="section section-dark">
+      <div class="container">
+        <div class="text-center reveal">
           <span class="section-label">Solution</span>
           <h2>{{SOLUTION_HEADLINE}}</h2>
-          <p class="text-muted" style="margin-top:12px;">{{SOLUTION_DETAILS}}</p>
-        </article>
+        </div>
+        <div class="grid-3 stagger" style="margin-top: 32px;">
+          <article class="feature-card dark-card">
+            <h3>{{SOLUTION_COLUMN_ONE_TITLE}}</h3>
+            <p class="text-muted">{{SOLUTION_COLUMN_ONE_BODY}}</p>
+          </article>
+          <article class="feature-card dark-card">
+            <h3>{{SOLUTION_COLUMN_TWO_TITLE}}</h3>
+            <p class="text-muted">{{SOLUTION_COLUMN_TWO_BODY}}</p>
+          </article>
+          <article class="feature-card dark-card">
+            <h3>{{SOLUTION_COLUMN_THREE_TITLE}}</h3>
+            <p class="text-muted">{{SOLUTION_COLUMN_THREE_BODY}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <article class="reveal">
+    <section class="section section-light">
+      <div class="container">
+        <div class="text-center reveal">
           <span class="section-label">Impact</span>
           <h2>{{IMPACT_HEADLINE}}</h2>
-          <p class="text-muted" style="margin-top:12px;">{{IMPACT_DETAILS}}</p>
-        </article>
+        </div>
+        <div class="impact-grid stagger" style="margin-top: 32px;">
+          <article class="stat-card">
+            <div class="impact-value">{{IMPACT_VALUE_ONE}}</div>
+            <div class="impact-label">{{IMPACT_LABEL_ONE}}</div>
+          </article>
+          <article class="stat-card">
+            <div class="impact-value">{{IMPACT_VALUE_TWO}}</div>
+            <div class="impact-label">{{IMPACT_LABEL_TWO}}</div>
+          </article>
+          <article class="stat-card">
+            <div class="impact-value">{{IMPACT_VALUE_THREE}}</div>
+            <div class="impact-label">{{IMPACT_LABEL_THREE}}</div>
+          </article>
+        </div>
       </div>
     </section>
   </main>

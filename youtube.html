@@ -4,24 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>YouTube | Gowtham M.</title>
-  <meta name="description" content="Watch practical videos on web development, automation, and AI workflow implementation by Gowtham M." />
+  <meta name="description" content="Video walkthroughs and technical breakdowns on web systems, automation, and AI implementation." />
   <link rel="stylesheet" href="assets/css/main.css" />
   <script defer data-domain="promepy.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
   <main class="site-main">
-    <section class="page-hero">
-      <div class="container reveal">
-        <span class="section-label">YouTube</span>
-        <h1>Video walkthroughs and technical breakdowns.</h1>
-        <p class="lead">From web builds to automation and AI systems-practical content focused on implementation quality and speed.</p>
-        <div style="margin-top:20px;">
-          <a href="https://www.youtube.com/@gowthammuraharirao" target="_blank" rel="noopener" class="btn btn-primary" data-analytics="yt_subscribe">Subscribe on YouTube</a>
+    <section class="page-hero page-hero-dark">
+      <div class="container">
+        <div class="page-hero-shell split">
+          <div class="copy-block reveal">
+            <span class="section-label">YouTube</span>
+            <h1>Video breakdowns of systems work and technical execution.</h1>
+            <p class="lead">This is where builds, workflows, and practical engineering decisions get unpacked in a more visual format. The focus stays on implementation, not noise.</p>
+            <div class="hero-actions" style="justify-content:flex-start;">
+              <a href="https://www.youtube.com/@gowthammuraharirao" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-analytics="yt_subscribe">Open Channel</a>
+            </div>
+          </div>
+          <div class="media-frame reveal">
+            <div class="stage-panel">
+              <span class="stage-kicker">Coverage</span>
+              <h3>Walkthroughs on websites, automation, and private AI systems.</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-light">
       <div class="container">
         <div id="ytFilterTabs" class="filter-tabs reveal">
           <button class="filter-tab active" data-type="all">All</button>
@@ -35,9 +45,12 @@
     <section class="section-sm">
       <div class="container">
         <div class="cta-block reveal">
-          <h2>Need help applying this to your business?</h2>
-          <p>Watching is useful. Executing with the right architecture is where results happen.</p>
-          <a href="contact.html" class="btn btn-primary btn-lg" data-analytics="yt_cta">Book a Free Discovery Call</a>
+          <span class="section-label">Need Implementation?</span>
+          <h2>Watching is useful. Building the right version is where the leverage starts.</h2>
+          <p>If a video topic maps directly to your business, I can help turn it into a working delivery plan and implementation path.</p>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top: 8px;">
+            <a href="contact.html" class="btn btn-primary btn-lg" data-analytics="yt_cta">Start a Project</a>
+          </div>
         </div>
       </div>
     </section>
@@ -49,61 +62,61 @@
   <script>
     (async function () {
       var allItems = [];
-      var activeType = 'all';
+      var activeType = "all";
 
       try {
-        var response = await fetch('data/youtube.json');
+        var response = await fetch("data/youtube.json");
         allItems = await response.json();
       } catch (error) {
-        console.warn('Could not load YouTube data:', error);
+        console.warn("Could not load YouTube data:", error);
       }
 
       function getThumb(url) {
         var match = url && url.match(/(?:v=|\/)([\w-]{11})/);
-        return match ? 'https://img.youtube.com/vi/' + match[1] + '/hqdefault.jpg' : '';
+        return match ? "https://img.youtube.com/vi/" + match[1] + "/hqdefault.jpg" : "";
       }
 
       function render(items) {
-        var grid = document.getElementById('ytGrid');
+        var grid = document.getElementById("ytGrid");
         if (!grid) return;
 
         if (!items.length) {
-          grid.innerHTML = '<p class="text-muted" style="grid-column:1/-1;">No videos available yet. Subscribe to get the next drop first.</p>';
+          grid.innerHTML = '<p class="text-muted" style="grid-column:1/-1;">No videos available yet. Subscribe to catch the next release.</p>';
           return;
         }
 
         grid.innerHTML = items.map(function (item) {
           var thumb = item.thumbnail || getThumb(item.url);
-          var isPlaylist = item.type === 'playlist';
-          var date = new Date(item.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+          var isPlaylist = item.type === "playlist";
+          var date = new Date(item.date).toLocaleDateString("en-US", { month: "short", year: "numeric" });
 
           return '<a href="' + item.url + '" target="_blank" rel="noopener" class="yt-card">' +
             '<div class="yt-thumb">' +
-              (thumb ? '<img src="' + thumb + '" alt="' + item.title + '" loading="lazy" />' : '<div class="yt-play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>') +
-            '</div>' +
+              (thumb ? '<img src="' + thumb + '" alt="' + item.title + '" loading="lazy" />' : "") +
+            "</div>" +
             '<div class="yt-info">' +
-              '<span class="yt-badge">' + (isPlaylist ? 'PLAYLIST' : 'VIDEO') + ' - ' + date + '</span>' +
-              '<h3>' + item.title + '</h3>' +
-              '<p class="text-muted">' + item.description + '</p>' +
-            '</div>' +
-          '</a>';
-        }).join('');
+              '<span class="yt-badge">' + (isPlaylist ? "PLAYLIST" : "VIDEO") + " · " + date + "</span>" +
+              "<h3>" + item.title + "</h3>" +
+              '<p class="text-muted">' + item.description + "</p>" +
+            "</div>" +
+          "</a>";
+        }).join("");
       }
 
       render(allItems);
 
-      var tabs = document.getElementById('ytFilterTabs');
+      var tabs = document.getElementById("ytFilterTabs");
       if (!tabs) return;
 
-      tabs.addEventListener('click', function (event) {
-        var tab = event.target.closest('.filter-tab');
+      tabs.addEventListener("click", function (event) {
+        var tab = event.target.closest(".filter-tab");
         if (!tab) return;
 
         activeType = tab.dataset.type;
-        tabs.querySelectorAll('.filter-tab').forEach(function (button) { button.classList.remove('active'); });
-        tab.classList.add('active');
+        tabs.querySelectorAll(".filter-tab").forEach(function (button) { button.classList.remove("active"); });
+        tab.classList.add("active");
 
-        var filtered = activeType === 'all'
+        var filtered = activeType === "all"
           ? allItems
           : allItems.filter(function (item) { return item.type === activeType; });
 

@@ -1,80 +1,78 @@
-// ============================================
-// Projects Listing - Render from JSON + filter
-// ============================================
+// Projects listing: JSON render + category filtering.
 (function () {
-    'use strict';
+  "use strict";
 
-    const CATEGORIES = ['All', 'AI/ML', 'Automation', 'Data Engineering', 'Open Source'];
-    let allProjects = [];
-    let activeCategory = 'All';
+  var CATEGORIES = ["All", "AI/ML", "Automation", "Data Engineering", "Open Source"];
+  var allProjects = [];
+  var activeCategory = "All";
 
-    async function init() {
-        const grid = document.getElementById('projectsGrid');
-        const tabsContainer = document.getElementById('filterTabs');
-        if (!grid || !tabsContainer) return;
+  async function init() {
+    var grid = document.getElementById("projectsGrid");
+    var tabsContainer = document.getElementById("filterTabs");
+    if (!grid || !tabsContainer) return;
 
-        // Render tabs
-        tabsContainer.innerHTML = CATEGORIES.map(cat =>
-            `<button class="filter-tab ${cat === 'All' ? 'active' : ''}" data-category="${cat}">${cat}</button>`
-        ).join('');
+    tabsContainer.innerHTML = CATEGORIES.map(function (category) {
+      var activeClass = category === "All" ? " active" : "";
+      return '<button class="filter-tab' + activeClass + '" data-category="' + category + '">' + category + "</button>";
+    }).join("");
 
-        // Load data
-        try {
-            const resp = await fetch('data/projects.json');
-            allProjects = await resp.json();
-            renderProjects(allProjects);
-        } catch (e) {
-            grid.innerHTML = '<p class="text-muted text-center">Could not load projects.</p>';
-        }
-
-        // Tab click handler
-        tabsContainer.addEventListener('click', function (e) {
-            const tab = e.target.closest('.filter-tab');
-            if (!tab) return;
-
-            activeCategory = tab.dataset.category;
-            tabsContainer.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            const filtered = activeCategory === 'All'
-                ? allProjects
-                : allProjects.filter(p => p.category === activeCategory);
-
-            renderProjects(filtered);
-        });
+    try {
+      var response = await fetch("data/projects.json");
+      allProjects = await response.json();
+      renderProjects(allProjects);
+    } catch (error) {
+      grid.innerHTML = '<p class="text-muted text-center" style="grid-column:1/-1;">Could not load projects.</p>';
     }
 
-    function renderProjects(projects) {
-        const grid = document.getElementById('projectsGrid');
-        if (!grid) return;
+    tabsContainer.addEventListener("click", function (event) {
+      var tab = event.target.closest(".filter-tab");
+      if (!tab) return;
 
-        if (!projects.length) {
-            grid.innerHTML = '<p class="text-muted text-center" style="grid-column:1/-1;">No projects in this category yet. More coming soon!</p>';
-            return;
-        }
+      activeCategory = tab.dataset.category;
+      tabsContainer.querySelectorAll(".filter-tab").forEach(function (button) {
+        button.classList.remove("active");
+      });
+      tab.classList.add("active");
 
-        grid.innerHTML = projects.map(p => `
-      <div class="project-card" onclick="window.location='${p.link}'">
-        <div class="project-meta">
-          <span class="badge">${p.category}</span>
-          <span class="text-xs text-muted">${new Date(p.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
-        </div>
-        <h3>${p.title}</h3>
-        <p>${p.excerpt}</p>
-        <div class="project-tags">
-          ${p.tags.map(t => `<span class="pill">${t}</span>`).join('')}
-        </div>
-        <a href="${p.link}" class="project-link">
-          Explore Case Study
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
-    `).join('');
+      var filtered = activeCategory === "All"
+        ? allProjects
+        : allProjects.filter(function (project) { return project.category === activeCategory; });
 
-        // Re-trigger animation
-        grid.classList.remove('visible');
-        requestAnimationFrame(() => grid.classList.add('visible'));
+      renderProjects(filtered);
+    });
+  }
+
+  function renderProjects(projects) {
+    var grid = document.getElementById("projectsGrid");
+    if (!grid) return;
+
+    if (!projects.length) {
+      grid.innerHTML = '<p class="text-muted text-center" style="grid-column:1/-1;">No projects in this category yet. More coming soon.</p>';
+      return;
     }
 
-    document.addEventListener('DOMContentLoaded', init);
+    grid.innerHTML = projects.map(function (project) {
+      var image = project.thumbnail || ("assets/images/projects/placeholders/" + project.id + "-placeholder.svg");
+      var date = new Date(project.date).toLocaleDateString("en-US", { month: "short", year: "numeric" });
+      var tags = (project.tags || []).slice(0, 4).map(function (tag) {
+        return '<span class="pill">' + tag + "</span>";
+      }).join("");
+
+      return '<a class="project-card" href="' + project.link + '">' +
+        '<div class="project-media"><img src="' + image + '" alt="' + project.title + '" loading="lazy" /></div>' +
+        '<div class="project-meta"><span class="badge">' + project.category + '</span><span class="text-xs text-soft">' + date + "</span></div>" +
+        "<h3>" + project.title + "</h3>" +
+        '<p class="text-muted">' + project.excerpt + "</p>" +
+        '<div class="project-tags">' + tags + "</div>" +
+        '<span class="project-link">Open Case Study</span>' +
+      "</a>";
+    }).join("");
+
+    grid.classList.remove("visible");
+    requestAnimationFrame(function () {
+      grid.classList.add("visible");
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
 })();

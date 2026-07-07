@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TV Remote Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="tv-shell" aria-label="TV remote interaction test">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="date-line">Local TV browser test</p>
+          <h1 id="page-title">TV Remote Lab</h1>
+          <p class="intro">
+            Use your remote arrows to move, OK/Enter to activate, and Back/Escape to close.
+          </p>
+        </div>
+        <div class="status-panel" aria-live="polite">
+          <span class="status-label">Focused</span>
+          <strong id="focusName">Start</strong>
+          <span id="lastKey">No key yet</span>
+        </div>
+      </section>
+
+      <section class="layout-grid">
+        <nav class="side-rail" aria-label="Main sections">
+          <button class="focusable nav-item is-active" data-label="Today" data-section="today">Today</button>
+          <button class="focusable nav-item" data-label="Week" data-section="week">Week</button>
+          <button class="focusable nav-item" data-label="Chores" data-section="chores">Month</button>
+          <button class="focusable nav-item" data-label="Meals" data-section="meals">Year</button>
+          <button class="focusable nav-item" data-label="Notes" data-section="notes">Decade</button>
+        </nav>
+
+        <section class="main-board" aria-label="Dashboard widgets">
+          <article class="feature-card focusable" tabindex="0" data-label="Next up card" data-action="select-card">
+            <span class="card-label">Something</span>
+            <h2>Anything</h2>
+            <p>Idugoo puvvu nuvvantey naku loveuuuu</p>
+          </article>
+
+          <article class="feature-card focusable" tabindex="0" data-label="Dinner card" data-action="select-card">
+            <span class="card-label">Another Something</span>
+            <h2>Another Anything</h2>
+            <p>Nuvvu na pakkana vundagaa nannu champee magaadu inka puttaledu mawaaaaa</p>
+          </article>
+
+          <article class="wide-card focusable" tabindex="0" data-label="Week calendar" data-action="select-card">
+            <div class="card-head">
+              <span class="card-label">Something</span>
+              <span class="hint">Anything</span>
+            </div>
+            <div class="week-strip" aria-hidden="true">
+              <span>Mon<br /><b>2</b></span>
+              <span>Tue<br /><b>1</b></span>
+              <span class="today">Wed<br /><b>4</b></span>
+              <span>Thu<br /><b>2</b></span>
+              <span>Fri<br /><b>5</b></span>
+              <span>Sat<br /><b>3</b></span>
+              <span>Sun<br /><b>1</b></span>
+            </div>
+          </article>
+
+          <section class="control-card" aria-label="Controls">
+            <div class="card-head">
+              <span class="card-label">Controls</span>
+              <span class="hint">Try OK and arrows</span>
+            </div>
+
+            <button class="focusable primary-action" data-label="Open dialog" data-action="modal">
+              Open dialog
+            </button>
+
+            <button class="focusable toggle" data-label="Quiet mode toggle" data-action="toggle" aria-pressed="false">
+              <span>Quiet mode</span>
+              <i aria-hidden="true"></i>
+            </button>
+
+            <div class="stepper focusable" tabindex="0" role="slider" aria-label="Text size" aria-valuemin="1" aria-valuemax="5" aria-valuenow="3" data-label="Text size slider" data-value="3">
+              <div class="stepper-text">
+                <span>Text size</span>
+                <strong id="textScaleValue">3 / 5</strong>
+              </div>
+              <div class="meter" aria-hidden="true"><span id="textScaleMeter"></span></div>
+            </div>
+          </section>
+
+          <section class="remote-card" aria-label="Remote control map">
+            <span class="card-label">Remote map</span>
+            <div class="dpad" aria-hidden="true">
+              <span></span>
+              <kbd>↑</kbd>
+              <span></span>
+              <kbd>←</kbd>
+              <kbd>OK</kbd>
+              <kbd>→</kbd>
+              <span></span>
+              <kbd>↓</kbd>
+              <span></span>
+            </div>
+          </section>
+        </section>
+
+        <aside class="log-panel" aria-label="Key event log">
+          <div class="card-head">
+            <span class="card-label">Key log</span>
+            <button class="focusable mini-button" data-label="Clear log" data-action="clear-log">Clear</button>
+          </div>
+          <ol id="keyLog"></ol>
+        </aside>
+      </section>
+    </main>
+
+    <div class="modal" id="modal" hidden>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h2 id="modalTitle">Remote dialog</h2>
+        <p>This checks whether Back/Escape and OK/Enter feel natural on your TV browser.</p>
+        <div class="modal-actions">
+          <button class="focusable modal-close primary-action" data-label="Close dialog" data-action="close-modal">Close</button>
+          <button class="focusable" data-label="Secondary modal action" data-action="select-card">Secondary</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

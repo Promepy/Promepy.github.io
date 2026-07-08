@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic ToDo API Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>Basic ToDo API Demo</h1>
+          <p>Vanilla JS frontend for a Flask + SQLite teaching API.</p>
+        </div>
+        <button id="logoutButton" class="secondary" type="button" hidden>Logout</button>
+      </header>
+
+      <section class="panel">
+        <h2>API connection</h2>
+        <form id="apiForm" class="row-form">
+          <label for="apiBase">API base URL</label>
+          <input id="apiBase" name="apiBase" type="url" required>
+          <button type="submit">Save</button>
+        </form>
+      </section>
+
+      <section id="authSection" class="grid">
+        <article class="panel">
+          <h2>Register</h2>
+          <form id="registerForm" class="stack">
+            <label>
+              User ID
+              <input name="userId" autocomplete="username" required>
+            </label>
+            <label>
+              Display name
+              <input name="displayName" autocomplete="name">
+            </label>
+            <label>
+              Password
+              <input name="password" type="password" autocomplete="new-password" required minlength="6">
+            </label>
+            <button type="submit">Create account</button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2>Login</h2>
+          <form id="loginForm" class="stack">
+            <label>
+              User ID
+              <input name="userId" autocomplete="username" required>
+            </label>
+            <label>
+              Password
+              <input name="password" type="password" autocomplete="current-password" required>
+            </label>
+            <button type="submit">Login</button>
+          </form>
+        </article>
+      </section>
+
+      <section id="todoSection" class="panel" hidden>
+        <div class="section-header">
+          <div>
+            <h2>Todos</h2>
+            <p id="userLabel"></p>
+          </div>
+          <button id="refreshButton" class="secondary" type="button">Refresh</button>
+        </div>
+
+        <form id="todoForm" class="stack">
+          <label>
+            Title
+            <input name="title" required maxlength="120">
+          </label>
+          <label>
+            Description
+            <textarea name="description" rows="3"></textarea>
+          </label>
+          <button type="submit">Add todo</button>
+        </form>
+
+        <ul id="todoList" class="todo-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Last HTTP response</h2>
+        <div id="responseMeta" class="response-meta">No request yet.</div>
+        <pre id="responseBody">{}</pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

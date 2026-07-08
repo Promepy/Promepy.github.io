@@ -23,6 +23,10 @@
           <input id="apiBase" name="apiBase" type="url" required>
           <button type="submit">Save</button>
         </form>
+        <div class="connection-links">
+          <span id="savedApiBase"></span>
+          <a id="openApiLink" href="http://127.0.0.1:5000/api/openapi.json" target="_blank" rel="noreferrer">OpenAPI JSON</a>
+        </div>
       </section>
 
       <section id="authSection" class="grid">
@@ -86,9 +90,74 @@
       </section>
 
       <section class="panel">
-        <h2>Last HTTP response</h2>
+        <h2>Status Lab</h2>
+        <div class="scenario-groups">
+          <div>
+            <h3>2xx</h3>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/200-profile">200 profile</button>
+            <button class="secondary scenario-button" type="button" data-method="POST" data-path="/teaching/status-codes/201-order" data-body='{"item":"API workbook","quantity":1}'>201 order</button>
+            <button class="secondary scenario-button" type="button" data-method="DELETE" data-path="/teaching/status-codes/204-notification/1">204 notification</button>
+          </div>
+          <div>
+            <h3>3xx</h3>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/302-latest-docs">302 docs</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/304-cached-profile">200 with ETag</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/304-cached-profile" data-if-none-match="&quot;teaching-profile-v1&quot;">304 cached</button>
+          </div>
+          <div>
+            <h3>4xx</h3>
+            <button class="secondary scenario-button" type="button" data-method="POST" data-path="/teaching/status-codes/400-checkout" data-body='{"quantity":0}'>400 checkout</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/401-account">401 account</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/403-admin-report" data-auth="true">403 admin</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/404-package/PKG-404">404 package</button>
+            <button class="secondary scenario-button" type="button" data-method="POST" data-path="/teaching/status-codes/409-seat-reservation" data-body='{"seatNumber":"A1","passengerName":"Student One"}'>409 seat</button>
+            <button class="secondary scenario-button" type="button" data-method="POST" data-path="/teaching/status-codes/415-upload" data-body='{"fileName":"notes.txt"}'>415 upload</button>
+            <button class="secondary scenario-button" type="button" data-method="POST" data-path="/teaching/status-codes/422-profile" data-body='{"age":9}'>422 profile</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/429-rate-limit">429 limit</button>
+          </div>
+          <div>
+            <h3>5xx</h3>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/500-report">500 report</button>
+            <button class="secondary scenario-button" type="button" data-method="GET" data-path="/teaching/status-codes/503-maintenance">503 maintenance</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Instructor controls</h2>
+        <div class="stack">
+          <label>
+            Teaching secret
+            <input id="teachingSecret" type="password" value="classroom-secret" autocomplete="off">
+          </label>
+          <div class="button-row">
+            <button id="resetButton" class="secondary" type="button">Reset demo data</button>
+            <button id="seedButton" class="secondary" type="button">Seed demo data</button>
+            <button id="snapshotButton" class="secondary" type="button">Snapshot</button>
+            <button id="requestLogButton" class="secondary" type="button">Get request log</button>
+            <button id="clearLogButton" class="secondary danger" type="button">Clear request log</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-header">
+          <h2>Request inspector</h2>
+          <span id="statusBadge" class="status-badge neutral">No request</span>
+        </div>
         <div id="responseMeta" class="response-meta">No request yet.</div>
-        <pre id="responseBody">{}</pre>
+        <div class="inspector-grid">
+          <article>
+            <h3>Request</h3>
+            <pre id="requestBody">{}</pre>
+          </article>
+          <article>
+            <h3>Response</h3>
+            <pre id="responseBody">{}</pre>
+          </article>
+        </div>
+        <h3>Session request history</h3>
+        <ol id="requestHistory" class="request-history"></ol>
       </section>
     </main>
 

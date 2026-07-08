@@ -68,6 +68,14 @@ function apiUrl(path) {
   return `${state.apiBase.replace(/\/$/, "")}${path}`;
 }
 
+function isNgrokUrl(url) {
+  try {
+    return new URL(url).hostname.includes("ngrok");
+  } catch (error) {
+    return false;
+  }
+}
+
 function updateConnectionDisplay() {
   const base = state.apiBase.replace(/\/$/, "");
   elements.apiBase.value = base;
@@ -138,6 +146,11 @@ function recordSyntheticRequest(method, path, status, body) {
 async function request(method, path, body, needsAuth = false, options = {}) {
   const headers = { ...(options.headers || {}) };
   let requestBody;
+  const fullUrl = apiUrl(path);
+
+  if (isNgrokUrl(fullUrl)) {
+    headers["ngrok-skip-browser-warning"] = "true";
+  }
 
   if (body !== undefined) {
     headers["Content-Type"] = options.contentType || "application/json";
@@ -148,7 +161,6 @@ async function request(method, path, body, needsAuth = false, options = {}) {
     headers.Authorization = `Bearer ${state.token}`;
   }
 
-  const fullUrl = apiUrl(path);
   const requestRecord = {
     method,
     path,

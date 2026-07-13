@@ -30,13 +30,19 @@
     <main id="fallback" hidden>
       <h1>Page not found</h1>
       <p>This page does not exist.</p>
-      <p><a href="/">Go home</a></p>
+      <p><a href="/aiForVizag/">Go to AI for Vizag Hub</a></p>
     </main>
     <script>
       (function () {
         var basePath = "/aiForVizag";
         var pathname = window.location.pathname.replace(/\/+$/, "");
         var isAppPath = basePath ? pathname === basePath || pathname.indexOf(basePath + "/") === 0 : true;
+        var isLegacyMemberPath = pathname === "/people" || pathname.indexOf("/people/") === 0;
+
+        if (!isAppPath && isLegacyMemberPath) {
+          window.location.replace(basePath + pathname + window.location.search + window.location.hash);
+          return;
+        }
 
         if (!isAppPath) {
           showFallback();

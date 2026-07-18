@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">The internet is a network of networks</title>
+  <desc id="desc">A learner's device connects through a home router and internet provider to an exchange, which joins several independently owned networks using shared TCP/IP rules.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#0B1F33" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0B1F33" flood-opacity=".13"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5 0 10Z" fill="#0B1F33"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#F7F1E3"/>
+  <rect width="1200" height="675" rx="28" fill="url(#grid)"/>
+  <path d="M34 112H1166" stroke="#0B1F33" stroke-width="3" stroke-linecap="round"/>
+  <text x="44" y="62" fill="#0B1F33" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">01 · CONNECT</text>
+  <text x="44" y="98" fill="#0B1F33" font-family="Arial, sans-serif" font-size="31" font-weight="800">A network of networks</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="246" width="170" height="140" rx="20" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+    <rect x="73" y="270" width="114" height="68" rx="8" fill="#D9F1FB" stroke="#0B1F33" stroke-width="3"/>
+    <path d="M103 353H157M130 338V353" stroke="#0B1F33" stroke-width="5" stroke-linecap="round"/>
+    <text x="130" y="375" text-anchor="middle" fill="#0B1F33" font-family="Arial, sans-serif" font-size="20" font-weight="700">Your device</text>
+  </g>
+
+  <path d="M215 316H286" fill="none" stroke="#0B1F33" stroke-width="5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="296" y="258" width="155" height="116" rx="58" fill="#F2C94C" stroke="#0B1F33" stroke-width="3"/>
+    <circle cx="346" cy="308" r="7" fill="#0B1F33"/>
+    <circle cx="375" cy="308" r="7" fill="#0B1F33"/>
+    <circle cx="404" cy="308" r="7" fill="#0B1F33"/>
+    <path d="M331 290Q374 249 417 290" fill="none" stroke="#0B1F33" stroke-width="5" stroke-linecap="round"/>
+    <text x="374" y="349" text-anchor="middle" fill="#0B1F33" font-family="Arial, sans-serif" font-size="19" font-weight="700">Home router</text>
+  </g>
+
+  <path d="M451 316H516" fill="none" stroke="#0B1F33" stroke-width="5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="526" y="220" width="186" height="192" rx="24" fill="#38BDF8" stroke="#0B1F33" stroke-width="3"/>
+    <path d="M571 285H667M571 316H667M571 347H667" stroke="#0B1F33" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="555" cy="285" r="7" fill="#FFFFFF"/>
+    <circle cx="555" cy="316" r="7" fill="#FFFFFF"/>
+    <circle cx="555" cy="347" r="7" fill="#FFFFFF"/>
+    <text x="619" y="389" text-anchor="middle" fill="#0B1F33" font-family="Arial, sans-serif" font-size="20" font-weight="800">Your ISP</text>
+  </g>
+
+  <path d="M712 316H774" fill="none" stroke="#0B1F33" stroke-width="5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <circle cx="836" cy="316" r="62" fill="#5FBF90" stroke="#0B1F33" stroke-width="3"/>
+    <path d="M786 316H886M836 266V366M800 280Q836 316 872 352M872 280Q836 316 800 352" fill="none" stroke="#0B1F33" stroke-width="4" stroke-linecap="round"/>
+    <text x="836" y="402" text-anchor="middle" fill="#0B1F33" font-family="Arial, sans-serif" font-size="18" font-weight="800">Internet exchange</text>
+  </g>
+
+  <path d="M893 292C949 250 959 219 1009 200M898 316H1004M893 340C949 382 959 413 1009 432" fill="none" stroke="#0B1F33" stroke-width="4" marker-end="url(#arrow)"/>
+  <g font-family="Arial, sans-serif" fill="#0B1F33" text-anchor="middle">
+    <g filter="url(#shadow)">
+      <rect x="1020" y="153" width="140" height="82" rx="16" fill="#F47B6A" stroke="#0B1F33" stroke-width="3"/>
+      <text x="1090" y="188" font-size="18" font-weight="800">Video</text><text x="1090" y="212" font-size="16">network</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="1015" y="275" width="145" height="82" rx="16" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <text x="1088" y="310" font-size="18" font-weight="800">School</text><text x="1088" y="334" font-size="16">network</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="1020" y="397" width="140" height="82" rx="16" fill="#D9F1FB" stroke="#0B1F33" stroke-width="3"/>
+      <text x="1090" y="432" font-size="18" font-weight="800">Cloud</text><text x="1090" y="456" font-size="16">network</text>
+    </g>
+  </g>
+
+  <g transform="rotate(-1 600 558)">
+    <rect x="145" y="520" width="910" height="92" rx="18" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3" filter="url(#shadow)"/>
+    <circle cx="194" cy="566" r="20" fill="#F2C94C" stroke="#0B1F33" stroke-width="3"/>
+    <path d="M185 566L191 572 203 559" fill="none" stroke="#0B1F33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="231" y="555" fill="#0B1F33" font-family="Arial, sans-serif" font-size="20" font-weight="800">Different owners. One connected system.</text>
+    <text x="231" y="584" fill="#0B1F33" font-family="Arial, sans-serif" font-size="18">Shared TCP/IP rules let every network move data to the right destination.</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Recognize common cyber threats and use layered defenses</title>
+  <desc id="desc">Phishing tries to steal trust, malware can recruit devices into botnets, and distributed denial-of-service attacks flood a service. A shield lists practical defenses including checking URLs, using multifactor authentication, and keeping software updated.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#0B1F33" stroke-opacity=".055"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0B1F33" flood-opacity=".13"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5 0 10Z" fill="#0B1F33"/></marker>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#F7F1E3"/><rect width="1200" height="675" rx="28" fill="url(#grid)"/>
+  <path d="M34 112H1166" stroke="#0B1F33" stroke-width="3" stroke-linecap="round"/>
+  <text x="44" y="62" fill="#0B1F33" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">07 · DEFEND</text>
+  <text x="44" y="98" fill="#0B1F33" font-family="Arial, sans-serif" font-size="31" font-weight="800">Threats target people, devices, and availability</text>
+
+  <g font-family="Arial, sans-serif" fill="#0B1F33">
+    <g filter="url(#shadow)">
+      <rect x="44" y="155" width="324" height="174" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="89" cy="201" r="25" fill="#F2C94C" stroke="#0B1F33" stroke-width="3"/>
+      <path d="M77 191Q89 177 101 191V208Q89 222 77 208Z" fill="none" stroke="#0B1F33" stroke-width="4"/><path d="M89 211V222" stroke="#0B1F33" stroke-width="4"/>
+      <text x="129" y="194" font-size="23" font-weight="800">Phishing</text>
+      <text x="129" y="220" font-size="15" font-weight="700" fill="#A46900">STEALS TRUST</text>
+      <text x="72" y="260" font-size="16">A fake message or site pressures you</text>
+      <text x="72" y="283" font-size="16">to reveal passwords, codes, or money.</text>
+      <rect x="72" y="297" width="251" height="20" rx="10" fill="#FFF6D1"/>
+      <text x="198" y="312" text-anchor="middle" font-size="12" font-weight="800">STOP · CHECK THE URL · VERIFY</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="44" y="351" width="324" height="174" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="89" cy="397" r="25" fill="#F47B6A" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="89" cy="397" r="11" fill="none" stroke="#0B1F33" stroke-width="4"/><path d="M89 372V380M89 414V422M64 397H72M106 397H114M71 379L77 385M101 409L107 415M107 379L101 385M77 409L71 415" stroke="#0B1F33" stroke-width="4" stroke-linecap="round"/>
+      <text x="129" y="390" font-size="23" font-weight="800">Malware + botnets</text>
+      <text x="129" y="416" font-size="15" font-weight="700" fill="#B3473B">CONTROLS DEVICES</text>
+      <text x="72" y="456" font-size="16">Malicious software can steal data or</text>
+      <text x="72" y="479" font-size="16">turn many devices into remote “bots.”</text>
+      <rect x="72" y="493" width="251" height="20" rx="10" fill="#FCE2DE"/>
+      <text x="198" y="508" text-anchor="middle" font-size="12" font-weight="800">UPDATE · SCAN · BACK UP</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="832" y="252" width="324" height="174" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="877" cy="298" r="25" fill="#38BDF8" stroke="#0B1F33" stroke-width="3"/>
+      <path d="M863 309C863 297 869 294 875 294C875 279 898 279 899 294C910 294 913 309 902 313H870C866 313 863 311 863 309Z" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <text x="917" y="291" font-size="23" font-weight="800">DDoS</text>
+      <text x="917" y="317" font-size="15" font-weight="700" fill="#1877A1">FLOODS A SERVICE</text>
+      <text x="860" y="357" font-size="16">A botnet sends more traffic than a</text>
+      <text x="860" y="380" font-size="16">service can handle, blocking real users.</text>
+      <rect x="860" y="394" width="251" height="20" rx="10" fill="#D9F1FB"/>
+      <text x="986" y="409" text-anchor="middle" font-size="12" font-weight="800">RATE LIMIT · FILTER · DISTRIBUTE</text>
+    </g>
+
+    <path d="M368 240C433 240 438 279 478 286" fill="none" stroke="#F2C94C" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M368 438C433 438 438 399 478 392" fill="none" stroke="#F47B6A" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M832 339H724" fill="none" stroke="#38BDF8" stroke-width="5" marker-end="url(#arrow)"/>
+    <g filter="url(#shadow)">
+      <path d="M600 181C643 219 688 227 714 231V358C714 448 654 503 600 531C546 503 486 448 486 358V231C512 227 557 219 600 181Z" fill="#5FBF90" stroke="#0B1F33" stroke-width="4"/>
+      <path d="M600 222C628 246 656 252 673 255V353C673 411 638 452 600 477C562 452 527 411 527 353V255C544 252 572 246 600 222Z" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <path d="M568 337L591 360 635 314" fill="none" stroke="#5FBF90" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="600" y="286" text-anchor="middle" font-size="21" font-weight="800">Layer defenses</text>
+      <text x="600" y="398" text-anchor="middle" font-size="15" font-weight="800">strong unique passwords</text>
+      <text x="600" y="420" text-anchor="middle" font-size="15" font-weight="800">+ MFA + updates</text>
+      <text x="600" y="442" text-anchor="middle" font-size="15" font-weight="800">+ careful choices</text>
+    </g>
+  </g>
+
+  <g transform="rotate(1 600 584)" filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="113" y="553" width="974" height="72" rx="17" fill="#0B1F33"/>
+    <text x="600" y="582" text-anchor="middle" fill="#F2C94C" font-size="18" font-weight="800">BEFORE YOU CLICK: pause when a message creates urgency or fear.</text>
+    <text x="600" y="607" text-anchor="middle" fill="#FFFFFF" font-size="16">Open the known site yourself, confirm the sender another way, and never share one-time codes.</text>
+  </g>
+  <text x="600" y="653" text-anchor="middle" fill="#466075" font-family="Arial, sans-serif" font-size="15" font-weight="700">Security is a habit and a system—not a single product.</text>
+</svg>

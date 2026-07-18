@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">How a search engine turns crawled pages into ranked results</title>
+  <desc id="desc">A pipeline shows crawlers discovering linked pages, an index mapping words to documents, a user query expressing intent, and ranking signals ordering useful results while filtering spam.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#0B1F33" stroke-opacity=".055"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0B1F33" flood-opacity=".13"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5 0 10Z" fill="#0B1F33"/></marker>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#F7F1E3"/><rect width="1200" height="675" rx="28" fill="url(#grid)"/>
+  <path d="M34 112H1166" stroke="#0B1F33" stroke-width="3" stroke-linecap="round"/>
+  <text x="44" y="62" fill="#0B1F33" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">08 · DISCOVER</text>
+  <text x="44" y="98" fill="#0B1F33" font-family="Arial, sans-serif" font-size="31" font-weight="800">Search the index, then rank the matches</text>
+
+  <g font-family="Arial, sans-serif" fill="#0B1F33">
+    <g filter="url(#shadow)">
+      <rect x="42" y="157" width="230" height="264" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="83" cy="198" r="21" fill="#F47B6A" stroke="#0B1F33" stroke-width="3"/><text x="83" y="205" text-anchor="middle" font-size="18" font-weight="800">1</text>
+      <text x="119" y="204" font-size="22" font-weight="800">Crawl</text>
+      <g fill="#D9F1FB" stroke="#0B1F33" stroke-width="2">
+        <rect x="73" y="238" width="83" height="68" rx="8"/><rect x="164" y="272" width="76" height="68" rx="8"/><rect x="84" y="326" width="83" height="58" rx="8"/>
+      </g>
+      <g stroke="#0B1F33" stroke-width="3" fill="none"><path d="M156 271L164 285M142 306L130 326M164 306L184 315"/></g>
+      <g stroke="#0B1F33" stroke-width="4" stroke-linecap="round"><path d="M87 255H140M87 268H128M178 289H226M178 302H215M98 343H153M98 356H137"/></g>
+      <text x="157" y="402" text-anchor="middle" font-size="15" font-weight="700">Bots follow links</text>
+    </g>
+    <path d="M272 289H320" stroke="#0B1F33" stroke-width="5" marker-end="url(#arrow)"/>
+    <g filter="url(#shadow)">
+      <rect x="329" y="157" width="258" height="264" rx="22" fill="#38BDF8" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="370" cy="198" r="21" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/><text x="370" y="205" text-anchor="middle" font-size="18" font-weight="800">2</text>
+      <text x="406" y="204" font-size="22" font-weight="800">Index</text>
+      <rect x="359" y="234" width="198" height="139" rx="13" fill="#FFFFFF" stroke="#0B1F33" stroke-width="2"/>
+      <path d="M359 272H557M359 310H557M359 348H557M439 234V373" stroke="#0B1F33" stroke-width="2"/>
+      <g font-family="monospace" font-size="14" font-weight="700">
+        <text x="374" y="259">dns</text><text x="453" y="259">p7, p18</text>
+        <text x="374" y="297">fast</text><text x="453" y="297">p4, p7</text>
+        <text x="374" y="335">lookup</text><text x="453" y="335">p7, p31</text>
+        <text x="374" y="361">...</text><text x="453" y="361">...</text>
+      </g>
+      <text x="458" y="402" text-anchor="middle" font-size="15" font-weight="700">Words point to pages</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="633" y="157" width="246" height="133" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="674" cy="198" r="21" fill="#F2C94C" stroke="#0B1F33" stroke-width="3"/><text x="674" y="205" text-anchor="middle" font-size="18" font-weight="800">3</text>
+      <text x="710" y="204" font-size="22" font-weight="800">Query</text>
+      <rect x="662" y="229" width="188" height="39" rx="19" fill="#FFF6D1" stroke="#0B1F33" stroke-width="2"/>
+      <circle cx="689" cy="248" r="9" fill="none" stroke="#0B1F33" stroke-width="3"/><path d="M696 255L705 264" stroke="#0B1F33" stroke-width="3"/>
+      <text x="721" y="254" font-size="15" font-weight="700">fast dns lookup</text>
+    </g>
+    <path d="M587 289H619C632 289 642 299 642 312V327H690" fill="none" stroke="#38BDF8" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M756 290V327" stroke="#F2C94C" stroke-width="5" marker-end="url(#arrow)"/>
+    <g filter="url(#shadow)">
+      <rect x="633" y="337" width="246" height="182" rx="22" fill="#5FBF90" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="674" cy="377" r="21" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/><text x="674" y="384" text-anchor="middle" font-size="18" font-weight="800">4</text>
+      <text x="710" y="383" font-size="22" font-weight="800">Rank</text>
+      <g font-size="15" font-weight="700">
+        <rect x="661" y="406" width="190" height="27" rx="13" fill="#FFFFFF" opacity=".95"/><text x="679" y="425">relevance to intent</text>
+        <rect x="661" y="441" width="190" height="27" rx="13" fill="#FFFFFF" opacity=".95"/><text x="679" y="460">quality + useful links</text>
+        <rect x="661" y="476" width="190" height="27" rx="13" fill="#FFFFFF" opacity=".95"/><text x="679" y="495">freshness + context</text>
+      </g>
+    </g>
+    <path d="M879 429H927" stroke="#0B1F33" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <g filter="url(#shadow)">
+      <rect x="936" y="157" width="222" height="362" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <circle cx="977" cy="198" r="21" fill="#38BDF8" stroke="#0B1F33" stroke-width="3"/><text x="977" y="205" text-anchor="middle" font-size="18" font-weight="800">5</text>
+      <text x="1013" y="204" font-size="22" font-weight="800">Results</text>
+      <g>
+        <rect x="962" y="232" width="170" height="72" rx="12" fill="#E3F6EC" stroke="#0B1F33" stroke-width="2"/>
+        <circle cx="983" cy="252" r="12" fill="#5FBF90"/><text x="983" y="257" text-anchor="middle" font-size="13" font-weight="800">1</text>
+        <path d="M1005 247H1115M1005 261H1088M978 282H1117" stroke="#0B1F33" stroke-width="5" stroke-linecap="round"/>
+        <rect x="962" y="318" width="170" height="72" rx="12" fill="#D9F1FB" stroke="#0B1F33" stroke-width="2"/>
+        <circle cx="983" cy="338" r="12" fill="#38BDF8"/><text x="983" y="343" text-anchor="middle" font-size="13" font-weight="800">2</text>
+        <path d="M1005 333H1115M1005 347H1082M978 368H1117" stroke="#0B1F33" stroke-width="5" stroke-linecap="round"/>
+        <rect x="962" y="404" width="170" height="72" rx="12" fill="#FFF6D1" stroke="#0B1F33" stroke-width="2"/>
+        <circle cx="983" cy="424" r="12" fill="#F2C94C"/><text x="983" y="429" text-anchor="middle" font-size="13" font-weight="800">3</text>
+        <path d="M1005 419H1115M1005 433H1093M978 454H1117" stroke="#0B1F33" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <text x="1047" y="501" text-anchor="middle" font-size="14" font-weight="700">best estimate first</text>
+    </g>
+  </g>
+
+  <g transform="rotate(-1 600 578)" filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="107" y="552" width="986" height="72" rx="17" fill="#0B1F33"/>
+    <text x="600" y="581" text-anchor="middle" fill="#F2C94C" font-size="18" font-weight="800">A search engine usually searches its index—not every live page at query time.</text>
+    <text x="600" y="607" text-anchor="middle" fill="#FFFFFF" font-size="16">Ranking is an estimate: evaluate the source, evidence, date, and fit for your question.</text>
+  </g>
+  <text x="600" y="651" text-anchor="middle" fill="#466075" font-family="Arial, sans-serif" font-size="14" font-weight="700">Spam detection removes manipulative pages; personalization and location can change the order.</text>
+</svg>

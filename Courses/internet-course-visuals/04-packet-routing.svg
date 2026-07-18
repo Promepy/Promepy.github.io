@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Packets can take different routes and still arrive reliably</title>
+  <desc id="desc">A message is split into three numbered packets. Routers send them along different paths to the destination, where TCP detects a missing or out-of-order packet and rebuilds the message.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#0B1F33" stroke-opacity=".055"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0B1F33" flood-opacity=".13"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5 0 10Z" fill="#0B1F33"/></marker>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#F7F1E3"/><rect width="1200" height="675" rx="28" fill="url(#grid)"/>
+  <path d="M34 112H1166" stroke="#0B1F33" stroke-width="3" stroke-linecap="round"/>
+  <text x="44" y="62" fill="#0B1F33" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">04 · ROUTE</text>
+  <text x="44" y="98" fill="#0B1F33" font-family="Arial, sans-serif" font-size="31" font-weight="800">Split it. Route it. Rebuild it.</text>
+
+  <g font-family="Arial, sans-serif" fill="#0B1F33">
+    <g filter="url(#shadow)">
+      <rect x="45" y="206" width="190" height="213" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <text x="140" y="244" text-anchor="middle" font-size="19" font-weight="800">Original message</text>
+      <rect x="75" y="269" width="130" height="61" rx="10" fill="#D9F1FB" stroke="#0B1F33" stroke-width="2"/>
+      <text x="140" y="306" text-anchor="middle" font-size="24" font-weight="800">HELLO!</text>
+      <path d="M91 359H189" stroke="#0B1F33" stroke-width="3" stroke-dasharray="7 6"/>
+      <text x="140" y="392" text-anchor="middle" font-size="16">split into packets</text>
+    </g>
+    <path d="M235 312H292" stroke="#0B1F33" stroke-width="5" marker-end="url(#arrow)"/>
+    <g filter="url(#shadow)" font-weight="800" text-anchor="middle">
+      <rect x="302" y="165" width="95" height="62" rx="13" fill="#F47B6A" stroke="#0B1F33" stroke-width="3"/><text x="350" y="203" font-size="18">1 · HE</text>
+      <rect x="302" y="281" width="95" height="62" rx="13" fill="#F2C94C" stroke="#0B1F33" stroke-width="3"/><text x="350" y="319" font-size="18">2 · LL</text>
+      <rect x="302" y="397" width="95" height="62" rx="13" fill="#5FBF90" stroke="#0B1F33" stroke-width="3"/><text x="350" y="435" font-size="18">3 · O!</text>
+    </g>
+
+    <text x="650" y="150" text-anchor="middle" font-size="15" font-weight="800" letter-spacing="1">ROUTERS CHOOSE THE NEXT BEST HOP</text>
+    <path d="M397 196C465 196 452 192 501 192S576 237 628 237 696 188 752 188 817 204 848 221" fill="none" stroke="#F47B6A" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M397 312C463 312 474 333 532 333S607 285 667 285 750 337 850 337" fill="none" stroke="#F2C94C" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M397 428C463 428 467 468 533 468S605 412 674 412 760 432 850 421" fill="none" stroke="#5FBF90" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <g fill="#38BDF8" stroke="#0B1F33" stroke-width="3" filter="url(#shadow)">
+      <circle cx="501" cy="192" r="30"/><circle cx="628" cy="237" r="30"/><circle cx="752" cy="188" r="30"/>
+      <circle cx="532" cy="333" r="30"/><circle cx="667" cy="285" r="30"/><circle cx="734" cy="338" r="30"/>
+      <circle cx="533" cy="468" r="30"/><circle cx="674" cy="412" r="30"/><circle cx="758" cy="429" r="30"/>
+    </g>
+    <g text-anchor="middle" font-size="13" font-weight="800">
+      <text x="501" y="197">R1</text><text x="628" y="242">R2</text><text x="752" y="193">R3</text>
+      <text x="532" y="338">R4</text><text x="667" y="290">R5</text><text x="734" y="343">R6</text>
+      <text x="533" y="473">R7</text><text x="674" y="417">R8</text><text x="758" y="434">R9</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="874" y="183" width="282" height="279" rx="22" fill="#FFFFFF" stroke="#0B1F33" stroke-width="3"/>
+      <text x="1015" y="219" text-anchor="middle" font-size="19" font-weight="800">Destination receives</text>
+      <g font-size="17" font-weight="800" text-anchor="middle">
+        <rect x="906" y="244" width="84" height="55" rx="11" fill="#F47B6A" stroke="#0B1F33" stroke-width="2"/><text x="948" y="278">1 · HE</text>
+        <rect x="1004" y="244" width="84" height="55" rx="11" fill="#5FBF90" stroke="#0B1F33" stroke-width="2"/><text x="1046" y="278">3 · O!</text>
+      </g>
+      <rect x="906" y="321" width="182" height="38" rx="9" fill="#FFF6D1"/>
+      <text x="997" y="346" text-anchor="middle" font-size="15" font-weight="800">TCP: packet 2 missing!</text>
+      <path d="M1098 340C1140 340 1140 404 1090 404" fill="none" stroke="#F47B6A" stroke-width="4" marker-end="url(#arrow)"/>
+      <rect x="906" y="377" width="182" height="58" rx="11" fill="#E3F6EC" stroke="#0B1F33" stroke-width="2"/>
+      <text x="997" y="403" text-anchor="middle" font-size="15" font-weight="800">retransmit + reorder</text>
+      <text x="997" y="424" text-anchor="middle" font-size="19" font-weight="800">HELLO!</text>
+    </g>
+  </g>
+
+  <g transform="rotate(-1 600 565)" filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="128" y="523" width="944" height="93" rx="18" fill="#0B1F33"/>
+    <text x="169" y="559" fill="#F2C94C" font-size="18" font-weight="800">FAULT TOLERANCE</text>
+    <text x="344" y="559" fill="#FFFFFF" font-size="18">If one route fails, routers can send packets another way.</text>
+    <text x="169" y="591" fill="#38BDF8" font-size="18" font-weight="800">TCP RELIABILITY</text>
+    <text x="344" y="591" fill="#FFFFFF" font-size="18">Numbers, acknowledgements, and retries restore the data.</text>
+  </g>
+  <text x="600" y="649" text-anchor="middle" fill="#466075" font-family="Arial, sans-serif" font-size="15">Real-time calls may prefer speed over waiting for every missing packet.</text>
+</svg>

@@ -1,1 +1,1 @@
-# Keep GitHub Pages from filtering nested _next assets when this folder is published directly.
+# Allows GitHub Pages to serve Next.js _next assets without Jekyll processing.

@@ -1,11 +1,11 @@
 {
-    "name": "MotoOps Demo",
+    "name": "MotoOps",
     "short_name": "MotoOps",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#FFFBF5",
     "theme_color": "#005A4F",
-    "description": "MotoOps fixture-first operations preview for Android and Web.",
+    "description": "MotoOps dealership operations for Android and Web.",
     "prefer_related_applications": false,
     "icons": [
         {

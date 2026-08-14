@@ -1,11 +1,11 @@
 {
-    "name": "MotoOps",
-    "short_name": "MotoOps",
+    "name": "KVR",
+    "short_name": "KVR",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#FFFBF5",
     "theme_color": "#005A4F",
-    "description": "MotoOps dealership operations for Android and Web.",
+    "description": "KVR dealership stock, bookings, payments, and operations.",
     "prefer_related_applications": false,
     "icons": [
         {

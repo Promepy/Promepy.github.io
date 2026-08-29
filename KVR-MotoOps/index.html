@@ -33,18 +33,6 @@
 
   <title>KVR</title>
   <link rel="manifest" href="manifest.json">
-
-  <!--
-    Keep PDF preview rendering available without a runtime dependency on a
-    third-party CDN. document.baseURI includes the Flutter --base-href, so the
-    same build contract works for root and GitHub Pages sub-path deployments.
-  -->
-  <script>
-    window.dartPdfJsBaseUrl = new URL(
-      "assets/js/pdf/5.7.284/",
-      document.baseURI
-    ).href;
-  </script>
 </head>
 <body>
   <!--

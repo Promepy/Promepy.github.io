@@ -1,7 +1,9 @@
-MotoOps India attendance pilot, build 3
+MotoOps India attendance pilot, build 4
 
-Update the installed MotoOps India Test app using MotoOps-India-Attendance-0.2.0-build3-arm64.apk. Same package/test signer; uninstalling is unnecessary and would erase pending device evidence. Android 13+ ARM64.
+Update MotoOps India Test in place using MotoOps-India-Attendance-0.2.0-build4-arm64.apk. Same package/test signer; do not uninstall if pending evidence must be retained. Android 13+ ARM64.
 
-Fixes: most accurate fresh provider selection, visible accuracy requirement, offline profile refresh no longer stops authorized collection, server-anchored monotonic event time, per-event clock rejection recovery, old-token reply isolation, network-return upload retry and accurate pending-checkout status.
+Automatic duty monitoring recovery: temporary internet/GPS failures retain the foreground session, location provider changes reconnect automatically, saved readings upload when network returns, and Android-managed sticky restart is requested after ordinary process reclamation. Reopening the signed-in app automatically recovers the authorized current local duty session; there is no Restore button.
 
-After updating, open Profile and use Restore duty monitoring if the current session is interrupted. For a 30 m accuracy requirement, obtain a fresh precise fix near the entrance/outdoors. A 100 m coarse fix remains unknown regardless of geofence radius. Missing historical evidence is not fabricated. Verify screen lock, a brief internet outage, departure/return and checkout before real salary use. Production is unchanged.
+Force-stop/reboot/battery restrictions can prevent background execution. Open the app to allow automatic recovery. A fresh authenticated clock is required after reboot. Checkout, sign-out, server stop and duty expiry prevent automatic restart. Unknown historical intervals are preserved.
+
+Test internet and GPS off/on without touching Profile, screen lock, app reopening and checkout/logout stop behavior on a real phone. Static analysis and Android/Web compilation passed; real-phone acceptance is still required. Production is unchanged.

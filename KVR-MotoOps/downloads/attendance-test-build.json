@@ -1,0 +1,19 @@
+{
+  "application_id": "in.kvrmotors.motoops.indiatest",
+  "label": "MotoOps India Test",
+  "version": "0.2.0",
+  "version_code": 2026103701,
+  "abi": "arm64-v8a",
+  "min_android": 13,
+  "environment": "MotoOps India / test",
+  "project_ref": "nakxrmzvnxwwxflsnnaj",
+  "filename": "MotoOps-India-Attendance-0.2.0-arm64.apk",
+  "bytes": 38704922,
+  "sha256": "582cf2d432563b26df3678d9bf05fe70e25a84da2749c9a146a20a606d31e947",
+  "signer": "Android test signer; separate India app identity",
+  "signer_certificate_sha256": "de4942e92c196eb819a9b108213fc1f95fab2d056487ad9e96a8d0e9b0006cf4",
+  "apk_url": "https://promepy.github.io/KVR-MotoOps/downloads/MotoOps-India-Attendance-0.2.0-arm64.apk",
+  "web_url": "https://promepy.github.io/KVR-MotoOps/",
+  "web_main_sha256": "2829ad220932c158333e551489599ff1c43c6d5e64aa66f8b210deb2ea1de859",
+  "built_at_utc": "2026-10-17T16:26:15.613272+00:00"
+}

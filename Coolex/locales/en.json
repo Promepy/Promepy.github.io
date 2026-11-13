@@ -1,0 +1,610 @@
+{
+  "messages": {
+    "brand.trade": "Manufacturers · Importers · Exporters",
+    "brand.locations": "Vijayawada & Hyderabad",
+    "brand.since": "Since 1975",
+    "brand.company": "Coolex Industries Pvt Ltd",
+    "brand.company_since": "Coolex Industries Pvt Ltd · Since 1975",
+    "brand.home": "Coolex home",
+    "brand.logo_alt": "Coolex — Since 1975",
+    "nav.equipment": "Equipment",
+    "nav.watch": "Watch & discover",
+    "nav.ideas": "Business ideas",
+    "nav.showrooms": "Showrooms",
+    "nav.home": "Home",
+    "nav.shortlist": "Your shortlist",
+    "nav.main": "Main navigation",
+    "nav.mobile": "Mobile navigation",
+    "nav.open": "Open navigation",
+    "nav.close": "Close navigation",
+    "nav.explore": "Explore Coolex",
+    "language.choose": "Choose your language",
+    "language.changed": "Language changed to {language}.",
+    "language.unavailable": "This translation could not be loaded. English is shown instead.",
+    "action.talk": "Talk to Coolex",
+    "action.explore_equipment": "Explore equipment",
+    "action.visit": "Visit a showroom",
+    "action.directions": "Get directions",
+    "action.all_equipment": "All equipment",
+    "action.explore_videos": "Explore videos",
+    "action.explore_ideas": "Explore business ideas",
+    "action.plan_visit": "Plan your visit",
+    "action.open_shortlist": "Open your shortlist",
+    "action.talk_showroom": "Talk to the showroom",
+    "action.ask_range": "Ask about this range",
+    "action.browse_equipment": "Browse all equipment",
+    "action.explore_category": "Explore category",
+    "action.call_showroom": "Call the showroom",
+    "action.call_coolex": "Call Coolex",
+    "action.close": "Close",
+    "footer.tagline": "Food equipment. Real demonstrations.",
+    "footer.ideas": "Ideas for your next business. Since 1975.",
+    "footer.find": "Find your next machine",
+    "footer.catalogue": "Equipment catalogue",
+    "footer.videos": "Video demonstrations",
+    "footer.ideas_link": "Business ideas & menus",
+    "footer.hello": "Come say hello",
+    "footer.hours": "Monday–Saturday · 10:00–7:00",
+    "footer.disclaimer": "Catalogue details and prices are subject to confirmation with Coolex.",
+    "footer.top": "Back to top ↑",
+    "youtube.telugu": "YouTube · Telugu",
+    "youtube.hindi_english": "YouTube · Hindi & English",
+    "youtube.watch_telugu": "Watch in Telugu",
+    "home.eyebrow": "Food business starts here",
+    "home.big_ideas": "Big ideas.",
+    "home.equipment": "Great equipment.",
+    "home.cooking": "Let’s get cooking.",
+    "home.description": "From your first food counter to your next kitchen. Discover equipment, see it in action, and find your fit with Coolex.",
+    "home.note": "Original catalogues. Real machines. Real possibilities.",
+    "home.hero_alt": "Commercial fryers, griddles and cooking equipment inside the Coolex showroom",
+    "home.stamp": "EQUIPPING IDEAS",
+    "home.stamp_since": "SINCE",
+    "home.tour": "Step inside Coolex.",
+    "home.tour_note": "Watch our original showroom tour",
+    "home.category_count": "67 equipment categories",
+    "home.kind_machine": "Find your kind of machine",
+    "home.see_first": "See it before you choose",
+    "home.video_proof": "Original video demonstrations",
+    "home.locations": "Two showroom locations",
+    "home.familiar": "A familiar name. A fresh start.",
+    "home.menu": "What’s on your menu?",
+    "home.menu_note": "Start with what you want to make. We’ll help you explore the equipment behind it.",
+    "home.everything": "A little of everything",
+    "home.search_prompt": "Already have something in mind? Find it in the catalogue.",
+    "home.less_guessing": "Less guessing. More seeing.",
+    "home.see_machines": "See the machines.",
+    "home.possibilities": "Imagine the possibilities.",
+    "home.video_note": "Go beyond the catalogue with original Coolex demonstrations and equipment walkthroughs.",
+    "home.inspiration": "A little inspiration",
+    "home.next_business": "Your next business",
+    "home.start_here": "could start here.",
+    "home.ideas_note": "Explore the menus, equipment and outlet ideas in our original business collections. Find a direction that feels like you.",
+    "home.originals": "The original collections",
+    "home.familiar_catalogue": "A familiar catalogue.",
+    "home.clearer": "A clearer way to explore.",
+    "home.all_originals": "Explore all original showroom photos & collection artwork",
+    "home.artwork": "Original Coolex collection artwork {index}",
+    "home.view_artwork": "View original home catalogue artwork {index}",
+    "showroom.eyebrow": "Come take a closer look",
+    "showroom.screen": "From your screen",
+    "showroom.destination": "to our showroom.",
+    "showroom.note": "See the equipment, ask your questions and talk through your next food business idea.",
+    "showroom.photo_alt": "Popcorn, drink and food equipment on display in the Coolex showroom",
+    "location.vijayawada": "Vijayawada",
+    "location.hyderabad": "Hyderabad",
+    "location.secunderabad": "Hyderabad / Secunderabad",
+    "location.ap": "Andhra Pradesh",
+    "location.telangana": "Telangana",
+    "location.vijayawada_state": "Vijayawada, Andhra Pradesh",
+    "location.secunderabad_state": "Secunderabad, Telangana",
+    "cta.title": "Let’s find your next machine.",
+    "cta.note": "Have a category in mind? Talk to Coolex about the right equipment, current details and a showroom visit.",
+    "catalogue.eyebrow": "The Coolex catalogue",
+    "catalogue.find": "Find your kind",
+    "catalogue.of": "of",
+    "catalogue.equipment": "equipment.",
+    "catalogue.description": "67 equipment categories. Original catalogues, real photos and video demonstrations. Start with a category or search for a machine.",
+    "catalogue.looking_for": "Looking for {name}?",
+    "catalogue.western": "Western dishwashers",
+    "catalogue.celfrost": "Celfrost equipment",
+    "catalogue.contact_note": "Talk to Coolex for details",
+    "filter.all": "All",
+    "filter.reset": "Reset filters",
+    "filter.clear": "Clear search",
+    "filter.family": "Filter by equipment family",
+    "sort.label": "Sort categories",
+    "sort.featured": "Catalogue order",
+    "sort.az": "Name: A–Z",
+    "sort.za": "Name: Z–A",
+    "search.label": "Search equipment",
+    "search.short": "Search",
+    "search.videos": "Search video demonstrations",
+    "search.video_placeholder": "Search demonstrations, e.g. fryers",
+    "search.placeholder": "Search equipment, e.g. fryers, ice cream, coffee…",
+    "search.title": "What are you looking for?",
+    "search.close": "Close search",
+    "search.all_label": "Search all equipment and business collections",
+    "search.global_placeholder": "Try fryers, ice cream, coffee…",
+    "search.note": "Find a category. Explore its catalogues, photos & videos.",
+    "search.all_results": "View all results",
+    "search.popular": "Popular starting points",
+    "search.no_matches": "No matching collections. Try a different word, or browse all equipment.",
+    "search.matches_one": "{count} matching collection",
+    "search.matches_other": "{count} matching collections",
+    "results.categories_one": "{count} category",
+    "results.categories_other": "{count} categories",
+    "results.videos_one": "{count} demonstration",
+    "results.videos_other": "{count} demonstrations",
+    "results.query": "for “{query}”",
+    "results.displayed": "{count} categories displayed",
+    "empty.title": "Nothing here just yet.",
+    "empty.note": "Try a shorter search or choose another equipment family.",
+    "media.catalogues": "Catalogues",
+    "media.collection": "Collection",
+    "media.photos": "Photos",
+    "media.videos": "Videos",
+    "media.original_collection": "Original collection",
+    "media.sheets": "Catalogue sheets",
+    "media.original_artwork": "Original artwork",
+    "media.view_sheet": "View sheet {index}",
+    "media.sheet_label": "Sheet {index}",
+    "media.sheet_count": "Sheet {index} of {count}",
+    "media.previous_sheet": "Previous catalogue sheet",
+    "media.next_sheet": "Next catalogue sheet",
+    "media.enlarge": "Enlarge & zoom",
+    "media.enlarge_sheet": "Enlarge catalogue sheet {index}",
+    "media.sheet_alt": "{title} — original catalogue sheet {index}",
+    "media.photo_note": "A closer look at the original equipment and collection photos.",
+    "media.photo_count": "{count} images · Select any photo to enlarge",
+    "media.video_note": "Select a video to load the original player. YouTube playback requires an internet connection.",
+    "media.disclaimer": "Original Coolex artwork and media. Confirm current prices, specifications and availability with the showroom.",
+    "media.summary": "Found something for your business? Save this category or talk to our showroom about the details.",
+    "media.tabs_label": "{title} media",
+    "media.enlarge_photo": "Enlarge {title} photo {index}",
+    "media.photo_alt": "{title} · photo {index}",
+    "media.close_viewer": "Close image viewer",
+    "media.image_alt": "{title} — original image {index}",
+    "media.viewer_help": "{index} of {count} · Arrow keys to browse · + / − to zoom",
+    "media.previous_image": "Previous image",
+    "media.next_image": "Next image",
+    "media.zoom_out": "Zoom out",
+    "media.zoom_in": "Zoom in",
+    "media.fit": "Fit",
+    "media.original": "Original",
+    "media.image_count": "Image {index} of {count}",
+    "media.play": "Play {title}",
+    "media.video": "Video",
+    "media.from": "from {time}",
+    "media.demonstration": "{title} · demonstration {index}",
+    "media.showroom": "Coolex showroom",
+    "media.coolex_collection": "Coolex collection",
+    "media.tour": "Showroom tour",
+    "media.close_video": "Close video",
+    "media.unsupported": "Your browser does not support this video.",
+    "media.youtube_note": "Original YouTube video. Press play in the player. If it is unavailable, open it on YouTube.",
+    "media.local_note": "Original video. Use the player controls to play and seek.",
+    "media.open_youtube": "Open on YouTube",
+    "media.open_original": "Open original video",
+    "count.sheets_one": "{count} catalogue sheet",
+    "count.sheets_other": "{count} catalogue sheets",
+    "count.videos_one": "{count} video",
+    "count.videos_other": "{count} videos",
+    "related.eyebrow": "Keep exploring",
+    "related.ideas": "More ideas for your business.",
+    "related.equipment": "Build out your next idea.",
+    "ideas.eyebrow": "Something to get you started",
+    "ideas.menu": "A new menu.",
+    "ideas.possibility": "A new possibility.",
+    "ideas.description": "Browse the original Coolex business collections: menus, outlet photographs and equipment setups to help shape your next conversation.",
+    "ideas.photos": "Photos & inspiration",
+    "ideas.demos": "Catalogue & demonstrations",
+    "ideas.menu_link": "Explore the original menu",
+    "ideas.collection_alt": "{title} — original collection",
+    "contact.eyebrow": "Let’s talk about your idea",
+    "contact.good_things": "Good things start",
+    "contact.conversation": "with a conversation.",
+    "contact.description": "Explore equipment in person or speak to Coolex about your next food business. Call ahead to plan your visit.",
+    "contact.vijayawada": "Visit Coolex in Vijayawada. Call the team for equipment enquiries and the latest visiting details.",
+    "contact.hyderabad": "Visit our Hyderabad / Secunderabad location. Speak to the team before making your journey.",
+    "contact.photo_alt": "Food equipment on display at the original Coolex showroom",
+    "contact.questions": "Bring your questions.",
+    "contact.ideas": "And your big ideas.",
+    "contact.hours": "Listed visiting hours: Monday–Saturday, 10:00–7:00. Please call to confirm your visit.",
+    "contact.shortlist": "Have a few categories in mind? Keep them together in your shortlist before you call.",
+    "contact.discover": "Keep discovering",
+    "contact.language": "Watch in your language.",
+    "contact.channels": "Explore the original Coolex YouTube channels.",
+    "shortlist.eyebrow": "Keep your ideas together",
+    "shortlist.idea": "Your next big idea,",
+    "shortlist.shape": "taking shape.",
+    "shortlist.description": "Save equipment categories as you explore. Your shortlist stays in this browser, ready for a conversation with the showroom.",
+    "shortlist.saved": "Saved to shortlist",
+    "shortlist.save": "Save to shortlist",
+    "shortlist.save_label": "Save {title} to shortlist",
+    "shortlist.remove_label": "Remove {title} from shortlist",
+    "shortlist.count_one": "{count} saved category",
+    "shortlist.count_other": "{count} saved categories",
+    "shortlist.header_count": "Shortlist · {count} saved",
+    "shortlist.copy": "Copy category list",
+    "shortlist.nothing_sent": "Nothing is sent automatically.",
+    "shortlist.empty_title": "A little space for your next idea.",
+    "shortlist.empty_note": "Save a category using the bookmark icon. It will be here when you’re ready to talk to Coolex.",
+    "shortlist.storage": "Browser storage is unavailable. Your list will last for this visit.",
+    "shortlist.removed": "Removed from your shortlist.",
+    "shortlist.added": "Saved to your shortlist.",
+    "shortlist.view": "View shortlist",
+    "shortlist.copy_title": "My Coolex equipment shortlist:",
+    "shortlist.copy_contact": "Contact:",
+    "shortlist.copied": "Category list copied. Nothing has been sent.",
+    "shortlist.copy_dialog": "Copy your category list",
+    "library.eyebrow": "The equipment, in action",
+    "library.play": "Press play.",
+    "library.possibilities": "Explore the possibilities.",
+    "library.description": "Discover original Coolex demonstrations, equipment walkthroughs and showroom videos. Choose a family to find what interests you.",
+    "library.note": "YouTube loads only when you press play. Video availability is managed by the original publisher.",
+    "library.more": "Show more videos · {count} remaining",
+    "error.eyebrow": "Let’s get you back on track",
+    "error.page": "That page isn’t here.",
+    "error.note": "Explore the equipment catalogue or find a Coolex showroom.",
+    "error.load": "We couldn’t load the catalogue.",
+    "error.reload": "Please reload the page. You can also call Coolex on {phone}.",
+    "meta.home": "Food equipment. Big possibilities.",
+    "meta.explore": "Explore",
+    "meta.contact": "Visit a Coolex showroom",
+    "access.skip": "Skip to content",
+    "access.breadcrumb": "Breadcrumb",
+    "page.description": "Explore {title} through original catalogue sheets, equipment photos and video demonstrations where available.",
+    "catalogue.heading": "Find your kind of equipment.",
+    "media.empty_title": "Let’s talk equipment.",
+    "media.empty_note": "Contact the showroom for details about this collection.",
+    "heritage.eyebrow": "From the Coolex archives",
+    "heritage.title": "Earlier Coolex",
+    "heritage.teaser_title": "Same Coolex. A different era.",
+    "heritage.teaser_note": "The old logo. The red carpet. Those image buttons. Take a little trip back through an earlier Coolex website.",
+    "heritage.explore": "Explore the earlier website",
+    "heritage.classic": "Classic website",
+    "heritage.preview": "Preview of the original Coolex home page",
+    "heritage.open_capsule": "Open the time capsule",
+    "heritage.description": "A little piece of Coolex history. Explore seven pages from the earlier website, with its original artwork, layout and character preserved.",
+    "heritage.choose_page": "Choose a preserved page",
+    "heritage.historical_note": "Historical website exhibit. Contact details, offers and prices belong to the earlier site; its live chat and enquiry forms are inactive here.",
+    "heritage.current_site": "Current enquiries",
+    "heritage.saved": "Preserved {date}",
+    "heritage.view_size": "Archive viewing size",
+    "heritage.fit": "Fit page",
+    "heritage.original_size": "Original size",
+    "heritage.source": "Original source",
+    "heritage.frame_title": "Classic Coolex archive — {page}",
+    "heritage.scroll_hint": "Scroll inside the old page to explore. Choose Original size for a closer look.",
+    "heritage.preservation": "About this preserved edition",
+    "heritage.preservation_note": "The original HTML and {count} available source assets are saved separately. This exhibit retains the old appearance and restores local photo browsing. Some source files are unavailable; uncaptured secondary links show a note rather than leaving the archive.",
+    "heritage.date_note": "The original publication date is not established. The date shown is when these pages were preserved, not the year this design was launched. Original page content remains in its source language.",
+    "heritage.viewing": "Viewing {page}",
+    "heritage.footer": "Earlier Coolex · the archive",
+    "heritage.page.home": "Welcome",
+    "heritage.page.about": "About Coolex",
+    "heritage.page.products": "Products",
+    "heritage.page.achievements": "Achievements",
+    "heritage.page.gallery": "Gallery",
+    "heritage.page.contact": "Contact",
+    "heritage.note.home": "The earlier logo, red-carpet welcome and original image navigation.",
+    "heritage.note.about": "The company story and team introductions as presented on the earlier site.",
+    "heritage.note.products": "The original product artwork and image-led catalogue page.",
+    "heritage.note.achievements": "The earlier collection of awards, certificates and achievement photographs.",
+    "heritage.note.gallery": "Preserved location and factory photographs, with local browsing controls.",
+    "heritage.note.contact": "The old contact page, retained as history rather than a current enquiry form.",
+    "heritage.page.landing": "Original home",
+    "heritage.note.landing": "The original entry page, with its HTML signpost, animated artwork and Cone Pizza graphics.",
+    "heritage.page_count": "{count} preserved pages"
+  },
+  "groups": {
+    "All": "All",
+    "Cooking": "Cooking",
+    "Snacks & sweets": "Snacks & sweets",
+    "Bakery & preparation": "Bakery & preparation",
+    "Beverages": "Beverages",
+    "Ice cream": "Ice cream",
+    "Display & refrigeration": "Display & refrigeration",
+    "Games & entertainment": "Games & entertainment",
+    "Business ideas": "Business ideas",
+    "Showrooms": "Showrooms"
+  },
+  "pages": {
+    "/": {
+      "title": "Commercial food equipment",
+      "description": "Explore commercial food equipment through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/atlantiscoffee-teavending-machine": {
+      "title": "Atlantis coffee & tea vending",
+      "description": "Explore atlantis coffee & tea vending through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/automaticfriedrice-wokmachines": {
+      "title": "Automatic fried rice & wok machines",
+      "description": "Explore automatic fried rice & wok machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/bainmarie-currypoint": {
+      "title": "Bain marie & curry counters",
+      "description": "Explore bain marie & curry counters through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/bakeryovens": {
+      "title": "Bakery ovens",
+      "description": "Explore bakery ovens through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/bbqmachines": {
+      "title": "Barbecue machines",
+      "description": "Explore barbecue machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/biryani-stoves": {
+      "title": "Biryani stoves",
+      "description": "Explore biryani stoves through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/blenders": {
+      "title": "Blenders",
+      "description": "Explore blenders through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/breading-table": {
+      "title": "Breading tables",
+      "description": "Explore breading tables through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/cakefinishing-machine": {
+      "title": "Cake finishing machines",
+      "description": "Explore cake finishing machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/candyflossmachine": {
+      "title": "Candyfloss machines",
+      "description": "Explore candyfloss machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/cansealing-machine": {
+      "title": "Can sealing machines",
+      "description": "Explore can sealing machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/chicken-meat-grillers": {
+      "title": "Chicken & meat grillers",
+      "description": "Explore chicken & meat grillers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/chicxpress-fried-chicken-franchise": {
+      "title": "Chicxpress concept",
+      "description": "Explore the original fried chicken concept and its visual catalogue."
+    },
+    "/chimneycake-kurthosmachine": {
+      "title": "Chimney cake machines",
+      "description": "Explore chimney cake machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/chocolatefountain": {
+      "title": "Chocolate fountains",
+      "description": "Explore chocolate fountains through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/chocolatefudgedispenser": {
+      "title": "Chocolate fudge dispensers",
+      "description": "Explore chocolate fudge dispensers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/chocolatewarmers": {
+      "title": "Chocolate warmers",
+      "description": "Explore chocolate warmers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/churros-machine-filler": {
+      "title": "Churros machines & fillers",
+      "description": "Explore churros machines & fillers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/coconut-cutter": {
+      "title": "Coconut cutters",
+      "description": "Explore coconut cutters through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/contact-details": {
+      "title": "Visit a Coolex showroom",
+      "description": "Explore visit a coolex showroom through original catalogue sheets."
+    },
+    "/coolexcoffeeteamilkboilersetup": {
+      "title": "Coffee & tea shop setup",
+      "description": "Explore the original coffee, tea and milk boiler setup collection."
+    },
+    "/cooling-juice-dispensers": {
+      "title": "Cooling juice dispensers",
+      "description": "Explore cooling juice dispensers through original catalogue sheets, equipment photos."
+    },
+    "/copy-of-chicxpress": {
+      "title": "Chicxpress outlet photos",
+      "description": "A closer look at the original outlet photographs."
+    },
+    "/copy-of-fresh-drink-outlet-menu": {
+      "title": "Frosty Bee menu",
+      "description": "Ice cream, shakes and fruit gelato menu inspiration."
+    },
+    "/donut-machines": {
+      "title": "Donut machines",
+      "description": "Explore donut machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/eggroll": {
+      "title": "Egg roll machines",
+      "description": "Explore egg roll machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/foodtimer-8channels": {
+      "title": "Eight-channel food timers",
+      "description": "Explore eight-channel food timers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/frenchfries-springpotato-floweronion-longfries": {
+      "title": "Fries, spring potato & onion cutters",
+      "description": "Explore fries, spring potato & onion cutters through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/freshdrinkoutletmenu": {
+      "title": "Fresh Drink outlet menu",
+      "description": "Explore the original drink menu and serving ideas."
+    },
+    "/fryers": {
+      "title": "Deep fryers",
+      "description": "Explore deep fryers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/gamemachines-fallingsticks-minidoll": {
+      "title": "Game machines",
+      "description": "Explore game machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/gelato-machines": {
+      "title": "Gelato machines",
+      "description": "Explore gelato machines through original catalogue sheets, equipment photos."
+    },
+    "/griddles": {
+      "title": "Electric griddles",
+      "description": "Explore electric griddles through original catalogue sheets, equipment photos."
+    },
+    "/haiermicrooven-prestigeinduction": {
+      "title": "Microwaves & induction cookers",
+      "description": "Explore microwaves & induction cookers through original catalogue sheets."
+    },
+    "/hoshizakisteelundercounters-2-4d": {
+      "title": "Hoshizaki steel undercounters",
+      "description": "Explore hoshizaki steel undercounters through original catalogue sheets."
+    },
+    "/hotdogroller": {
+      "title": "Hot dog rollers",
+      "description": "Explore hot dog rollers through original catalogue sheets, equipment photos."
+    },
+    "/ice-crushers": {
+      "title": "Ice crushers",
+      "description": "Explore ice crushers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/manual-soda-machine": {
+      "title": "Manual soda machines",
+      "description": "Explore manual soda machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/marination-machine": {
+      "title": "Marination machines",
+      "description": "Explore marination machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/milkboilers-coffeebrewer-teabrewer": {
+      "title": "Milk boilers, coffee & tea brewers",
+      "description": "Explore milk boilers, coffee & tea brewers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/oilfilter": {
+      "title": "Oil filters",
+      "description": "Explore oil filters through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/orengejuice-machine": {
+      "title": "Orange juice machines",
+      "description": "Explore orange juice machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/panipuridispenser-mocktaildispen": {
+      "title": "Pani puri & mocktail dispensers",
+      "description": "Explore pani puri & mocktail dispensers through original catalogue sheets."
+    },
+    "/panroll-icecream-machine": {
+      "title": "Pan roll ice cream machines",
+      "description": "Explore pan roll ice cream machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/pizzacone": {
+      "title": "Cone pizza machines",
+      "description": "Explore cone pizza machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/pizzaovens": {
+      "title": "Pizza ovens & dough rollers",
+      "description": "Explore pizza ovens & dough rollers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/planetary-spiralmixers": {
+      "title": "Planetary & spiral mixers",
+      "description": "Explore planetary & spiral mixers through original catalogue sheets, equipment photos."
+    },
+    "/popcornmachine": {
+      "title": "Popcorn machines",
+      "description": "Explore popcorn machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/popsicle-icecream-machine": {
+      "title": "Popsicle machines",
+      "description": "Explore popsicle machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/sandwitchgriller": {
+      "title": "Sandwich grillers",
+      "description": "Explore sandwich grillers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/shawarma-machine-shawarma-cutter": {
+      "title": "Shawarma machines & cutters",
+      "description": "Explore shawarma machines & cutters through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/snow-icebingsu-machine": {
+      "title": "Snow ice & bingsu machines",
+      "description": "Explore snow ice & bingsu machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/soda-machine": {
+      "title": "Soda machines",
+      "description": "Explore soda machines through original catalogue sheets, equipment photos."
+    },
+    "/soft-icecream-machines": {
+      "title": "Soft ice cream machines",
+      "description": "Explore soft ice cream machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/souppot": {
+      "title": "Soup pots",
+      "description": "Explore soup pots through original catalogue sheets and video demonstrations."
+    },
+    "/steeltables-sinks": {
+      "title": "Steel tables & sinks",
+      "description": "Explore steel tables & sinks through original catalogue sheets."
+    },
+    "/sugarcane-machines": {
+      "title": "Sugarcane juice machines",
+      "description": "Explore sugarcane juice machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/sugarcane-peeler": {
+      "title": "Sugarcane peelers",
+      "description": "Explore sugarcane peelers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/sujatha-mixers": {
+      "title": "Sujatha mixers",
+      "description": "Explore sujatha mixers through original catalogue sheets, equipment photos."
+    },
+    "/sweetcorn": {
+      "title": "Sweet corn & momo steamers",
+      "description": "Explore sweet corn & momo steamers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/tabletop-coolingdisplay": {
+      "title": "Tabletop cooling displays",
+      "description": "Explore tabletop cooling displays through original catalogue sheets, equipment photos."
+    },
+    "/tabletop-displaywarmers": {
+      "title": "Tabletop display warmers",
+      "description": "Explore tabletop display warmers through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/ufoburger-cuppizza": {
+      "title": "UFO burgers & cup pizza",
+      "description": "Explore ufo burgers & cup pizza through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/waffle": {
+      "title": "Waffle machines",
+      "description": "Explore waffle machines through original catalogue sheets, equipment photos and video demonstrations."
+    },
+    "/westernbackbarchillers": {
+      "title": "Western back bar chillers",
+      "description": "Explore western back bar chillers through original catalogue sheets."
+    },
+    "/westernbakerycool-hot-plainshowcase": {
+      "title": "Western bakery showcases",
+      "description": "Explore western bakery showcases through original catalogue sheets and video demonstrations."
+    },
+    "/westerndeepfreezers": {
+      "title": "Western deep freezers",
+      "description": "Explore western deep freezers through original catalogue sheets."
+    },
+    "/westernicecubemachines": {
+      "title": "Western ice cube machines",
+      "description": "Explore western ice cube machines through original catalogue sheets."
+    },
+    "/westernmedicalrefrigeartion": {
+      "title": "Western medical refrigeration",
+      "description": "Explore western medical refrigeration through original catalogue sheets."
+    },
+    "/westernpreperatintables": {
+      "title": "Western preparation tables",
+      "description": "Explore western preparation tables through original catalogue sheets."
+    },
+    "/westernstoragewatercoolers": {
+      "title": "Western water coolers",
+      "description": "Explore western water coolers through original catalogue sheets."
+    },
+    "/westernsupermarketfreezer-chiller": {
+      "title": "Western supermarket freezers & chillers",
+      "description": "Explore western supermarket freezers & chillers through original catalogue sheets."
+    },
+    "/westernvisicoolers": {
+      "title": "Western visi coolers",
+      "description": "Explore western visi coolers through original catalogue sheets and video demonstrations."
+    }
+  }
+}

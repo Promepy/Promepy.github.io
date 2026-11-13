@@ -1,0 +1,999 @@
+/* CSS Document */
+.body{
+	margin: 0px;
+	padding: 0px;
+
+}
+.lft_bg{
+	background-image: url("/Coolex/heritage/archive/assets/566eee63bef34ed4b796ec0e.jpg");
+	background-repeat: repeat-y;
+
+}
+.rgt_bg{
+	background-image: url("/Coolex/heritage/archive/assets/f83ebafec8ef3d98620e339b.jpg");
+	background-repeat: repeat-y;
+
+}
+.bg_txt{
+	background-image: url("/Coolex/heritage/archive/assets/6f349c87bb5e77ab80827a1a.jpg");
+	background-repeat: repeat-y;
+
+}
+.contact_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+
+
+}
+.small_hdg{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+	line-height: 24px;
+
+
+}
+.bg_gallery{
+	background-image: url("/Coolex/heritage/archive/assets/98ab8cb69b138cfe8a797aad.jpg");
+	background-repeat: repeat-y;
+
+
+
+}
+.link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+
+}
+.link:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+
+}
+.txt_filed{
+	font-family: tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+
+}
+.small_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+
+}
+.bank_bg{
+	background-image: url("/Coolex/heritage/archive/assets/324a01b8696874c75b478d50.jpg");
+	background-repeat: no-repeat;
+}
+.bank_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 20px;
+}
+.white_boldtxt{
+}
+.sitemap_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.sitemap_txt:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #e40000;
+	text-decoration: underline;
+}
+.sitemap_lft{
+	background-image: url("/Coolex/heritage/archive/assets/b4890971a2ed50d61a376629.jpg");
+	background-repeat: repeat-y;
+}
+.sitemap_rgt{
+	background-image: url("/Coolex/heritage/archive/assets/3b9a7af0d18cb9d8fe264dce.jpg");
+	background-repeat: repeat-y;
+}
+.sitemap_links{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.sitemap_links:hover{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #878787;
+	text-decoration: none;
+}
+.sitemap_sublinks{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: #606060;
+	text-decoration: none;
+	line-height: 22px;
+}
+.sitemap_sublinks:hover{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.sitemap_products_links{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #606060;
+	text-decoration: none;
+}
+.sugarcane{
+	background-image: url("/Coolex/heritage/archive/assets/277b51c7588714bf6ba3d568.jpg");
+	background-repeat: no-repeat;
+}
+.content_txt_2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 19px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+}
+.coconut_bg{
+	background-image: url("/Coolex/heritage/archive/assets/07eadc736d83bd5b94b9cb08.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi_bg{
+	background-image: url("/Coolex/heritage/archive/assets/e88a4d41483c8eed52b4ed2a.jpg");
+	background-repeat: no-repeat;
+}
+.sweet_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8d5abb208f5c6ea4d6cecda5.jpg");
+	background-repeat: no-repeat;
+}
+.popcorn_bg{
+	background-image: url("/Coolex/heritage/archive/assets/222ae146fd6e05b358bfa703.jpg");
+	background-repeat: no-repeat;
+}
+.soda_bg{
+	background-image: url("/Coolex/heritage/archive/assets/009954ba947a2fb1fb026fbd.jpg");
+	background-repeat: no-repeat;
+}
+.sugarcanday_bg{
+	background-image: url("/Coolex/heritage/archive/assets/b1945ea03ab8c4a4fef47bc6.jpg");
+	background-repeat: no-repeat;
+}
+.chocolate_bg{
+	background-image: url("/Coolex/heritage/archive/assets/02a9e7f9efa1ad1b6754bca2.jpg");
+	background-repeat: no-repeat;
+}
+.hot_bg{
+	background-image: url("/Coolex/heritage/archive/assets/ace00266bdc8eefb5afceab6.jpg");
+	background-repeat: no-repeat;
+}
+.orange_bg{
+	background-image: url("/Coolex/heritage/archive/assets/e6bb710a30774d852c213c4a.jpg");
+	background-repeat: no-repeat;
+}
+.dount_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8ad0e3ea53ad43ed24a33255.jpg");
+	background-repeat: no-repeat;
+}
+.duplicate_bg{
+	background-image: url("/Coolex/heritage/archive/assets/695c0d9250a156c45c0e32be.jpg");
+	background-repeat: no-repeat;
+}
+.wighthight_bg{
+	background-image: url("/Coolex/heritage/archive/assets/c631e1f3ba99a8f9508cd1ca.jpg");
+	background-repeat: no-repeat;
+}
+.printing_bg{
+	background-image: url("/Coolex/heritage/archive/assets/216d7990c91ccee3ce31957e.jpg");
+	background-repeat: no-repeat;
+}
+.stamp_bg{
+	background-image: url("/Coolex/heritage/archive/assets/d779e6cda8e7ae3152f26b9d.jpg");
+	background-repeat: no-repeat;
+}
+.temporary_bg{
+	background-image: url("/Coolex/heritage/archive/assets/fef6fbd0b629c26bb00401c5.jpg");
+	background-repeat: no-repeat;
+}
+.nailart_bg{
+	background-image: url("/Coolex/heritage/archive/assets/7a6127c0f32ca0e144be8480.jpg");
+	background-repeat: no-repeat;
+}
+.storagewater_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8df3d64364c7e4da4f5181f8.jpg");
+	background-repeat: no-repeat;
+}
+.sugarcane-equipment_bg_2page{
+	background-image: url("/Coolex/heritage/archive/assets/b9ede02d4cf6d09de2a17bb5.jpg");
+	background-repeat: no-repeat;
+}
+.cane-crusher_bg2page{
+	background-image: url("/Coolex/heritage/archive/assets/0cb25bd975713edf863ab976.jpg");
+	background-repeat: no-repeat;
+}
+.Sugar-cane-juice-_bg_4page{
+	background-image: url("/Coolex/heritage/archive/assets/1b1936ca28b1610f1e2f7ff0.jpg");
+	background-repeat: no-repeat;
+}
+.Domestic-sugar-cane_bg_6page{
+	background-image: url("/Coolex/heritage/archive/assets/41fdce52456dca54b344c412.jpg");
+	background-repeat: no-repeat;
+}
+.Sugar-cane-juice-cart_6page{
+	background-image: url("/Coolex/heritage/archive/assets/0b64d14dbd4a74df1ba78398.jpg");
+	background-repeat: no-repeat;
+}
+.cane-juicer-machine_7page{
+	background-image: url("/Coolex/heritage/archive/assets/858f35493e5d51c18903ede7.jpg");
+	background-repeat: no-repeat;
+}
+.Sugar-cane-juicer_7page{
+	background-image: url("/Coolex/heritage/archive/assets/042a213f1de9339509b525e2.jpg");
+	background-repeat: no-repeat;
+}
+.sweetcorn-mobile{
+	background-image: url("/Coolex/heritage/archive/assets/b4868fe9175eaec24719e17f.jpg");
+	background-repeat: no-repeat;
+}
+.corn-making{
+	background-image: url("/Coolex/heritage/archive/assets/e0b6230b043c6694a5fa5d15.jpg");
+	background-repeat: no-repeat;
+}
+.sweetcorn_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8abaadd787f1d678cce1fbc5.jpg");
+	background-repeat: repeat-x;
+}
+.corn-maker{
+	background-image: url("/Coolex/heritage/archive/assets/860a63990c0a8d301a369aac.jpg");
+	background-repeat: no-repeat;
+}
+.corn-machine-in-india{
+	background-image: url("/Coolex/heritage/archive/assets/03adab13a4390c46e93426eb.jpg");
+	background-repeat: no-repeat;
+}
+.Sweet-corn-equipment{
+	background-image: url("/Coolex/heritage/archive/assets/ac4d63b9d5ca4148035868e7.jpg");
+	background-repeat: no-repeat;
+}
+.Corn-machine-buy{
+	background-image: url("/Coolex/heritage/archive/assets/7b0ec567c28489ddff5bbf41.jpg");
+	background-repeat: no-repeat;
+}
+.Corn-retail-machine{
+	background-image: url("/Coolex/heritage/archive/assets/e34a30f380f04408a75a6125.jpg");
+	background-repeat: no-repeat;
+}
+.Corn-machines{
+	background-image: url("/Coolex/heritage/archive/assets/2d61bb653d228cbf172977bd.jpg");
+	background-repeat: no-repeat;
+}
+.sweetcorn_bg1{
+	background-image: url("/Coolex/heritage/archive/assets/27d8e1b8917d64232f550867.jpg");
+	background-repeat: repeat-x;
+}
+.Domestic-sweetcorn-cooking{
+	background-image: url("/Coolex/heritage/archive/assets/51a2562df4d61145a5440499.jpg");
+	background-repeat: no-repeat;
+}
+.Domestic-sweetcorn-kiosk{
+	background-image: url("/Coolex/heritage/archive/assets/cbed8a624a06abb52c0bae80.jpg");
+	background-repeat: no-repeat;
+}
+.Corn-machine-India{
+	background-image: url("/Coolex/heritage/archive/assets/312df4d9a2480a7db88a95cb.jpg");
+	background-repeat: no-repeat;
+}
+.corn-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/9abd891df352876f9e8c5073.jpg");
+	background-repeat: repeat-x;
+}
+.corn-club_bg{
+	background-image: url("/Coolex/heritage/archive/assets/17b4ac26b9d1c6a0c22c8cc3.jpg");
+	background-repeat: repeat-x;
+}
+.corn_bg{
+	background-image: url("/Coolex/heritage/archive/assets/adf7f866ed0d214e4c9ce4f2.jpg");
+	background-repeat: repeat-x;
+}
+.sweetcorn-cart-machine{
+	background-image: url("/Coolex/heritage/archive/assets/9417a8255d36b99f2846b464.jpg");
+	background-repeat: no-repeat;
+}
+.Sumos-sweetcorn-steamer{
+	background-image: url("/Coolex/heritage/archive/unavailable.svg");
+	background-repeat: no-repeat;
+}
+.sweetcorn-machine{
+}
+.corn-club-sweetcorn-machine{
+	background-image: url("/Coolex/heritage/archive/assets/23d4876e2922d77f7ceb9af7.jpg");
+	background-repeat: repeat-x;
+}
+.Sumos-sweetcorn-cart{
+	background-image: url("/Coolex/heritage/archive/assets/f400abfcf5ec98cac305df9b.jpg");
+	background-repeat: no-repeat;
+}
+.Sweet-Corn-Cob{
+	background-image: url("/Coolex/heritage/archive/assets/ae6390e136e5ffa8bfb23bee.jpg");
+	background-repeat: no-repeat;
+}
+.hot-air-popcorn-makers_bg{
+	background-image: url("/Coolex/heritage/archive/assets/a16a88bb3bc56f5eb88653d4.jpg");
+	background-repeat: no-repeat;
+}
+.popper-popcorn{
+	background-image: url("/Coolex/heritage/archive/assets/9c4d67959dda5af0ac5bcdae.jpg");
+	background-repeat: no-repeat;
+}
+.commercial-popcorn_bg{
+	background-image: url("/Coolex/heritage/archive/assets/cf9801ad42444ccd503d81fa.jpg");
+	background-repeat: no-repeat;
+}
+.steam-popcorncorn_bg{
+	background-image: url("/Coolex/heritage/archive/assets/0a286207c2c3a2f2b8bfd634.jpg");
+	background-repeat: no-repeat;
+}
+.popcorn-supplies_bg{
+	background-image: url("/Coolex/heritage/archive/assets/4304d216be46d26c890d217a.jpg");
+	background-repeat: no-repeat;
+}
+.corns-popper_bg{
+	background-image: url("/Coolex/heritage/archive/assets/6a82dc9fcea423cbd2bb3986.jpg");
+	background-repeat: no-repeat;
+}
+.salted-popcorn-calories_bg{
+	background-image: url("/Coolex/heritage/archive/assets/6754fa00aefba7582c8b571c.jpg");
+	background-repeat: no-repeat;
+}
+.coconut-maker-machine{
+	background-image: url("/Coolex/heritage/archive/assets/6524092f14ceef1b66bbc317.jpg");
+	background-repeat: no-repeat;
+}
+.coconut-juice-machine{
+	background-image: url("/Coolex/heritage/archive/assets/cc52127cddd1422fb9fc2531.jpg");
+	background-repeat: no-repeat;
+}
+.coconut-crushing-machine{
+	background-image: url("/Coolex/heritage/archive/assets/34bb3308e43cf6872d56fdfa.jpg");
+	background-repeat: no-repeat;
+}
+.white_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: justify;
+	line-height: 18px;
+}
+.coconut-machines{
+	background-image: url("/Coolex/heritage/archive/assets/07994241963e5ce5e02475b9.jpg");
+	background-repeat: no-repeat;
+}
+.coconut-crusher-machife_bg{
+	background-image: url("/Coolex/heritage/archive/assets/ece8a973162da8dcee780aa3.jpg");
+	background-repeat: no-repeat;
+}
+.Kulfi-freezer_bg{
+	background-image: url("/Coolex/heritage/archive/assets/4eb6d1683f658cd0662d8ae8.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi-from-India_bg{
+	background-image: url("/Coolex/heritage/archive/assets/e1a5d23ba44116a79f9a59d0.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi_bg{
+	background-image: url("/Coolex/heritage/archive/assets/2503b31826e628b83a3a4808.jpg");
+	background-repeat: no-repeat;
+}
+.make-kulfi_bg{
+	background-image: url("/Coolex/heritage/archive/assets/11ea1af6ae31f22a8b7e574f.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi-flavors_bg{
+	background-image: url("/Coolex/heritage/archive/assets/4e9ddbe7db8abd964b74066d.jpg");
+	background-repeat: no-repeat;
+}
+.mango-kulfi-ice-cream_bg{
+	background-image: url("/Coolex/heritage/archive/assets/ab229a5ea8fa8239262c0754.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi-machine-bg{
+	background-image: url("/Coolex/heritage/archive/assets/4d492a8d2bf75a3f9a50ff16.jpg");
+	background-repeat: no-repeat;
+}
+.soda-coolers_bg{
+	background-image: url("/Coolex/heritage/archive/assets/d514362ee0fb0d47874867c9.jpg");
+	background-repeat: no-repeat;
+}
+.soda-machine-distributors_bg{
+	background-image: url("/Coolex/heritage/archive/assets/ba127b25d84ab11fa2547abe.jpg");
+	background-repeat: no-repeat;
+}
+.soda-equipment_bg{
+	background-image: url("/Coolex/heritage/archive/assets/66564a35dc872296e4ba8528.jpg");
+	background-repeat: no-repeat;
+}
+.sodaa_bg{
+	background-image: url("/Coolex/heritage/archive/assets/3bc96c47515d87b98dd5dd0f.jpg");
+	background-repeat: no-repeat;
+}
+.soda_bg1{
+	background-image: url("/Coolex/heritage/archive/assets/398b4c3e4290119066394d64.jpg");
+	background-repeat: no-repeat;
+}
+.lemon-soda-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/60cab60245e974eb6bd6e1e0.jpg");
+	background-repeat: no-repeat;
+}
+.vending-soda-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/5b459bd2b5f9012d9012311c.jpg");
+	background-repeat: no-repeat;
+}
+
+.Candyfloss_bg{
+	background-image: url("/Coolex/heritage/archive/assets/6187e11e0ef90c4009b300f9.jpg");
+	background-repeat: no-repeat;
+}
+.candyfloss-equipment_bg{
+	background-image: url("/Coolex/heritage/archive/assets/4918d79018807000af6459de.jpg");
+	background-repeat: no-repeat;
+}
+.sugarcany-kiosk_bg{
+	background-image: url("/Coolex/heritage/archive/assets/08c0ceafb04ab549cd49ec20.jpg");
+	background-repeat: no-repeat;
+}
+.sugarcandy-maker_bg{
+	background-image: url("/Coolex/heritage/archive/assets/a09750082cb21957c5871116.jpg");
+	background-repeat: no-repeat;
+}
+.Sugarcandy_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8cd8c608f84f38b211891c93.jpg");
+	background-repeat: no-repeat;
+}
+.ice-maker_bg{
+	background-image: url("/Coolex/heritage/archive/assets/20b4c02ebb610d2574ed5e12.jpg");
+	background-repeat: no-repeat;
+}
+.ice-cube-maker_bg{
+	background-image: url("/Coolex/heritage/archive/assets/44ff41034f67ae01498d0d93.jpg");
+	background-repeat: no-repeat;
+}
+.ice-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/45e0c94c02f2b339c3c99234.jpg");
+	background-repeat: no-repeat;
+}
+.ice-flaker-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/a342f4c2015f2dabcedbf6f2.jpg");
+	background-repeat: no-repeat;
+}
+.ice-cream-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/e093613145d3291ba33a0a02.jpg");
+	background-repeat: no-repeat;
+}
+.restaurant-ice-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/c4d771963897ac259ae2099c.jpg");
+	background-repeat: no-repeat;
+}
+.snowy-ice-gola_bg{
+	background-image: url("/Coolex/heritage/archive/assets/a3f058fce1b1c82b8906d4c3.jpg");
+	background-repeat: no-repeat;
+}
+.ice-goal-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/7e60b77b878802018c2eec5c.jpg");
+	background-repeat: no-repeat;
+}
+.crushed-ice-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/2954ea07af1c734c1b613937.jpg");
+	background-repeat: no-repeat;
+}
+.hotdog_bg{
+	background-image: url("/Coolex/heritage/archive/assets/3eeeb8f334bc059872624a51.jpg");
+	background-repeat: no-repeat;
+}
+.hot-dog-maker_bg{
+	background-image: url("/Coolex/heritage/archive/assets/305048bb166b545f59ca1b6a.jpg");
+	background-repeat: no-repeat;
+}
+.commercial-hot-dog-steamers_bg{
+	background-image: url("/Coolex/heritage/archive/assets/f20cdda5170dcfd7486da019.jpg");
+	background-repeat: no-repeat;
+}
+.hotdog-bun-steamer_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8fcae4df758c621a4a2be1ec.jpg");
+	background-repeat: no-repeat;
+}
+.hot-dog-cart_bg{
+	background-image: url("/Coolex/heritage/archive/assets/d5b745da3352c4ea27522735.jpg");
+	background-repeat: no-repeat;
+}
+.nail-care_bg{
+	background-image: url("/Coolex/heritage/archive/assets/c87707c6e1dc458bf2b3c742.jpg");
+	background-repeat: no-repeat;
+}
+.nail-fake_bg{
+	background-image: url("/Coolex/heritage/archive/assets/305cdedd6f03e46cf0c8de1c.jpg");
+	background-repeat: no-repeat;
+}
+.painting-nail-art_bg{
+	background-image: url("/Coolex/heritage/archive/assets/eea69cfd03d8dee55d9d2f22.jpg");
+	background-repeat: no-repeat;
+}
+.salon-nail-painter_bg{
+	background-image: url("/Coolex/heritage/archive/assets/e42593ee45a0d00be33b5f42.jpg");
+	background-repeat: no-repeat;
+}
+.nail-design_bg{
+	background-image: url("/Coolex/heritage/archive/assets/4a5e62f86a5a52ba9bad465e.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi_bg12{
+	background-image: url("/Coolex/heritage/archive/assets/6e6ef84047e573a4dff56858.jpg");
+	background-repeat: no-repeat;
+}
+.make-soft-ice-cream_bg{
+	background-image: url("/Coolex/heritage/archive/assets/1e4296afdc4a9ad8c5d401c7.jpg");
+	background-repeat: no-repeat;
+}
+.ice-cream-club_bg{
+	background-image: url("/Coolex/heritage/archive/assets/04860e910da60f20c65a1de5.jpg");
+	background-repeat: no-repeat;
+}
+.ice-cream-freezers_bg{
+	background-image: url("/Coolex/heritage/archive/assets/87e9b3269552c297206a0301.jpg");
+	background-repeat: no-repeat;
+}
+.ava-soft-ice-cream_bg{
+	background-image: url("/Coolex/heritage/archive/assets/22cf0509093295b7a39cec3b.jpg");
+	background-repeat: no-repeat;
+}
+.blank-keys_bg{
+	background-image: url("/Coolex/heritage/archive/assets/a7d0e5bb6fa897d5a9ee60a9.jpg");
+	background-repeat: no-repeat;
+}
+.arial_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: 16px;
+	text-align: justify;
+}
+.arial_txt1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 23px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+}
+.key-man-machine-orange_bg{
+	background-image: url("/Coolex/heritage/archive/assets/8970adc32d725338c4f7f93a.jpg");
+	background-repeat: no-repeat;
+}
+.duplicate-key-cost_bg{
+	background-image: url("/Coolex/heritage/archive/assets/5bea6d59b28ef3f21a315245.jpg");
+	background-repeat: no-repeat;
+}
+.master-key_bg{
+	background-image: url("/Coolex/heritage/archive/assets/de007f33f41eba32eeaae009.jpg");
+	background-repeat: no-repeat;
+}
+.emergency-locksmiths_bg{
+	background-image: url("/Coolex/heritage/archive/assets/7a137728723c05b3eff61724.jpg");
+	background-repeat: no-repeat;
+}
+.key-man_bg{
+	background-image: url("/Coolex/heritage/archive/assets/89ac00f27fa946b51b3f29e4.jpg");
+	background-repeat: no-repeat;
+}
+.weight-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/f179cbc9610c0d06d24014ee.jpg");
+	background-repeat: no-repeat;
+}
+.weight-machine_bg1{
+	background-image: url("/Coolex/heritage/archive/assets/5481c2205ea717961a421558.jpg");
+	background-repeat: no-repeat;
+}
+.body-spex-machines_bg{
+	background-image: url("/Coolex/heritage/archive/assets/17ca4be518acb617c67a726e.jpg");
+	background-repeat: no-repeat;
+}
+.body-spex-machines_bg1{
+	background-image: url("/Coolex/heritage/archive/assets/d48e6d6e2fd6c38019ce5571.jpg");
+	background-repeat: no-repeat;
+}
+.body-spex-machines_bg2{
+	background-image: url("/Coolex/heritage/archive/assets/8ed22541a5de518de3e20311.jpg");
+	background-repeat: no-repeat;
+}
+.height-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/6b91c007ea000e81a7ede1ee.jpg");
+	background-repeat: no-repeat;
+}
+.body-spex__bg{
+	background-image: url("/Coolex/heritage/archive/assets/8155da73677b3c765df1eb0e.jpg");
+	background-repeat: no-repeat;
+}
+.body-spex__bg1{
+	background-image: url("/Coolex/heritage/archive/assets/9c2c7d870196d52e6c23bff4.jpg");
+	background-repeat: no-repeat;
+}
+.body-spex-height-machines_bg{
+	background-image: url("/Coolex/heritage/archive/assets/06ffa7eb4eea929266cf0ba3.jpg");
+	background-repeat: no-repeat;
+}
+.label-printing-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/68bc3b7b6159a7089d1ed25d.jpg");
+	background-repeat: no-repeat;
+}
+.printing-machine-sales_bg{
+	background-image: url("/Coolex/heritage/archive/assets/3f54cb9ea2bf0ca709e0a8ad.jpg");
+	background-repeat: no-repeat;
+}
+.printing-machine-India_bg{
+	background-image: url("/Coolex/heritage/archive/assets/680e7895184ad89e5e1c8860.jpg");
+	background-repeat: no-repeat;
+}
+.buy-printing-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/a126fa81e9bff7befdfcdf18.jpg");
+	background-repeat: no-repeat;
+}
+.tag-printing-machines_bg{
+	background-image: url("/Coolex/heritage/archive/assets/c51746b117d6290789191db7.jpg");
+	background-repeat: no-repeat;
+}
+.automatic-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/d29576f95c6c48f1204ce923.jpg");
+	background-repeat: no-repeat;
+}
+.chocolate-tempering-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/b7f9de076c21c32fd084c23c.jpg");
+	background-repeat: no-repeat;
+}
+.tabletop-chocolate_bg{
+	background-image: url("/Coolex/heritage/archive/assets/25efd18cace6abaade8571ec.jpg");
+	background-repeat: no-repeat;
+}
+.choco_bg{
+	background-image: url("/Coolex/heritage/archive/assets/136e97a73e94fe12f6a8e979.jpg");
+	background-repeat: no-repeat;
+}
+.t-shirt-stamp-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/53724c74578ca8d88ac6954d.jpg");
+	background-repeat: no-repeat;
+}
+.steel-stamp-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/b615b7aeee15619bbc135638.jpg");
+	background-repeat: no-repeat;
+}
+.kingsley-stamp-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/d0233331630e21cc7dd6490e.jpg");
+	background-repeat: no-repeat;
+}
+.rubber-stamp_bg{
+	background-image: url("/Coolex/heritage/archive/assets/1961a7a60513eda659eefdf4.jpg");
+	background-repeat: no-repeat;
+}
+.stamper-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/7db36db254b9a2e3653afb3e.jpg");
+	background-repeat: no-repeat;
+}
+.machine_bg1{
+	background-image: url("/Coolex/heritage/archive/assets/f5b968cfb0d6a7c22e0055b5.jpg");
+	background-repeat: no-repeat;
+}
+.machine_bg2{
+	background-image: url("/Coolex/heritage/archive/assets/d9fda9718d63267e44dc30d1.jpg");
+	background-repeat: no-repeat;
+}
+.machine_bg3{
+	background-image: url("/Coolex/heritage/archive/assets/88b669cc6c85a911690f735a.jpg");
+	background-repeat: no-repeat;
+}
+.dount-machine-maker_bg{
+	background-image: url("/Coolex/heritage/archive/assets/dded920a17fdaedace9518a9.jpg");
+	background-repeat: no-repeat;
+}
+.donut-making-machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/4bd44bbc2044f300be4c88eb.jpg");
+	background-repeat: no-repeat;
+}
+.dount-machine-equipment_bg{
+	background-image: url("/Coolex/heritage/archive/assets/1f380beb71146ee1f9a34c91.jpg");
+	background-repeat: no-repeat;
+}
+.maker_machine_bg{
+	background-image: url("/Coolex/heritage/archive/assets/08f87be20cf46f4e12c0fd47.jpg");
+	background-repeat: no-repeat;
+}
+.maker_machine_bg1{
+	background-image: url("/Coolex/heritage/archive/assets/96d0b4030b64595a9a015d12.jpg");
+	background-repeat: no-repeat;
+}
+.chat_img{
+	background-image: url("/Coolex/heritage/archive/assets/621628efc9c17aefe4109619.jpg");
+	background-repeat: no-repeat;
+}
+.soft_ice_bg{
+	background-image: url("/Coolex/heritage/archive/assets/5a19fd428a2b1a1faf46c1bd.jpg");
+	background-repeat: no-repeat;
+}
+.milk_bg_img1{
+	background-image: url("/Coolex/heritage/archive/assets/1f88af803de2515ca5ed201c.jpg");
+	background-repeat: no-repeat;
+}
+.icegola_img_bg{
+	background-image: url("/Coolex/heritage/archive/assets/6565526dfff001b2795f2df5.jpg");
+	background-repeat: no-repeat;
+}
+.ctlink {
+	color:#000000;
+}
+.foodvending_bg{
+	background-image: url("/Coolex/heritage/archive/assets/3282fdfc47edf950e60a0db6.jpg");
+	background-repeat: repeat-y;
+}
+.juice_bg{
+	background-image: url("/Coolex/heritage/archive/assets/543a6109c952032f813df4a3.jpg");
+	background-repeat: no-repeat;
+}
+.white_bg{
+	background-image: url("/Coolex/heritage/archive/assets/c6bf192a50cbd5e7f898dac3.jpg");
+	background-repeat: repeat-y;
+}
+.tv1{
+	background-image: url("/Coolex/heritage/archive/assets/a43296ab91a3a343c48081fb.jpg");
+	background-repeat: no-repeat;
+}
+.form_bg{
+	background-image: url("/Coolex/heritage/archive/assets/cd65f616a01a7158e7d980eb.jpg");
+	background-repeat: no-repeat;
+}
+.home_txt_bg{
+	background-image: url("/Coolex/heritage/archive/assets/9315404e0ebeec067435dfd9.jpg");
+	background-repeat: no-repeat;
+}
+.custmized_big_img{
+	background-image: url("/Coolex/heritage/archive/assets/2f48b5c7dac5c7d60017c9c9.jpg");
+	background-repeat: no-repeat;
+}
+.img{
+	background-image: url("/Coolex/heritage/archive/assets/cd935fcf57d92699763e4442.jpg");
+	background-repeat: no-repeat;
+}
+.img2{
+	background-image: url("/Coolex/heritage/archive/assets/a9cea2d71d3f6517494fb826.jpg");
+	background-repeat: no-repeat;
+}
+.nav_bg{
+	background-image: url("/Coolex/heritage/archive/assets/b887944853fb86ed6a451600.jpg");
+	background-repeat: repeat-x;
+}
+.arial_txt_bold{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 24px;
+}
+.order_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+	line-height: 17px;
+}
+.order_filed_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.big_hdgg1{
+	font-family: "Century Gothic";
+	font-size: 22px;
+	color: #000000;
+	text-decoration: none;
+}
+.ex_txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: none;
+}
+.ex_txt:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: underline;
+}
+.top_bg-111{
+	background-image: url("/Coolex/heritage/archive/assets/533b9930a9ff3defb34a89d0.jpg");
+	background-repeat: repeat-x;
+}
+.txt_bg{
+	background-image: url("/Coolex/heritage/archive/assets/13cdd33790af91606cff1e3c.jpg");
+	background-repeat: no-repeat;
+}
+.aboutus_txt_bg{
+	background-image: url("/Coolex/heritage/archive/assets/fedb94d170c4132ed75d0f06.jpg");
+	background-repeat: no-repeat;
+}
+.contact-bg111{
+	background-image: url("/Coolex/heritage/archive/assets/a0f8c002cbe4d0f41e6ec46b.jpg");
+	background-repeat: no-repeat;
+}
+.terms_bg111{
+	background-image: url("/Coolex/heritage/archive/assets/3d7ba7adead4268dc39519c6.jpg");
+	background-repeat: no-repeat;
+}
+.business_bg{
+	background-image: url("/Coolex/heritage/archive/assets/cc79ae03634a42fef8b7df57.jpg");
+	background-repeat: no-repeat;
+}
+.products2-hdg{
+	font-family: "Arno Pro";
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.formore-txt{
+	font-family: "Arno Pro";
+	font-size: 35px;
+	font-weight: normal;
+	color: #990000;
+	text-decoration: none;
+	line-height: 45px;
+}
+.pro-txt{
+	font-family: "Tw Cen MT";
+	font-size: 19px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: justify;
+	line-height: 27px;
+}
+.bank-bg{
+	background-image: url("/Coolex/heritage/archive/assets/f5244b8a3ddcfd285240e85f.jpg");
+	background-repeat: no-repeat;
+}
+.bank-txt{
+	font-family: "Tw Cen MT";
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.forms-bg{
+	background-image: url("/Coolex/heritage/archive/assets/af6b80fefdca45b26f70883c.jpg");
+	background-repeat: repeat-y;
+}
+.form-txt{
+	font-family: "Arno Pro";
+	font-size: 28px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.form-txt1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #444444;
+	text-decoration: none;
+}
+.nextpage{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.nextpage:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.pink-bg{
+	background-image: url("/Coolex/heritage/archive/assets/fa4e01daa1a0cb16e5483e81.jpg");
+	background-repeat: repeat-y;
+}
+.twcenmt-txt{
+	font-family: "Tw Cen MT";
+	font-size: 21px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-variant: normal;
+	text-transform: none;
+}
+.small-hdg1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.new-txt-aboutus-{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+	line-height: 22px;
+}
+.footer-link-{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer-link-:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.contact-new-text{
+	font-family: "Myriad Pro";
+	font-size: 19px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: 25px;
+}
+
+
+
+.address-hdg-txt{
+	font-family: "Tw Cen MT Condensed";
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+}

@@ -1,0 +1,464 @@
+/* CSS Document */
+
+.body{
+	margin: 0px;
+	padding: 0px;
+}
+.rgt_bg{
+	background-image: url("/Coolex/heritage/archive/assets/2de7071d6a238a82c19f27b7.jpg");
+	background-repeat: repeat-y;
+}
+.lft_bg{
+	background-image: url("/Coolex/heritage/archive/assets/ead2e390388625470fdb846a.jpg");
+	background-repeat: repeat-y;
+	background-color: #573A28;
+}
+.footer_bg{
+	background-image: url("/Coolex/heritage/archive/assets/002c06519ca1d64b4b444ed8.jpg");
+	background-repeat: repeat-x;
+}
+.curve_bg{
+	background-image: url("/Coolex/heritage/archive/assets/eab38410b6e9a691d65c2bc4.jpg");
+	background-repeat: repeat-y;
+	background-color: #FFFFFF;
+}
+.big_hdg{
+	font-family: "Minion Pro";
+	font-size: 38px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.small_hdg{
+	font-family: "Book Antiqua";
+	font-size: 20px;
+	font-weight: bold;
+	color: #cb0000;
+	text-decoration: none;
+}
+.txt{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 23px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+}
+.bank{
+	background-image: url("/Coolex/heritage/archive/unavailable.svg");
+	background-repeat: no-repeat;
+}
+.hdg_txt{
+	font-family: "Arno Pro";
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.botoom_nav_link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	text-decoration: none;
+}
+.botoom_nav_link:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	text-decoration: underline;
+}
+.sitemap_link{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.sitemap_link:hover{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.sitemap_sublinks{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+}
+.sitemap_sublinks:hover{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.products_sublink{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+}
+.products_sublink:hover{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.layer_link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.layer_link:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+.hdg{
+	font-family: "Book Antiqua";
+	font-size: 20px;
+	font-weight: bold;
+	color: #D80901;
+}
+.dot{
+	background-image: url("/Coolex/heritage/archive/assets/a7286cbec6bd681489b6cc96.jpg");
+	background-repeat: repeat-y;
+}
+.dot2{
+	background-image: url("/Coolex/heritage/archive/assets/596c0ca5ee69ff22a65c25d4.jpg");
+	background-repeat: repeat-x;
+}
+.indexpage-hdg{
+	font-family: "Arno Pro";
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	line-height: 26px;
+}
+.export_hdg{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.export_hdg1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.export_hdg1:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #f90001;
+	text-decoration: none;
+	font-weight: bold;
+}
+.churros_bg{
+	background-image: url("/Coolex/heritage/archive/assets/b59d5b1f20f8b66396114c03.jpg");
+	background-repeat: repeat-y;
+}
+.curves-bg{
+	background-image: url("/Coolex/heritage/archive/assets/fa6a0a593a6fc0101493303e.jpg");
+	background-repeat: repeat-y;
+}
+.all_link{
+	font-family: "Arno Pro";
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.all_link:hover{
+	font-family: "Arno Pro";
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #cd0009;
+	text-decoration: none;
+}
+.curvebg1{
+	background-image: url("/Coolex/heritage/archive/assets/fa6a0a593a6fc0101493303e.jpg");
+	background-repeat: repeat-y;
+}
+.all-hdg{
+	font-family: "Arno Pro";
+	font-size: 35px;
+	font-weight: normal;
+	color: #db0000;
+}
+.link-link{
+	font-family: "Arno Pro";
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.link-link:hover{
+	font-family: "Arno Pro";
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #db0000;
+	text-decoration: none;
+}
+.chocolate_bg1{
+	background-image: url("/Coolex/heritage/archive/unavailable.svg");
+	background-repeat: no-repeat;
+}
+.choco-txt{
+	font-family: "Tw Cen MT";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: 22px;
+}
+.curve-bg{
+	background-image: url("/Coolex/heritage/archive/unavailable.svg");
+	background-repeat: repeat-y;
+}
+.red-choco-txt{
+	font-family: "Tw Cen MT";
+	font-size: 19px;
+	font-weight: normal;
+	color: #cc0000;
+	text-decoration: none;
+	font-variant: normal;
+}
+.choco-nav-bg{
+	background-image: url("/Coolex/heritage/archive/assets/6c3b7e904888fab3f0fed7ba.jpg");
+	background-repeat: no-repeat;
+	background-color: #4C2915;
+}
+.top-bg{
+	background-image: url("/Coolex/heritage/archive/assets/d37b0b54e038880936ff01fc.jpg");
+	background-repeat: no-repeat;
+}
+.choco-txt{
+	font-family: "Arno Pro";
+	font-size: 23px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 30px;
+}
+.choco-hdg{
+	font-family: "Arno Pro";
+	font-size: 45px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.choco-txt-btn{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.choco-txt-btn:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/e975408a1d6475107aa7ab61.jpg");
+	background-repeat: repeat-y;
+}
+.product-hdg-txt{
+	font-family: "Arno Pro";
+	font-size: 18px;
+	font-weight: bold;
+	color: #e20000;
+	line-height: 35px;
+}
+.product-hdg-txt1{
+	font-family: "Arno Pro";
+	font-size: 18px;
+	font-weight: bold;
+	color: #e20000;
+}
+.dimensions-txt{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 26px;
+}
+.dimensions-txt1{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.raw-meta-bg{
+	background-image: url("/Coolex/heritage/archive/assets/967927915d24d3eb8337dd18.jpg");
+	background-repeat: no-repeat;
+}
+.txt-bgs{
+	background-image: url("/Coolex/heritage/archive/assets/d5aa6b3d400438835db3463d.jpg");
+	background-repeat: repeat-y;
+}
+.white-cane-bg{
+	background-image: url("/Coolex/heritage/archive/assets/c228e529c3aaf95a3c0e731d.jpg");
+	background-repeat: repeat-y;
+}
+.sugarcane-txt{
+	font-family: "Arno Pro";
+	font-size: 19px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+	line-height: 30px;
+}
+.white-small-bg{
+	background-image: url("/Coolex/heritage/archive/assets/7f5e329394ec34eb30fa8b13.jpg");
+	background-repeat: repeat-y;
+}
+.pop-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/4fa3d7b35706b851b3f89962.jpg");
+	background-repeat: repeat-y;
+}
+.popcorn-txt{
+	font-family: "Tw Cen MT";
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 28px;
+}
+.curvebg1{
+	background-image: url("/Coolex/heritage/archive/assets/e2ad678770190e393088b32b.jpg");
+	background-repeat: repeat-x;
+}
+.profit-bg{
+	background-image: url("/Coolex/heritage/archive/assets/f94ceb15070beb1f215f3dfa.jpg");
+	background-repeat: repeat-y;
+}
+.ice-gola-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/c4e1a18c0a71b639c0cb22e4.jpg");
+	background-repeat: repeat-y;
+}
+.gola-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/21795ec02577ea0f35341c8b.jpg");
+	background-repeat: repeat-y;
+}
+.candy-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/1d2d6d40bed1a2226159f5a1.jpg");
+	background-repeat: repeat-y;
+}
+.candy-snall-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/959fd4de86758a2d793586fa.jpg");
+	background-repeat: repeat-y;
+}
+.menu-txt{
+	font-family: "Myriad Pro";
+	font-size: 22px;
+	font-weight: normal;
+	color: #db0061;
+	text-decoration: none;
+	line-height: 35px;
+}
+.kulfi-small-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/bcf2e55aeee137553493bd8b.jpg");
+	background-repeat: repeat-y;
+}
+.kulfi-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/0bcfd96ffc3e02d2b7b5d2fc.jpg");
+	background-repeat: repeat-y;
+}
+.kulfi-menu-bg{
+	background-image: url("/Coolex/heritage/archive/assets/f81d4816e66fc31202c51b45.jpg");
+	background-repeat: no-repeat;
+}
+.kulfi-menu-txt{
+	font-family: "Tw Cen MT";
+	font-size: 27px;
+	font-weight: normal;
+	color: #3a6600;
+	line-height: 41px;
+}
+.coconut-white-small-bg{
+	background-image: url("/Coolex/heritage/archive/assets/f278c4a4a740d6ba6fb25b47.jpg");
+	background-repeat: repeat-y;
+}
+.coco-big-white-bg{
+	background-repeat: repeat-y;
+	background-image: url("/Coolex/heritage/archive/assets/4da4bfa19a89165302c57044.jpg");
+}
+.softy-bg{
+	background-image: url("/Coolex/heritage/archive/assets/e8dca9ae70e70819f1f4816a.jpg");
+	background-repeat: repeat-y;
+}
+.soft-ice-white-bg{
+	background-image: url("/Coolex/heritage/archive/assets/638d26963fe8bbf3887317bc.png");
+	background-repeat: repeat-y;
+}
+.softy-txt1{
+	font-family: "Tw Cen MT Condensed";
+	font-size: 26px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;
+}
+.soft-txt2{
+	font-family: "Tw Cen MT Condensed";
+	font-size: 35px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.gotop{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.gotop:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+.new-bg-corn{
+	background-image: url("/Coolex/heritage/archive/assets/576e18ec91918bf9e435a29f.jpg");
+	background-repeat: repeat-y;
+}
+.fryer-txtff{
+	font-family: "Tw Cen MT Condensed";
+	font-size: 97px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.fryer-normal-txt{
+	font-family: "Tw Cen MT Condensed";
+	font-size: 23px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: 32px;
+	text-transform: none;
+}

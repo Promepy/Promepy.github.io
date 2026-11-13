@@ -1,0 +1,610 @@
+{
+  "messages": {
+    "brand.trade": "निर्माता · आयातक · निर्यातक",
+    "brand.locations": "विजयवाड़ा और हैदराबाद",
+    "brand.since": "1975 से",
+    "brand.company": "Coolex Industries Pvt Ltd",
+    "brand.company_since": "Coolex Industries Pvt Ltd · 1975 से",
+    "brand.home": "Coolex का मुख्य पृष्ठ",
+    "brand.logo_alt": "Coolex — 1975 से",
+    "nav.equipment": "उपकरण",
+    "nav.watch": "देखें और जानें",
+    "nav.ideas": "कारोबार के विचार",
+    "nav.showrooms": "शोरूम",
+    "nav.home": "मुख्य पृष्ठ",
+    "nav.shortlist": "आपकी पसंद सूची",
+    "nav.main": "मुख्य नेविगेशन",
+    "nav.mobile": "मोबाइल नेविगेशन",
+    "nav.open": "नेविगेशन खोलें",
+    "nav.close": "नेविगेशन बंद करें",
+    "nav.explore": "Coolex को जानें",
+    "language.choose": "अपनी भाषा चुनें",
+    "language.changed": "भाषा बदलकर {language} कर दी गई है।",
+    "language.unavailable": "यह अनुवाद लोड नहीं हो सका। इसकी जगह अंग्रेज़ी दिखाई जा रही है।",
+    "action.talk": "Coolex से बात करें",
+    "action.explore_equipment": "उपकरण देखें",
+    "action.visit": "शोरूम आएँ",
+    "action.directions": "रास्ता देखें",
+    "action.all_equipment": "सभी उपकरण",
+    "action.explore_videos": "वीडियो देखें",
+    "action.explore_ideas": "कारोबार के विचार देखें",
+    "action.plan_visit": "आने की योजना बनाएँ",
+    "action.open_shortlist": "अपनी पसंद सूची खोलें",
+    "action.talk_showroom": "शोरूम की टीम से बात करें",
+    "action.ask_range": "इस रेंज के बारे में पूछें",
+    "action.browse_equipment": "सभी उपकरण देखें",
+    "action.explore_category": "श्रेणी देखें",
+    "action.call_showroom": "शोरूम को कॉल करें",
+    "action.call_coolex": "Coolex को कॉल करें",
+    "action.close": "बंद करें",
+    "footer.tagline": "खाद्य व्यवसाय के उपकरण। वास्तविक डेमो।",
+    "footer.ideas": "आपके अगले कारोबार के लिए विचार। 1975 से।",
+    "footer.find": "अपनी अगली मशीन खोजें",
+    "footer.catalogue": "उपकरणों का कैटलॉग",
+    "footer.videos": "वीडियो डेमो",
+    "footer.ideas_link": "कारोबार के विचार और मेन्यू",
+    "footer.hello": "आइए, मिलते हैं",
+    "footer.hours": "सोमवार–शनिवार · 10:00–7:00",
+    "footer.disclaimer": "कैटलॉग के विवरण और कीमतों की पुष्टि Coolex से करें।",
+    "footer.top": "ऊपर जाएँ ↑",
+    "youtube.telugu": "YouTube · तेलुगु",
+    "youtube.hindi_english": "YouTube · हिन्दी और अंग्रेज़ी",
+    "youtube.watch_telugu": "तेलुगु में देखें",
+    "home.eyebrow": "खाद्य कारोबार की शुरुआत यहाँ से",
+    "home.big_ideas": "बड़े विचार।",
+    "home.equipment": "बेहतरीन उपकरण।",
+    "home.cooking": "आइए, शुरुआत करें।",
+    "home.description": "आपके पहले फ़ूड काउंटर से अगली रसोई तक। Coolex के उपकरण देखें, उनका काम समझें और अपने कारोबार के लिए सही विकल्प चुनें।",
+    "home.note": "मूल कैटलॉग। वास्तविक मशीनें। नई संभावनाएँ।",
+    "home.hero_alt": "Coolex शोरूम में कमर्शियल फ्रायर, ग्रिडल और खाना पकाने के उपकरण",
+    "home.stamp": "विचारों को आकार दें",
+    "home.stamp_since": "से",
+    "home.tour": "Coolex के अंदर आइए।",
+    "home.tour_note": "हमारे शोरूम का मूल वीडियो टूर देखें",
+    "home.category_count": "उपकरणों की 67 श्रेणियाँ",
+    "home.kind_machine": "अपनी ज़रूरत की मशीन खोजें",
+    "home.see_first": "चुनने से पहले देखें",
+    "home.video_proof": "मूल वीडियो डेमो",
+    "home.locations": "दो जगहों पर शोरूम",
+    "home.familiar": "एक जाना-पहचाना नाम। एक नई शुरुआत।",
+    "home.menu": "आपके मेन्यू में क्या है?",
+    "home.menu_note": "पहले तय करें कि आप क्या बनाना चाहते हैं। उससे जुड़े उपकरणों को जानने में हम आपकी मदद करेंगे।",
+    "home.everything": "हर तरह के कुछ विकल्प",
+    "home.search_prompt": "पहले से कुछ सोचा हुआ है? उसे कैटलॉग में खोजें।",
+    "home.less_guessing": "अंदाज़ा कम। जानकारी ज़्यादा।",
+    "home.see_machines": "मशीनें देखें।",
+    "home.possibilities": "संभावनाएँ सोचें।",
+    "home.video_note": "मूल Coolex डेमो और उपकरणों के वीडियो से कैटलॉग से आगे की जानकारी पाएँ।",
+    "home.inspiration": "थोड़ी प्रेरणा",
+    "home.next_business": "आपका अगला कारोबार",
+    "home.start_here": "यहाँ से शुरू हो सकता है।",
+    "home.ideas_note": "हमारे मूल कारोबारी संग्रह में मेन्यू, उपकरण और आउटलेट के विचार देखें। अपनी पसंद की दिशा खोजें।",
+    "home.originals": "मूल संग्रह",
+    "home.familiar_catalogue": "वही जाना-पहचाना कैटलॉग।",
+    "home.clearer": "देखने-समझने का आसान तरीका।",
+    "home.all_originals": "शोरूम की सभी मूल तस्वीरें और संग्रह की सामग्री देखें",
+    "home.artwork": "Coolex संग्रह की मूल सामग्री {index}",
+    "home.view_artwork": "मुख्य पृष्ठ के मूल कैटलॉग की सामग्री {index} देखें",
+    "showroom.eyebrow": "आइए, करीब से देखें",
+    "showroom.screen": "आपकी स्क्रीन से",
+    "showroom.destination": "हमारे शोरूम तक।",
+    "showroom.note": "उपकरण देखें, अपने सवाल पूछें और अगले खाद्य कारोबार के विचार पर बात करें।",
+    "showroom.photo_alt": "Coolex शोरूम में प्रदर्शित पॉपकॉर्न, पेय और खाद्य उपकरण",
+    "location.vijayawada": "विजयवाड़ा",
+    "location.hyderabad": "हैदराबाद",
+    "location.secunderabad": "हैदराबाद / सिकंदराबाद",
+    "location.ap": "आंध्र प्रदेश",
+    "location.telangana": "तेलंगाना",
+    "location.vijayawada_state": "विजयवाड़ा, आंध्र प्रदेश",
+    "location.secunderabad_state": "सिकंदराबाद, तेलंगाना",
+    "cta.title": "आइए, आपकी अगली मशीन खोजें।",
+    "cta.note": "कोई श्रेणी सोची हुई है? सही उपकरण, ताज़ा जानकारी और शोरूम आने के बारे में Coolex से बात करें।",
+    "catalogue.eyebrow": "Coolex कैटलॉग",
+    "catalogue.find": "अपनी पसंद के",
+    "catalogue.of": "सही",
+    "catalogue.equipment": "उपकरण खोजें।",
+    "catalogue.description": "उपकरणों की 67 श्रेणियाँ। मूल कैटलॉग, वास्तविक तस्वीरें और वीडियो डेमो। किसी श्रेणी से शुरू करें या मशीन खोजें।",
+    "catalogue.looking_for": "क्या आप {name} खोज रहे हैं?",
+    "catalogue.western": "Western डिशवॉशर",
+    "catalogue.celfrost": "Celfrost उपकरण",
+    "catalogue.contact_note": "जानकारी के लिए Coolex से बात करें",
+    "filter.all": "सभी",
+    "filter.reset": "फ़िल्टर रीसेट करें",
+    "filter.clear": "खोज साफ़ करें",
+    "filter.family": "उपकरण समूह के अनुसार फ़िल्टर करें",
+    "sort.label": "श्रेणियों का क्रम चुनें",
+    "sort.featured": "कैटलॉग का क्रम",
+    "sort.az": "नाम: A–Z",
+    "sort.za": "नाम: Z–A",
+    "search.label": "उपकरण खोजें",
+    "search.short": "खोजें",
+    "search.videos": "वीडियो डेमो खोजें",
+    "search.video_placeholder": "डेमो खोजें, जैसे फ्रायर",
+    "search.placeholder": "उपकरण खोजें, जैसे फ्रायर, आइसक्रीम, कॉफ़ी…",
+    "search.title": "आप क्या खोज रहे हैं?",
+    "search.close": "खोज बंद करें",
+    "search.all_label": "सभी उपकरण और कारोबारी संग्रह खोजें",
+    "search.global_placeholder": "फ्रायर, आइसक्रीम, कॉफ़ी आज़माएँ…",
+    "search.note": "श्रेणी खोजें। उसके कैटलॉग, तस्वीरें और वीडियो देखें।",
+    "search.all_results": "सभी नतीजे देखें",
+    "search.popular": "यहाँ से शुरुआत करें",
+    "search.no_matches": "कोई मेल खाता संग्रह नहीं मिला। कोई दूसरा शब्द आज़माएँ या सभी उपकरण देखें।",
+    "search.matches_one": "{count} मेल खाता संग्रह",
+    "search.matches_other": "{count} मेल खाते संग्रह",
+    "results.categories_one": "{count} श्रेणी",
+    "results.categories_other": "{count} श्रेणियाँ",
+    "results.videos_one": "{count} डेमो",
+    "results.videos_other": "{count} डेमो",
+    "results.query": "“{query}” के लिए",
+    "results.displayed": "{count} श्रेणियाँ दिखाई गई हैं",
+    "empty.title": "यहाँ अभी कोई नतीजा नहीं है।",
+    "empty.note": "छोटा खोज शब्द आज़माएँ या उपकरणों का दूसरा समूह चुनें।",
+    "media.catalogues": "कैटलॉग",
+    "media.collection": "संग्रह",
+    "media.photos": "तस्वीरें",
+    "media.videos": "वीडियो",
+    "media.original_collection": "मूल संग्रह",
+    "media.sheets": "कैटलॉग के पन्ने",
+    "media.original_artwork": "मूल सामग्री",
+    "media.view_sheet": "पन्ना {index} देखें",
+    "media.sheet_label": "पन्ना {index}",
+    "media.sheet_count": "{count} में से पन्ना {index}",
+    "media.previous_sheet": "कैटलॉग का पिछला पन्ना",
+    "media.next_sheet": "कैटलॉग का अगला पन्ना",
+    "media.enlarge": "बड़ा करें और ज़ूम करें",
+    "media.enlarge_sheet": "कैटलॉग का पन्ना {index} बड़ा करें",
+    "media.sheet_alt": "{title} — मूल कैटलॉग का पन्ना {index}",
+    "media.photo_note": "मूल उपकरणों और संग्रह की तस्वीरें करीब से देखें।",
+    "media.photo_count": "{count} तस्वीरें · बड़ा करने के लिए कोई तस्वीर चुनें",
+    "media.video_note": "मूल प्लेयर लोड करने के लिए वीडियो चुनें। YouTube चलाने के लिए इंटरनेट कनेक्शन चाहिए।",
+    "media.disclaimer": "मूल Coolex सामग्री और मीडिया। ताज़ा कीमत, तकनीकी विवरण और उपलब्धता की पुष्टि शोरूम से करें।",
+    "media.summary": "अपने कारोबार के लिए कुछ पसंद आया? इस श्रेणी को सहेजें या जानकारी के लिए शोरूम से बात करें।",
+    "media.tabs_label": "{title} का मीडिया",
+    "media.enlarge_photo": "{title} की तस्वीर {index} बड़ी करें",
+    "media.photo_alt": "{title} · तस्वीर {index}",
+    "media.close_viewer": "तस्वीर का व्यूअर बंद करें",
+    "media.image_alt": "{title} — मूल तस्वीर {index}",
+    "media.viewer_help": "{count} में से {index} · देखने के लिए ऐरो कुंजियाँ · ज़ूम के लिए + / −",
+    "media.previous_image": "पिछली तस्वीर",
+    "media.next_image": "अगली तस्वीर",
+    "media.zoom_out": "ज़ूम घटाएँ",
+    "media.zoom_in": "ज़ूम बढ़ाएँ",
+    "media.fit": "स्क्रीन में फ़िट करें",
+    "media.original": "मूल फ़ाइल",
+    "media.image_count": "{count} में से तस्वीर {index}",
+    "media.play": "{title} चलाएँ",
+    "media.video": "वीडियो",
+    "media.from": "{time} से",
+    "media.demonstration": "{title} · डेमो {index}",
+    "media.showroom": "Coolex शोरूम",
+    "media.coolex_collection": "Coolex संग्रह",
+    "media.tour": "शोरूम का वीडियो टूर",
+    "media.close_video": "वीडियो बंद करें",
+    "media.unsupported": "आपका ब्राउज़र यह वीडियो नहीं चला सकता।",
+    "media.youtube_note": "मूल YouTube वीडियो। प्लेयर में प्ले दबाएँ। उपलब्ध न होने पर इसे YouTube पर खोलें।",
+    "media.local_note": "मूल वीडियो। चलाने और आगे-पीछे जाने के लिए प्लेयर के नियंत्रणों का उपयोग करें।",
+    "media.open_youtube": "YouTube पर खोलें",
+    "media.open_original": "मूल वीडियो खोलें",
+    "count.sheets_one": "कैटलॉग का {count} पन्ना",
+    "count.sheets_other": "कैटलॉग के {count} पन्ने",
+    "count.videos_one": "{count} वीडियो",
+    "count.videos_other": "{count} वीडियो",
+    "related.eyebrow": "और भी देखें",
+    "related.ideas": "आपके कारोबार के लिए और विचार।",
+    "related.equipment": "अपने अगले विचार को आकार दें।",
+    "ideas.eyebrow": "शुरुआत के लिए कुछ विचार",
+    "ideas.menu": "एक नया मेन्यू।",
+    "ideas.possibility": "एक नई संभावना।",
+    "ideas.description": "मूल Coolex कारोबारी संग्रह देखें: मेन्यू, आउटलेट की तस्वीरें और उपकरणों के सेटअप, ताकि अगली बातचीत के लिए आपके पास विचार हों।",
+    "ideas.photos": "तस्वीरें और प्रेरणा",
+    "ideas.demos": "कैटलॉग और डेमो",
+    "ideas.menu_link": "मूल मेन्यू देखें",
+    "ideas.collection_alt": "{title} — मूल संग्रह",
+    "contact.eyebrow": "आपके विचार पर बात करें",
+    "contact.good_things": "अच्छी शुरुआत होती है",
+    "contact.conversation": "एक बातचीत से।",
+    "contact.description": "उपकरण खुद देखें या अपने अगले खाद्य कारोबार के बारे में Coolex से बात करें। आने की योजना बनाने के लिए पहले कॉल करें।",
+    "contact.vijayawada": "विजयवाड़ा में Coolex आएँ। उपकरणों की जानकारी और आने के ताज़ा विवरण के लिए टीम को कॉल करें।",
+    "contact.hyderabad": "हमारे हैदराबाद / सिकंदराबाद शोरूम आएँ। यात्रा शुरू करने से पहले टीम से बात करें।",
+    "contact.photo_alt": "मूल Coolex शोरूम में प्रदर्शित खाद्य उपकरण",
+    "contact.questions": "अपने सवाल लेकर आइए।",
+    "contact.ideas": "और अपने बड़े विचार भी।",
+    "contact.hours": "दिए गए समय के अनुसार: सोमवार–शनिवार, 10:00–7:00। आने से पहले कॉल करके पुष्टि करें।",
+    "contact.shortlist": "कुछ श्रेणियाँ सोची हुई हैं? कॉल करने से पहले उन्हें अपनी पसंद सूची में साथ रखें।",
+    "contact.discover": "और जानें",
+    "contact.language": "अपनी भाषा में देखें।",
+    "contact.channels": "मूल Coolex YouTube चैनल देखें।",
+    "shortlist.eyebrow": "अपने विचार साथ रखें",
+    "shortlist.idea": "आपका अगला बड़ा विचार,",
+    "shortlist.shape": "आकार ले रहा है।",
+    "shortlist.description": "देखते समय उपकरणों की श्रेणियाँ सहेजें। आपकी पसंद सूची इसी ब्राउज़र में रहती है, ताकि शोरूम की टीम से बात करते समय काम आए।",
+    "shortlist.saved": "पसंद सूची में सहेजा गया",
+    "shortlist.save": "पसंद सूची में सहेजें",
+    "shortlist.save_label": "{title} को पसंद सूची में सहेजें",
+    "shortlist.remove_label": "{title} को पसंद सूची से हटाएँ",
+    "shortlist.count_one": "{count} सहेजी गई श्रेणी",
+    "shortlist.count_other": "{count} सहेजी गई श्रेणियाँ",
+    "shortlist.header_count": "पसंद सूची · {count} सहेजे गए",
+    "shortlist.copy": "श्रेणियों की सूची कॉपी करें",
+    "shortlist.nothing_sent": "कुछ भी अपने-आप नहीं भेजा जाता।",
+    "shortlist.empty_title": "आपके अगले विचार के लिए थोड़ी जगह।",
+    "shortlist.empty_note": "बुकमार्क चिह्न से कोई श्रेणी सहेजें। Coolex से बात करने के लिए तैयार होने पर वह यहीं मिलेगी।",
+    "shortlist.storage": "ब्राउज़र में सहेजना उपलब्ध नहीं है। आपकी सूची केवल इस बार साइट खुली रहने तक रहेगी।",
+    "shortlist.removed": "आपकी पसंद सूची से हटा दिया गया।",
+    "shortlist.added": "आपकी पसंद सूची में सहेज दिया गया।",
+    "shortlist.view": "पसंद सूची देखें",
+    "shortlist.copy_title": "Coolex उपकरणों की मेरी पसंद सूची:",
+    "shortlist.copy_contact": "संपर्क:",
+    "shortlist.copied": "श्रेणियों की सूची कॉपी हो गई। कुछ भी नहीं भेजा गया है।",
+    "shortlist.copy_dialog": "अपनी श्रेणियों की सूची कॉपी करें",
+    "library.eyebrow": "उपकरणों का काम देखें",
+    "library.play": "प्ले दबाएँ।",
+    "library.possibilities": "संभावनाएँ जानें।",
+    "library.description": "मूल Coolex डेमो, उपकरणों की जानकारी और शोरूम के वीडियो देखें। अपनी रुचि के वीडियो खोजने के लिए उपकरण समूह चुनें।",
+    "library.note": "YouTube केवल प्ले दबाने पर लोड होता है। वीडियो की उपलब्धता मूल प्रकाशक के नियंत्रण में है।",
+    "library.more": "और वीडियो दिखाएँ · {count} बाकी",
+    "error.eyebrow": "आइए, सही पृष्ठ पर चलें",
+    "error.page": "यह पृष्ठ यहाँ मौजूद नहीं है।",
+    "error.note": "उपकरणों का कैटलॉग देखें या Coolex शोरूम खोजें।",
+    "error.load": "कैटलॉग लोड नहीं हो सका।",
+    "error.reload": "पृष्ठ दोबारा लोड करें। आप Coolex को {phone} पर कॉल भी कर सकते हैं।",
+    "meta.home": "खाद्य उपकरण। बड़ी संभावनाएँ।",
+    "meta.explore": "और देखें",
+    "meta.contact": "Coolex शोरूम आएँ",
+    "access.skip": "मुख्य सामग्री पर जाएँ",
+    "access.breadcrumb": "पृष्ठ का मार्ग",
+    "page.description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और उपलब्ध वीडियो डेमो से {title} के बारे में जानें।",
+    "catalogue.heading": "अपनी पसंद के उपकरण खोजें।",
+    "media.empty_title": "उपकरणों के बारे में बात करें।",
+    "media.empty_note": "इस संग्रह की जानकारी के लिए शोरूम से संपर्क करें।",
+    "heritage.eyebrow": "Coolex के पुराने पन्नों से",
+    "heritage.title": "पुराना Coolex",
+    "heritage.teaser_title": "वही Coolex। एक अलग दौर।",
+    "heritage.teaser_note": "पुराना लोगो। लाल कालीन। तस्वीरों वाले बटन। Coolex की पुरानी वेबसाइट के ज़रिए उस दौर में लौटें।",
+    "heritage.explore": "पुरानी वेबसाइट देखें",
+    "heritage.classic": "पुरानी वेबसाइट",
+    "heritage.preview": "Coolex के पुराने होम पेज की झलक",
+    "heritage.open_capsule": "पुरानी यादें खोलें",
+    "heritage.description": "Coolex के इतिहास की एक झलक। पुरानी वेबसाइट के सात पन्ने देखें, जिनकी मूल तस्वीरें, बनावट और पहचान सहेजी गई हैं।",
+    "heritage.choose_page": "सहेजा गया पन्ना चुनें",
+    "heritage.historical_note": "यह पुरानी वेबसाइट का संग्रह है। संपर्क विवरण, ऑफ़र और कीमतें उस दौर की हैं। यहाँ लाइव चैट और पूछताछ फ़ॉर्म सक्रिय नहीं हैं।",
+    "heritage.current_site": "मौजूदा पूछताछ",
+    "heritage.saved": "सहेजा गया: {date}",
+    "heritage.view_size": "पुराने पन्ने का आकार",
+    "heritage.fit": "पन्ना फ़िट करें",
+    "heritage.original_size": "मूल आकार",
+    "heritage.source": "मूल वेबसाइट",
+    "heritage.frame_title": "पुराना Coolex संग्रह — {page}",
+    "heritage.scroll_hint": "देखने के लिए पुराने पन्ने के भीतर स्क्रॉल करें। पास से पढ़ने के लिए मूल आकार चुनें।",
+    "heritage.preservation": "इस सहेजे गए संस्करण के बारे में",
+    "heritage.preservation_note": "मूल HTML और उपलब्ध {count} फ़ाइलें अलग से सहेजी गई हैं। इस संग्रह में पुराना रूप बरकरार है और तस्वीरें स्थानीय रूप से देखी जा सकती हैं। कुछ मूल फ़ाइलें उपलब्ध नहीं हैं। संग्रह में शामिल न किए गए लिंक पर एक सूचना दिखाई देती है।",
+    "heritage.date_note": "मूल प्रकाशन की तारीख़ तय नहीं है। दिखाई गई तारीख़ इन पन्नों को सहेजने की है, इस डिज़ाइन के शुरू होने की नहीं। पुराने पन्नों की सामग्री मूल भाषा में ही है।",
+    "heritage.viewing": "{page} देख रहे हैं",
+    "heritage.footer": "पुराना Coolex · संग्रह",
+    "heritage.page.home": "स्वागत",
+    "heritage.page.about": "Coolex के बारे में",
+    "heritage.page.products": "उत्पाद",
+    "heritage.page.achievements": "उपलब्धियाँ",
+    "heritage.page.gallery": "तस्वीरें",
+    "heritage.page.contact": "संपर्क",
+    "heritage.note.home": "पुराना लोगो, लाल कालीन वाला स्वागत और तस्वीरों का मूल मेनू।",
+    "heritage.note.about": "पुरानी वेबसाइट पर दी गई कंपनी की कहानी और टीम का परिचय।",
+    "heritage.note.products": "मूल उत्पाद तस्वीरें और तस्वीरों पर आधारित कैटलॉग पन्ना।",
+    "heritage.note.achievements": "पुरस्कारों, प्रमाणपत्रों और उपलब्धियों की पुरानी तस्वीरें।",
+    "heritage.note.gallery": "सहेजी गई स्थानों और फ़ैक्टरी की तस्वीरें, जिन्हें यहीं देखा जा सकता है।",
+    "heritage.note.contact": "पुराना संपर्क पन्ना, इतिहास के तौर पर सहेजा गया है; यह मौजूदा पूछताछ फ़ॉर्म नहीं है।",
+    "heritage.page.landing": "मूल होम पेज",
+    "heritage.note.landing": "मूल प्रवेश पन्ना, जिसमें HTML का संकेत, एनिमेटेड तस्वीरें और कोन पिज़्ज़ा की तस्वीरें हैं।",
+    "heritage.page_count": "{count} सहेजे गए पन्ने"
+  },
+  "groups": {
+    "All": "सभी",
+    "Cooking": "खाना पकाने के उपकरण",
+    "Snacks & sweets": "स्नैक्स और मिठाइयाँ",
+    "Bakery & preparation": "बेकरी और तैयारी",
+    "Beverages": "पेय पदार्थ",
+    "Ice cream": "आइसक्रीम",
+    "Display & refrigeration": "डिस्प्ले और रेफ्रिजरेशन",
+    "Games & entertainment": "गेम और मनोरंजन",
+    "Business ideas": "कारोबार के विचार",
+    "Showrooms": "शोरूम"
+  },
+  "pages": {
+    "/": {
+      "title": "खाद्य व्यवसाय के कमर्शियल उपकरण",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से खाद्य व्यवसाय के कमर्शियल उपकरण के बारे में जानें।"
+    },
+    "/atlantiscoffee-teavending-machine": {
+      "title": "Atlantis कॉफ़ी और चाय वेंडिंग मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से Atlantis कॉफ़ी और चाय वेंडिंग मशीनें के बारे में जानें।"
+    },
+    "/automaticfriedrice-wokmachines": {
+      "title": "ऑटोमैटिक फ्राइड राइस और वॉक मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से ऑटोमैटिक फ्राइड राइस और वॉक मशीनें के बारे में जानें।"
+    },
+    "/bainmarie-currypoint": {
+      "title": "बेन मैरी और करी काउंटर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से बेन मैरी और करी काउंटर के बारे में जानें।"
+    },
+    "/bakeryovens": {
+      "title": "बेकरी ओवन",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से बेकरी ओवन के बारे में जानें।"
+    },
+    "/bbqmachines": {
+      "title": "बारबेक्यू मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से बारबेक्यू मशीनें के बारे में जानें।"
+    },
+    "/biryani-stoves": {
+      "title": "बिरयानी स्टोव",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से बिरयानी स्टोव के बारे में जानें।"
+    },
+    "/blenders": {
+      "title": "ब्लेंडर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से ब्लेंडर के बारे में जानें।"
+    },
+    "/breading-table": {
+      "title": "ब्रेडिंग टेबल",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से ब्रेडिंग टेबल के बारे में जानें।"
+    },
+    "/cakefinishing-machine": {
+      "title": "केक फ़िनिशिंग मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से केक फ़िनिशिंग मशीनें के बारे में जानें।"
+    },
+    "/candyflossmachine": {
+      "title": "कैंडीफ्लॉस मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से कैंडीफ्लॉस मशीनें के बारे में जानें।"
+    },
+    "/cansealing-machine": {
+      "title": "कैन सीलिंग मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से कैन सीलिंग मशीनें के बारे में जानें।"
+    },
+    "/chicken-meat-grillers": {
+      "title": "चिकन और मीट ग्रिलर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से चिकन और मीट ग्रिलर के बारे में जानें।"
+    },
+    "/chicxpress-fried-chicken-franchise": {
+      "title": "Chicxpress का कारोबार मॉडल",
+      "description": "मूल फ्राइड चिकन कारोबार मॉडल और उसका चित्रों वाला कैटलॉग देखें।"
+    },
+    "/chimneycake-kurthosmachine": {
+      "title": "चिमनी केक मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से चिमनी केक मशीनें के बारे में जानें।"
+    },
+    "/chocolatefountain": {
+      "title": "चॉकलेट फ़ाउंटेन",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से चॉकलेट फ़ाउंटेन के बारे में जानें।"
+    },
+    "/chocolatefudgedispenser": {
+      "title": "चॉकलेट फ़ज डिस्पेंसर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से चॉकलेट फ़ज डिस्पेंसर के बारे में जानें।"
+    },
+    "/chocolatewarmers": {
+      "title": "चॉकलेट वार्मर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से चॉकलेट वार्मर के बारे में जानें।"
+    },
+    "/churros-machine-filler": {
+      "title": "चुरोस मशीनें और फ़िलर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से चुरोस मशीनें और फ़िलर के बारे में जानें।"
+    },
+    "/coconut-cutter": {
+      "title": "नारियल काटने की मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से नारियल काटने की मशीनें के बारे में जानें।"
+    },
+    "/contact-details": {
+      "title": "Coolex शोरूम आएँ",
+      "description": "Coolex के शोरूम की जानकारी लें और आने की योजना बनाएँ।"
+    },
+    "/coolexcoffeeteamilkboilersetup": {
+      "title": "कॉफ़ी और चाय की दुकान का सेटअप",
+      "description": "कॉफ़ी, चाय और मिल्क बॉयलर सेटअप का मूल संग्रह देखें।"
+    },
+    "/cooling-juice-dispensers": {
+      "title": "कूलिंग जूस डिस्पेंसर",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से कूलिंग जूस डिस्पेंसर के बारे में जानें।"
+    },
+    "/copy-of-chicxpress": {
+      "title": "Chicxpress आउटलेट की तस्वीरें",
+      "description": "आउटलेट की मूल तस्वीरें करीब से देखें।"
+    },
+    "/copy-of-fresh-drink-outlet-menu": {
+      "title": "Frosty Bee मेन्यू",
+      "description": "आइसक्रीम, शेक और फ्रूट जेलाटो मेन्यू के लिए प्रेरणा लें।"
+    },
+    "/donut-machines": {
+      "title": "डोनट मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से डोनट मशीनें के बारे में जानें।"
+    },
+    "/eggroll": {
+      "title": "एग रोल मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से एग रोल मशीनें के बारे में जानें।"
+    },
+    "/foodtimer-8channels": {
+      "title": "आठ-चैनल फ़ूड टाइमर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से आठ-चैनल फ़ूड टाइमर के बारे में जानें।"
+    },
+    "/frenchfries-springpotato-floweronion-longfries": {
+      "title": "फ्राइज़, स्प्रिंग पोटैटो और प्याज़ काटने की मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से फ्राइज़, स्प्रिंग पोटैटो और प्याज़ काटने की मशीनें के बारे में जानें।"
+    },
+    "/freshdrinkoutletmenu": {
+      "title": "Fresh Drink आउटलेट का मेन्यू",
+      "description": "पेय पदार्थों का मूल मेन्यू और परोसने के विचार देखें।"
+    },
+    "/fryers": {
+      "title": "डीप फ्रायर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से डीप फ्रायर के बारे में जानें।"
+    },
+    "/gamemachines-fallingsticks-minidoll": {
+      "title": "गेम मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से गेम मशीनें के बारे में जानें।"
+    },
+    "/gelato-machines": {
+      "title": "जेलाटो मशीनें",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से जेलाटो मशीनें के बारे में जानें।"
+    },
+    "/griddles": {
+      "title": "इलेक्ट्रिक ग्रिडल",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से इलेक्ट्रिक ग्रिडल के बारे में जानें।"
+    },
+    "/haiermicrooven-prestigeinduction": {
+      "title": "माइक्रोवेव और इंडक्शन कुकर",
+      "description": "मूल कैटलॉग के पन्नों से माइक्रोवेव और इंडक्शन कुकर के बारे में जानें।"
+    },
+    "/hoshizakisteelundercounters-2-4d": {
+      "title": "Hoshizaki स्टील अंडरकाउंटर",
+      "description": "मूल कैटलॉग के पन्नों से Hoshizaki स्टील अंडरकाउंटर के बारे में जानें।"
+    },
+    "/hotdogroller": {
+      "title": "हॉट डॉग रोलर",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से हॉट डॉग रोलर के बारे में जानें।"
+    },
+    "/ice-crushers": {
+      "title": "बर्फ़ क्रश करने की मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से बर्फ़ क्रश करने की मशीनें के बारे में जानें।"
+    },
+    "/manual-soda-machine": {
+      "title": "मैन्युअल सोडा मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से मैन्युअल सोडा मशीनें के बारे में जानें।"
+    },
+    "/marination-machine": {
+      "title": "मैरिनेशन मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से मैरिनेशन मशीनें के बारे में जानें।"
+    },
+    "/milkboilers-coffeebrewer-teabrewer": {
+      "title": "मिल्क बॉयलर, कॉफ़ी और चाय ब्रूअर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से मिल्क बॉयलर, कॉफ़ी और चाय ब्रूअर के बारे में जानें।"
+    },
+    "/oilfilter": {
+      "title": "तेल फ़िल्टर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से तेल फ़िल्टर के बारे में जानें।"
+    },
+    "/orengejuice-machine": {
+      "title": "संतरे के जूस की मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से संतरे के जूस की मशीनें के बारे में जानें।"
+    },
+    "/panipuridispenser-mocktaildispen": {
+      "title": "पानीपुरी और मॉकटेल डिस्पेंसर",
+      "description": "मूल कैटलॉग के पन्नों से पानीपुरी और मॉकटेल डिस्पेंसर के बारे में जानें।"
+    },
+    "/panroll-icecream-machine": {
+      "title": "पैन रोल आइसक्रीम मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से पैन रोल आइसक्रीम मशीनें के बारे में जानें।"
+    },
+    "/pizzacone": {
+      "title": "कोन पिज़्ज़ा मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से कोन पिज़्ज़ा मशीनें के बारे में जानें।"
+    },
+    "/pizzaovens": {
+      "title": "पिज़्ज़ा ओवन और डो रोलर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से पिज़्ज़ा ओवन और डो रोलर के बारे में जानें।"
+    },
+    "/planetary-spiralmixers": {
+      "title": "प्लैनेटरी और स्पाइरल मिक्सर",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से प्लैनेटरी और स्पाइरल मिक्सर के बारे में जानें।"
+    },
+    "/popcornmachine": {
+      "title": "पॉपकॉर्न मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से पॉपकॉर्न मशीनें के बारे में जानें।"
+    },
+    "/popsicle-icecream-machine": {
+      "title": "पॉप्सिकल मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से पॉप्सिकल मशीनें के बारे में जानें।"
+    },
+    "/sandwitchgriller": {
+      "title": "सैंडविच ग्रिलर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से सैंडविच ग्रिलर के बारे में जानें।"
+    },
+    "/shawarma-machine-shawarma-cutter": {
+      "title": "शावरमा मशीनें और कटर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से शावरमा मशीनें और कटर के बारे में जानें।"
+    },
+    "/snow-icebingsu-machine": {
+      "title": "स्नो आइस और बिंगसू मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से स्नो आइस और बिंगसू मशीनें के बारे में जानें।"
+    },
+    "/soda-machine": {
+      "title": "सोडा मशीनें",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से सोडा मशीनें के बारे में जानें।"
+    },
+    "/soft-icecream-machines": {
+      "title": "सॉफ़्ट आइसक्रीम मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से सॉफ़्ट आइसक्रीम मशीनें के बारे में जानें।"
+    },
+    "/souppot": {
+      "title": "सूप पॉट",
+      "description": "मूल कैटलॉग के पन्नों और वीडियो डेमो से सूप पॉट के बारे में जानें।"
+    },
+    "/steeltables-sinks": {
+      "title": "स्टील टेबल और सिंक",
+      "description": "मूल कैटलॉग के पन्नों से स्टील टेबल और सिंक के बारे में जानें।"
+    },
+    "/sugarcane-machines": {
+      "title": "गन्ने के रस की मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से गन्ने के रस की मशीनें के बारे में जानें।"
+    },
+    "/sugarcane-peeler": {
+      "title": "गन्ना छीलने की मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से गन्ना छीलने की मशीनें के बारे में जानें।"
+    },
+    "/sujatha-mixers": {
+      "title": "Sujatha मिक्सर",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से Sujatha मिक्सर के बारे में जानें।"
+    },
+    "/sweetcorn": {
+      "title": "स्वीट कॉर्न और मोमो स्टीमर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से स्वीट कॉर्न और मोमो स्टीमर के बारे में जानें।"
+    },
+    "/tabletop-coolingdisplay": {
+      "title": "टेबलटॉप कूलिंग डिस्प्ले",
+      "description": "मूल कैटलॉग के पन्नों और उपकरणों की तस्वीरों से टेबलटॉप कूलिंग डिस्प्ले के बारे में जानें।"
+    },
+    "/tabletop-displaywarmers": {
+      "title": "टेबलटॉप डिस्प्ले वार्मर",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से टेबलटॉप डिस्प्ले वार्मर के बारे में जानें।"
+    },
+    "/ufoburger-cuppizza": {
+      "title": "UFO बर्गर और कप पिज़्ज़ा",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से UFO बर्गर और कप पिज़्ज़ा के बारे में जानें।"
+    },
+    "/waffle": {
+      "title": "वॉफ़ल मशीनें",
+      "description": "मूल कैटलॉग के पन्नों, उपकरणों की तस्वीरों और वीडियो डेमो से वॉफ़ल मशीनें के बारे में जानें।"
+    },
+    "/westernbackbarchillers": {
+      "title": "Western बैक बार चिलर",
+      "description": "मूल कैटलॉग के पन्नों से Western बैक बार चिलर के बारे में जानें।"
+    },
+    "/westernbakerycool-hot-plainshowcase": {
+      "title": "Western बेकरी शोकेस",
+      "description": "मूल कैटलॉग के पन्नों और वीडियो डेमो से Western बेकरी शोकेस के बारे में जानें।"
+    },
+    "/westerndeepfreezers": {
+      "title": "Western डीप फ़्रीज़र",
+      "description": "मूल कैटलॉग के पन्नों से Western डीप फ़्रीज़र के बारे में जानें।"
+    },
+    "/westernicecubemachines": {
+      "title": "Western आइस क्यूब मशीनें",
+      "description": "मूल कैटलॉग के पन्नों से Western आइस क्यूब मशीनें के बारे में जानें।"
+    },
+    "/westernmedicalrefrigeartion": {
+      "title": "Western मेडिकल रेफ्रिजरेशन",
+      "description": "मूल कैटलॉग के पन्नों से Western मेडिकल रेफ्रिजरेशन के बारे में जानें।"
+    },
+    "/westernpreperatintables": {
+      "title": "Western प्रिपरेशन टेबल",
+      "description": "मूल कैटलॉग के पन्नों से Western प्रिपरेशन टेबल के बारे में जानें।"
+    },
+    "/westernstoragewatercoolers": {
+      "title": "Western वॉटर कूलर",
+      "description": "मूल कैटलॉग के पन्नों से Western वॉटर कूलर के बारे में जानें।"
+    },
+    "/westernsupermarketfreezer-chiller": {
+      "title": "Western सुपरमार्केट फ़्रीज़र और चिलर",
+      "description": "मूल कैटलॉग के पन्नों से Western सुपरमार्केट फ़्रीज़र और चिलर के बारे में जानें।"
+    },
+    "/westernvisicoolers": {
+      "title": "Western विज़ी कूलर",
+      "description": "मूल कैटलॉग के पन्नों और वीडियो डेमो से Western विज़ी कूलर के बारे में जानें।"
+    }
+  }
+}

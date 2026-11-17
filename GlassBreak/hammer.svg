@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g transform="rotate(-35 32 32)">
+    <!-- hammer head -->
+    <rect x="14" y="10" width="28" height="16" rx="6" fill="#D9A441"/>
+    <ellipse cx="42" cy="18" rx="5" ry="7" fill="#C9912F"/>
+
+    <!-- wood grain on head -->
+    <path d="M18 14 Q22 12 26 14" stroke="#B97D1F" stroke-width="1.5" fill="none"/>
+    <path d="M20 19 Q25 17 30 19" stroke="#B97D1F" stroke-width="1.5" fill="none"/>
+    <path d="M24 23 Q28 21 33 23" stroke="#B97D1F" stroke-width="1.5" fill="none"/>
+    <path d="M38 13 Q40 18 38 23" stroke="#B97D1F" stroke-width="1.2" fill="none"/>
+
+    <!-- handle -->
+    <rect x="26" y="24" width="8" height="28" rx="4" fill="#D9A441"/>
+
+    <!-- wood grain on handle -->
+    <path d="M29 28 L29 48" stroke="#B97D1F" stroke-width="1.2"/>
+    <path d="M27 33 Q30 32 33 33" stroke="#B97D1F" stroke-width="1" fill="none"/>
+    <path d="M27 40 Q30 39 33 40" stroke="#B97D1F" stroke-width="1" fill="none"/>
+    <path d="M27 46 Q30 45 33 46" stroke="#B97D1F" stroke-width="1" fill="none"/>
+  </g>
+</svg>

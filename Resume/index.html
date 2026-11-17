@@ -3,63 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Resume | Gowtham M.</title>
-  <meta name="description" content="Resume overview for Gowtham Muraharirao." />
+  <title>Gowtham Muraharirao | GenAI Engineer Resume</title>
+  <meta name="description" content="Gowtham Muraharirao's resume: GenAI engineering, Python, RAG and LLM applications, professional experience at Harman, LocalRAG, and MotoOps." />
   <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    .resume-shell { max-width: 1080px; margin: 0 auto; padding: 56px 24px 80px; }
+    .resume-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+    .resume-toolbar .resume-actions { margin: 0; }
+    .resume-paper { background: #fff; border: 1px solid var(--line-light); border-radius: 12px; padding: clamp(24px, 5vw, 64px); box-shadow: 0 8px 40px rgba(29, 29, 31, .05); }
+    .resume-heading { padding-bottom: 28px; border-bottom: 1px solid var(--line-light); }
+    .resume-heading h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); line-height: 1.12; }
+    .resume-contact { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 20px 0 0; font-size: .94rem; font-style: normal; }
+    .resume-contact a { overflow-wrap: anywhere; }
+    .resume-content { display: grid; gap: 36px; padding-top: 32px; }
+    .resume-content section { scroll-margin-top: 80px; }
+    .resume-content h2 { font-size: 1.55rem; line-height: 1.25; margin-bottom: 18px; letter-spacing: -.025em; }
+    .resume-content h3 { font-size: 1.16rem; line-height: 1.4; }
+    .resume-content p { margin: 10px 0 0; }
+    .resume-role { color: var(--link-blue); font-size: 1.16rem; font-weight: 600; margin: 14px 0 0; }
+    .resume-skills { margin: 0; display: grid; gap: 12px; }
+    .resume-skills > div { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; }
+    .resume-skills dt { font-weight: 600; color: var(--text-strong); }
+    .resume-skills dd { margin: 0; }
+    .resume-details { color: var(--text-muted); font-size: .94rem; }
+    .resume-bullets { margin: 16px 0 0; padding-left: 22px; display: grid; gap: 10px; }
+    .resume-bullets li { padding-left: 4px; }
+    .resume-project + .resume-project { border-top: 1px solid var(--line-light); padding-top: 24px; margin-top: 28px; }
+    .resume-entry-top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; }
+    .resume-project-link { font-size: .9rem; white-space: nowrap; }
+    .resume-period { display: block; color: var(--text-muted); font-size: .94rem; font-weight: 400; margin-top: 6px; letter-spacing: 0; }
+    .resume-personal { margin-top: 24px; }
+    .resume-personal ul { display: flex; flex-wrap: wrap; gap: 10px 20px; padding: 0; margin: 12px 0 0; list-style: none; }
+    @media (max-width: 600px) {
+      .resume-shell { padding: 28px 16px 48px; }
+      .resume-toolbar .resume-actions { width: 100%; }
+      .resume-toolbar .btn { flex: 1; }
+      .resume-skills > div { grid-template-columns: 1fr; gap: 2px; }
+      .resume-contact { flex-direction: column; }
+    }
+    @media print {
+      @page { margin: 15mm; }
+      .resume-toolbar { display: none !important; }
+      .resume-shell { max-width: none; margin: 0; }
+      .resume-paper { border: 0; padding: 0; box-shadow: none; }
+      .resume-heading h1 { font-size: 28pt; }
+      .resume-content { gap: 20px; padding-top: 20px; }
+      .resume-content h2 { font-size: 16pt; break-after: avoid; }
+      .resume-content h3 { font-size: 12pt; break-after: avoid; }
+      .resume-paper { font-size: 10pt; }
+      .resume-contact, .resume-details, .resume-period, .resume-project-link { font-size: 9pt; }
+      .resume-bullets { gap: 5px; }
+      .resume-bullets li, .resume-skills > div { break-inside: avoid; }
+      .resume-skills > div { grid-template-columns: 150px minmax(0, 1fr); }
+      .resume-contact { flex-direction: row; }
+      .resume-paper a { color: inherit; text-decoration: underline; }
+    }
+  </style>
 </head>
 <body class="resume-page">
   <main class="site-main">
-    <section class="page-hero">
-      <div class="container">
-        <div class="page-hero-shell split">
-          <div class="copy-block reveal">
-            <span class="section-label">Resume</span>
-            <h1>Experience snapshot and detailed resume.</h1>
-            <p class="lead">A lighter, more utilitarian surface for the professional history behind the portfolio work. The emphasis here is clarity and print-readiness rather than full editorial storytelling.</p>
-            <div class="resume-actions">
-              <a href="resume.html" class="btn btn-primary btn-lg">Open Detailed Resume</a>
-              <a href="mailto:Gowtham.Muraharirao@outlook.com" class="btn btn-secondary btn-lg">Email Gowtham</a>
-            </div>
-          </div>
-          <div class="service-panel reveal">
-            <span class="section-label">Current focus</span>
-            <div class="spec-grid">
-              <div class="spec-item">
-                <strong>Experience</strong>
-                <p>Quality engineering, test automation, frontend delivery, and systems-minded technical execution.</p>
-              </div>
-              <div class="spec-item">
-                <strong>Core tools</strong>
-                <p>Java, Python, Selenium, REST Assured, Jenkins, SQL, Git, and practical automation workflows.</p>
-              </div>
-              <div class="spec-item">
-                <strong>Location</strong>
-                <p>Bengaluru, India.</p>
-              </div>
-            </div>
-          </div>
+    <div class="resume-shell">
+      <div class="resume-toolbar">
+        <span class="section-label">Resume</span>
+        <div class="resume-actions">
+          <a href="Gowtham%20Muraharirao%20Resume_AI.pdf" class="btn btn-primary" download>Download PDF</a>
+          <a href="Gowtham%20Muraharirao%20Resume_AI.pdf" class="btn btn-secondary" target="_blank" rel="noopener">View PDF</a>
         </div>
       </div>
-    </section>
 
-    <section class="section section-light">
-      <div class="container">
-        <div class="grid-3 stagger">
-          <article class="service-card">
-            <h3>Work History</h3>
-            <p class="text-muted">Quality Engineering Analyst and Associate roles at Accenture, plus earlier software development internship experience.</p>
-          </article>
-          <article class="service-card">
-            <h3>Skills</h3>
-            <p class="text-muted">Testing automation, API validation, CI/CD workflows, scripting, debugging, and collaborative delivery in Agile teams.</p>
-          </article>
-          <article class="service-card">
-            <h3>Projects</h3>
-            <p class="text-muted">Offline cab-service workflow and computer vision work using OpenCV, Python, and CNN-based detection approaches.</p>
-          </article>
+      <article class="resume-paper" aria-labelledby="resume-name">
+        <header class="resume-heading">
+          <h1 id="resume-name">Gowtham Muraharirao</h1>
+          <p class="resume-role">GenAI Engineer | Python, RAG, LLM Applications</p>
+          <address class="resume-contact">
+            <span>Visakhapatnam</span>
+            <a href="mailto:Gowtham.Muraharirao@outlook.com">Gowtham.Muraharirao@outlook.com</a>
+            <a href="tel:+917093572116">+91 7093572116</a>
+            <a href="https://www.linkedin.com/in/gowthammuraharirao/">LinkedIn</a>
+            <a href="https://github.com/Promepy">GitHub</a>
+          </address>
+        </header>
+
+        <div class="resume-content">
+          <section aria-labelledby="summary-title">
+            <h2 id="summary-title">Profile</h2>
+            <p>GenAI, Software Engineer and broadly a Generalist with 5+ years of experience building Python/Flask automation platforms, REST services, monitoring systems, and React dashboards for distributed operations across 100+ sites. Recently, I worked on MotoOps - EV Dealership Operations Application which is live and being used by 100+ users across 6 dealership locations. Experienced in production workflow automation, SQL-backed services, operational monitoring, and human-in-the-loop systems, with a focus on enterprise RAG and agentic AI applications.</p>
+          </section>
+
+          <section aria-labelledby="skills-title">
+            <h2 id="skills-title">Core Skills</h2>
+            <dl class="resume-skills">
+              <div><dt>Programming</dt><dd>Python, SQL, JavaScript, TypeScript</dd></div>
+              <div><dt>Generative AI</dt><dd>LLM Applications, Retrieval-Augmented Generation (RAG), Prompt Engineering, Tool/Function Calling, Source-Grounded Generation</dd></div>
+              <div><dt>LLMs &amp; Frameworks</dt><dd>Llama 3.1, Ollama, Groq, OpenAI-Compatible APIs</dd></div>
+              <div><dt>Embeddings &amp; Vector Search</dt><dd>Nomic Embeddings, ChromaDB, pgvector, Semantic Search, Document Chunking &amp; Retrieval</dd></div>
+              <div><dt>Backend &amp; APIs</dt><dd>Flask, REST APIs, PostgreSQL, SQLite, Supabase</dd></div>
+              <div><dt>Frontend &amp; Integration</dt><dd>React, Next.js, Tailwind CSS</dd></div>
+              <div><dt>Automation &amp; Deployment</dt><dd>Python Automation, Scheduled Jobs, Git, GitHub, Linux, Vercel</dd></div>
+            </dl>
+          </section>
+
+          <section aria-labelledby="experience-title">
+            <h2 id="experience-title">Professional Experience</h2>
+            <h3>Harman Connected Services Pvt. Ltd.</h3>
+            <p class="resume-details">Bengaluru, India</p>
+            <p><strong>Software Engineer</strong> | September 2021 - January 2026</p>
+            <ul class="resume-bullets">
+              <li>Engineered a Python/Flask uptime-monitoring platform for <strong>100+ distributed weighbridge servers</strong>, replacing manual Excel-based checks performed every 10-30 minutes.</li>
+              <li>Built a <strong>polling and validation pipeline</strong> using Requests and BeautifulSoup to parse server-status data <strong>every 30 seconds</strong>, reconcile active connections against expected site inventory, and persist incident history in SQLite.</li>
+              <li>Reduced practical outage detection from <strong>30-60 minutes</strong> or customer-reported discovery to approximately <strong>2-5 minutes</strong> through sustained-disconnection validation and secondary network checks.</li>
+              <li>Developed a React, Tailwind CSS and Chart.js operations dashboard covering live availability, downtime history, acknowledgement state, ticket references, root-cause notes, alert suppression and reporting.</li>
+              <li>Implemented <strong>Node-RED/JavaScript</strong> processing for TCP weight-indicator payloads, extracting and normalizing noisy measurements into structured JSON for MQTT-based downstream systems.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="projects-title">
+            <h2 id="projects-title">Projects <span class="resume-period">January 2026 - Present</span></h2>
+            <article class="resume-project">
+              <div class="resume-entry-top">
+                <h3>LocalRAG - Fully Offline RAG System</h3>
+                <a class="resume-project-link" href="https://github.com/Promepy/LocalRAG">View on GitHub &rarr;</a>
+              </div>
+              <p class="resume-details"><strong>Technologies:</strong> Python, Ollama, Llama 3.1 8B, Chroma, Nomic Embeddings, OpenAI-Compatible API</p>
+              <ul class="resume-bullets">
+                <li>Built a <strong>fully offline RAG system</strong> for ingesting, searching, summarizing, and chatting with personal documents without cloud APIs, external vector stores, telemetry, or data transfer.</li>
+                <li>Supported Markdown, TXT, HTML, JSON, and PDF ingestion by <strong>chunking</strong> documents into approximately 1000-character segments, <strong>generating 768-dimensional nomic-embed-text embeddings</strong>, and storing vectors/metadata in Chroma.</li>
+                <li>Implemented retrieval flow: user query &rarr; query embedding &rarr; Chroma similarity search &rarr; retrieved context &rarr; <strong>local generation through Ollama using llama3.1:8b-instruct-q4</strong> &rarr; answer with <strong>citations</strong>.</li>
+                <li>Added incremental document updates, persistent vector storage, file indexing, terminal chat, and an OpenAI-compatible API server for Open WebUI integration.</li>
+              </ul>
+            </article>
+            <article class="resume-project">
+              <div class="resume-entry-top">
+                <h3>MotoOps - EV Dealership Operations Application (Live)</h3>
+                <a class="resume-project-link" href="https://promepy.github.io/KVR-MotoOps/">View live application &rarr;</a>
+              </div>
+              <p class="resume-details"><strong>Technologies:</strong> Flutter, Dart, PostgreSQL, Supabase (Auth, Database, Storage), REST APIs, Git, GitHub Pages, Android, Codex</p>
+              <ul class="resume-bullets">
+                <li>MotoOps is live with <strong>100+ users</strong> actively using it across <strong>6 dealership sites</strong>.</li>
+                <li>Designed and developed a <strong>multi-location EV dealership management application</strong> for customer enquiries, follow-ups, inventory, payments, and vehicle deliveries.</li>
+                <li>Built a <strong>cross-platform application using Flutter and Dart</strong>, supporting both web and Android from a single codebase and used <strong>Supabase as a serverless backend</strong> with PostgreSQL for data storage, authentication, and file management.</li>
+                <li>Implemented <strong>role-based access control</strong>, invite-only staff onboarding, and branch-specific workflows.</li>
+                <li>Integrated <strong>REST APIs</strong>, database queries, input validation, and error handling for reliable data management.</li>
+                <li>Deployed the <strong>web application on GitHub Pages</strong>, with Android APK support using the same Flutter codebase. Tested the application with <strong>real dealership users and operational data</strong>, improving features based on feedback.</li>
+              </ul>
+            </article>
+            <div class="resume-personal">
+              <h3>Personal Projects</h3>
+              <ul>
+                <li><a href="../timeShrink/">TimeShrink</a></li>
+                <li><a href="../GlassBreak/">GlassBreak</a></li>
+                <li><a href="../Quotes/">Quotes</a></li>
+                <li><a href="../PDF2Image/">PDF2Image</a></li>
+                <li><a href="../Courses/">Courses</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <h3>Gayatri Vidya Parishad College of Engineering</h3>
+            <p class="resume-details">Visakhapatnam, Andhra Pradesh</p>
+            <p>Bachelor of Technology - Information Technology | 2021 | GPA: 7.39</p>
+          </section>
         </div>
-      </div>
-    </section>
+      </article>
+    </div>
   </main>
 
   <script src="../assets/js/nav.js"></script>
